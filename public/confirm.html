@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Confirm Subscription | Castilva Games</title>
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            font-family: 'Inter', sans-serif;
+            background: #1a1410;
+            color: #e8dcc8;
+            background-image:
+                radial-gradient(ellipse at top, rgba(249, 115, 22, 0.08), transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(249, 115, 22, 0.05), transparent 50%);
+        }
+        .card {
+            width: 100%;
+            max-width: 480px;
+            background: rgba(26, 20, 16, 0.85);
+            border: 1px solid rgba(120, 53, 15, 0.35);
+            border-radius: 16px;
+            padding: 40px 32px;
+            text-align: center;
+            box-shadow: 0 20px 60px -20px rgba(249, 115, 22, 0.25);
+        }
+        .logo {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 20px;
+            display: block;
+            filter: brightness(1.1);
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            font-size: 26px;
+            letter-spacing: 0.02em;
+            color: #fef3c7;
+            margin-bottom: 12px;
+        }
+        h1 .accent { color: #f97316; }
+        p {
+            color: rgba(232, 220, 200, 0.7);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .email {
+            color: #fb923c;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            word-break: break-all;
+        }
+        .icon-wrap {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(249, 115, 22, 0.4);
+            background: rgba(249, 115, 22, 0.12);
+        }
+        .icon-wrap.error {
+            border-color: rgba(239, 68, 68, 0.4);
+            background: rgba(239, 68, 68, 0.12);
+        }
+        .icon-wrap svg { width: 32px; height: 32px; }
+        .icon-wrap.success svg { color: #fb923c; }
+        .icon-wrap.error svg { color: #f87171; }
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid rgba(249, 115, 22, 0.2);
+            border-top-color: #f97316;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 12px 28px;
+            background: #ea580c;
+            color: #fef3c7;
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: #f97316; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="/logo.png" alt="Castilva Games" class="logo">
+
+        <div id="state-loading">
+            <div class="spinner"></div>
+            <h1>CONFIRMING<span class="accent">...</span></h1>
+            <p>Checking your confirmation link.</p>
+        </div>
+
+        <div id="state-success" class="hidden">
+            <div class="icon-wrap success">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h1>YOU'RE <span class="accent">IN</span></h1>
+            <p>Your subscription is confirmed.</p>
+            <p id="success-email" class="email"></p>
+            <p style="margin-top: 12px;">We'll drop you a line when there's news from the wasteland.</p>
+            <a href="/" class="btn">Back to site</a>
+        </div>
+
+        <div id="state-invalid" class="hidden">
+            <div class="icon-wrap error">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+            </div>
+            <h1>LINK <span class="accent">EXPIRED</span></h1>
+            <p>This confirmation link is no longer valid. It may have already been used, or a newer one has replaced it.</p>
+            <p style="margin-top: 12px;">Try subscribing again from the footer.</p>
+            <a href="/" class="btn">Back to site</a>
+        </div>
+
+        <div id="state-error" class="hidden">
+            <div class="icon-wrap error">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                </svg>
+            </div>
+            <h1>SOMETHING <span class="accent">WENT WRONG</span></h1>
+            <p>We couldn't confirm your subscription right now. Please try again in a moment.</p>
+            <a href="/" class="btn">Back to site</a>
+        </div>
+    </div>
+
+    <script>
+        // These values are public and already present in the main bundle.
+        const SUPABASE_URL = 'https://dzmqyzgrechlzkhrxhwp.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR6bXF5emdyZWNobHpraHJ4aHdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYxOTYyNjMsImV4cCI6MjA5MTc3MjI2M30.lhmzQv9xqZHPo6GEbusdD2EibTWZgqMBfF7HTNRIIzM';
+
+        const show = (id) => {
+            ['state-loading', 'state-success', 'state-invalid', 'state-error'].forEach((s) => {
+                document.getElementById(s).classList.toggle('hidden', s !== id);
+            });
+        };
+
+        (async () => {
+            const token = new URLSearchParams(window.location.search).get('token');
+            if (!token) {
+                show('state-invalid');
+                return;
+            }
+
+            try {
+                const res = await fetch(`${SUPABASE_URL}/functions/v1/confirm-subscription`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                        'apikey': SUPABASE_ANON_KEY,
+                    },
+                    body: JSON.stringify({ token }),
+                });
+                const body = await res.json().catch(() => ({}));
+
+                if (body.status === 'confirmed' || body.status === 'already_confirmed') {
+                    if (body.email) {
+                        document.getElementById('success-email').textContent = body.email;
+                    }
+                    show('state-success');
+                } else if (body.status === 'invalid') {
+                    show('state-invalid');
+                } else {
+                    show('state-error');
+                }
+            } catch (err) {
+                console.error(err);
+                show('state-error');
+            }
+        })();
+    </script>
+</body>
+</html>

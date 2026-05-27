@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Harbor | Castilva Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1a1410;
+            color: #e8dcc8;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: #1a1410/95;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(120, 53, 15, 0.3);
+        }
+        
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        
+        .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #e8dcc8;
+            letter-spacing: 0.05em;
+        }
+        
+        .logo-text span {
+            color: #f97316;
+        }
+        
+        .back-link {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: #e8dcc8;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: rgba(245, 158, 11, 0.5);
+        }
+        
+        /* Main Content */
+        main {
+            padding-top: 120px;
+            padding-bottom: 80px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #e8dcc8;
+            margin-bottom: 16px;
+        }
+        
+        .page-header h1 span {
+            background: linear-gradient(to right, #f97316, #f59e0b, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .effective-date {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 16px;
+            color: rgba(232, 220, 200, 0.6);
+        }
+        
+        /* Content Card */
+        .content-card {
+            background: #241a14;
+            border-radius: 16px;
+            padding: 48px;
+            border: 1px solid rgba(120, 53, 15, 0.3);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #e8dcc8;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(120, 53, 15, 0.3);
+        }
+        
+        .section p {
+            color: rgba(232, 220, 200, 0.8);
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+        
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+        
+        .section ul li {
+            color: rgba(232, 220, 200, 0.8);
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+            line-height: 1.8;
+        }
+        
+        .section ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            color: #f97316;
+        }
+        
+        .section ul li strong {
+            color: #e8dcc8;
+        }
+        
+        .contact-email {
+            display: inline-block;
+            color: #f97316;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 8px;
+        }
+        
+        .contact-email:hover {
+            color: #f59e0b;
+        }
+        
+        /* Footer */
+        footer {
+            background: #120e0a;
+            border-top: 1px solid rgba(120, 53, 15, 0.2);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-text {
+            color: rgba(232, 220, 200, 0.4);
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            
+            .content-card {
+                padding: 24px;
+            }
+            
+            .section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="/logo.png" alt="Castilva Games">
+                <span class="logo-text">CASTILVA <span>GAMES</span></span>
+            </a>
+            <a href="/" class="back-link">← Back to Home</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1>Privacy Policy for <span>Harbor</span></h1>
+                <p class="effective-date">Effective Date: February 3, 2026</p>
+            </div>
+            
+            <div class="content-card">
+                <div class="section">
+                    <h2>1. Introduction</h2>
+                    <p>Castilva Games ("we," "us," or "our") respects the privacy of our players. This Privacy Policy explains how we collect, use, and protect your information when you play our game, <strong>Harbor</strong>.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>2. Information We Collect</h2>
+                    <p>To provide multiplayer services, maintain game integrity, and save your progress, we may process the following data:</p>
+                    <ul>
+                        <li><strong>Account Information:</strong> Your Epic Games Account ID to identify you across sessions.</li>
+                        <li><strong>Gameplay Data:</strong> In-game progress, inventory, survival statistics (health, hunger, etc.), and location data within the game world.</li>
+                        <li><strong>Technical Data:</strong> IP address, hardware details, and network information required for connection to our game servers and for anti-cheat purposes.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>3. How We Use Your Information</h2>
+                    <p>We use this information strictly to:</p>
+                    <ul>
+                        <li>Facilitate multiplayer gameplay and matchmaking.</li>
+                        <li>Persist your character's state, inventory, and base building progress.</li>
+                        <li>Detect and prevent cheating or unauthorized modifications to ensure a fair environment.</li>
+                        <li>Analyze game stability and fix technical issues.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>4. Third-Party Services</h2>
+                    <p>We utilize trusted third-party services to support our game's infrastructure. By playing Harbor, you acknowledge that your data may be processed by:</p>
+                    <ul>
+                        <li><strong>Epic Online Services (EOS):</strong> For authentication, matchmaking, and player data management.</li>
+                        <li><strong>Easy Anti-Cheat (EAC):</strong> For analyzing game client integrity to prevent cheating. EAC may collect and process data regarding game binaries and system memory purely for cheat detection.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>5. Data Retention</h2>
+                    <p>We retain your gameplay data for as long as you maintain an active account or as required to provide the service. You may request the deletion of your data at any time.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>6. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy or your data, please contact us at:</p>
+                    <a href="mailto:info@castilva.com" class="contact-email">info@castilva.com</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="footer-text">© 2026 CASTILVA GAMES. All rights reserved.</p>
+    </footer>
+</body>
+</html>
