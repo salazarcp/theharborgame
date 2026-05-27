@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ImageLightbox from '@/components/ImageLightbox';
+import PictureImage from '@/components/PictureImage';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,15 +16,15 @@ interface Feature {
 }
 
 const beyondImages = [
-  '/beyond-48.png',
-  '/beyond-55.png',
-  '/beyond-54.png',
-  '/beyond-51.png',
-  '/beyond-42.png',
-  '/beyond-36.png',
-  '/beyond-16.png',
-  '/beyond-14.png',
-  '/beyond-8.png',
+  '/beyond-48.jpg',
+  '/beyond-55.jpg',
+  '/beyond-54.jpg',
+  '/beyond-51.jpg',
+  '/beyond-42.jpg',
+  '/beyond-36.jpg',
+  '/beyond-16.jpg',
+  '/beyond-14.jpg',
+  '/beyond-8.jpg',
 ];
 
 const features: Feature[] = [
@@ -32,7 +33,7 @@ const features: Feature[] = [
     title: 'THE HARBOR BAR',
     description:
       'At the heart of the safe zone, the bar is where survivors gather to drink, swap stories, and broker deals before heading back into the wasteland.',
-    image: '/feature-harbor-bar.png',
+    image: '/feature-harbor-bar.jpg',
     align: 'left',
   },
   {
@@ -40,7 +41,7 @@ const features: Feature[] = [
     title: 'KING OF THE HILL',
     description:
       'Sanctioned fight events inside the safe zone. Step into the ring, take down other survivors, and build a reputation that carries beyond Harbor.',
-    image: '/feature-king-of-the-hill.png',
+    image: '/feature-king-of-the-hill.jpg',
     align: 'right',
   },
   {
@@ -48,7 +49,7 @@ const features: Feature[] = [
     title: 'THE CITADEL',
     description:
       'Carved into the red cliffs, the Citadel holds the master valve. Open it, water returns to the wasteland, and your name is written into the map itself.',
-    image: '/feature-citadel.png',
+    image: '/feature-citadel.jpg',
     align: 'left',
   },
   {
@@ -56,7 +57,7 @@ const features: Feature[] = [
     title: 'HARBOR',
     description:
       'Harbor sits at the center of the wasteland. The only safe haven where you can catch your breath, restock, and gather your nerve before the next run.',
-    image: '/feature-harbor.png',
+    image: '/feature-harbor.jpg',
     align: 'right',
   },
   {
@@ -64,7 +65,7 @@ const features: Feature[] = [
     title: 'DIESEL RING',
     description:
       'The only place on the map to refuel. Anyone running on fumes is already on their way, and they will fight you for every drop.',
-    image: '/feature-diesel-ring.png',
+    image: '/feature-diesel-ring.jpg',
     align: 'left',
   },
   {
@@ -72,7 +73,7 @@ const features: Feature[] = [
     title: 'BLACKRAIL',
     description:
       'Most of the wasteland is one ride away. Hop the Blackrail to skip the long runs, and shelter inside its cars where even the radiation cannot reach you.',
-    image: '/feature-blackrail.png',
+    image: '/feature-blackrail.jpg',
     align: 'right',
   },
   {
@@ -80,7 +81,7 @@ const features: Feature[] = [
     title: 'THE BULLET QUARRY',
     description:
       'The richest alloy deposits in the wasteland. Remember it well, because every survivor runs out of bullets eventually, and a mine cart drops you straight to the bottom when that day comes.',
-    image: '/feature-bullet-quarry.png',
+    image: '/feature-bullet-quarry.jpg',
     align: 'left',
   },
   {
@@ -88,7 +89,7 @@ const features: Feature[] = [
     title: 'GREENWOUND',
     description:
       'Without clean blood, the radiation finds you with every step. The Blackrail is the only way in that lets you walk back out.',
-    image: '/feature-greenwound.png',
+    image: '/feature-greenwound.jpg',
     align: 'right',
   },
   {
@@ -104,7 +105,7 @@ const features: Feature[] = [
     title: 'RULERS OF THE HARBOR',
     description:
       'The only ground in Harbor a clan can take and hold. Claim it, and the gates open at your name, your colors fly above the walls, and every drop of fuel outside the Diesel Ring runs through your people.',
-    image: '/feature-rulers.png',
+    image: '/feature-rulers.jpg',
     align: 'right',
   },
 ];
@@ -230,9 +231,11 @@ const GameFeatures = () => {
 
                   {/* Image Container */}
                   <div className="relative aspect-video rounded-xl overflow-hidden border border-amber-900/30">
-                    <img
+                    <PictureImage
                       src={feature.image}
                       alt={feature.title}
+                      width={1920}
+                      height={1080}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
 
@@ -277,10 +280,11 @@ const GameFeatures = () => {
                 aria-label="Open screenshot"
                 className="flex-none w-[320px] md:w-[400px] lg:w-[480px] aspect-video relative rounded-xl overflow-hidden border border-amber-900/30 group cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
-                <img
+                <PictureImage
                   src={src}
                   alt=""
-                  loading="lazy"
+                  width={1920}
+                  height={1080}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a1410]/60 via-transparent to-transparent" />

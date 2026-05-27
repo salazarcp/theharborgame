@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import PictureImage from '@/components/PictureImage';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,9 +35,12 @@ const Navigation = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10">
-              <img 
-                src="/logo.png" 
-                alt="Castilva Games" 
+              <PictureImage
+                src="/logo.png"
+                alt="Castilva Games"
+                loading="eager"
+                width={40}
+                height={40}
                 className="w-full h-full object-contain filter brightness-110 group-hover:brightness-125 transition-all duration-300"
               />
             </div>

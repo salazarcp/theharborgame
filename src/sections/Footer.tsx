@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { CheckCircle2, MessageCircle, Youtube } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/lib/supabase';
+import PictureImage from '@/components/PictureImage';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -63,9 +64,11 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <a href="/" className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 relative">
-                <img
+                <PictureImage
                   src="/logo.png"
                   alt="Castilva Games"
+                  width={40}
+                  height={40}
                   className="w-full h-full object-contain filter brightness-110"
                 />
               </div>

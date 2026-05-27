@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import PictureImage from '@/components/PictureImage';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,9 +69,11 @@ const NewMap = () => {
         {/* Map Image */}
         <div ref={imageRef} className="max-w-5xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden border border-amber-900/30 shadow-2xl bg-black">
-            <img
-              src="/new-map.png"
+            <PictureImage
+              src="/new-map.jpg"
               alt="Game Difficulty Level Heat Map"
+              width={1920}
+              height={1080}
               className="w-full h-auto object-contain"
             />
             {/* Subtle inner glow */}

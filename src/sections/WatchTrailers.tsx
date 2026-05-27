@@ -69,6 +69,10 @@ const WatchTrailers = () => {
                 <img
                   src="/trailer-thumb.webp"
                   alt="Harbor - Official Trailer"
+                  loading="lazy"
+                  decoding="async"
+                  width={1280}
+                  height={720}
                   className="w-full h-full object-cover"
                 />
                 

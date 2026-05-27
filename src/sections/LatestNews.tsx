@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, Calendar } from 'lucide-react';
+import PictureImage from '@/components/PictureImage';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -121,9 +122,11 @@ const LatestNews = () => {
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
-                <img
+                <PictureImage
                   src={item.image}
                   alt={item.title}
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#241a14] to-transparent" />

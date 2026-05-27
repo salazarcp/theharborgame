@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ChevronDown, Play } from 'lucide-react';
+import PictureImage from '@/components/PictureImage';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -66,6 +67,11 @@ const Hero = () => {
           <img
             src="/hero-bg.webp"
             alt="Last Harbor - Desert Wasteland"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover"
           />
         </div>
@@ -83,9 +89,12 @@ const Hero = () => {
         <div className="mb-8 animate-float">
           <div className="inline-flex items-center gap-4">
             <div className="w-16 h-16 lg:w-20 lg:h-20 relative">
-              <img 
-                src="/logo.png" 
-                alt="Castilva Games" 
+              <PictureImage
+                src="/logo.png"
+                alt="Castilva Games"
+                loading="eager"
+                width={80}
+                height={80}
                 className="w-full h-full object-contain filter drop-shadow-lg"
               />
             </div>
