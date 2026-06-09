@@ -287,3 +287,23 @@
     animation: none;
   }
 }
+
+/* Hero WISHLIST NOW title: gentle float + breathing orange glow (synced 3s) */
+@keyframes wishlist-glow {
+  0%, 100% {
+    text-shadow: 0 0 6px rgba(234, 88, 12, 0.3), 0 0 18px rgba(234, 88, 12, 0.18);
+  }
+  50% {
+    text-shadow: 0 0 14px rgba(245, 158, 11, 0.7), 0 0 34px rgba(234, 88, 12, 0.55), 0 0 60px rgba(234, 88, 12, 0.3);
+  }
+}
+
+.hero-title-glow {
+  animation: float 3s ease-in-out infinite, wishlist-glow 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title-glow {
+    animation: none;
+  }
+}

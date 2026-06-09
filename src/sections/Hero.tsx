@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ChevronDown, Play } from 'lucide-react';
-import PictureImage from '@/components/PictureImage';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -85,34 +84,10 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 container-custom text-center pt-20">
-        {/* Logo */}
-        <div className="mb-8 animate-float">
-          <div className="inline-flex items-center gap-4">
-            <div className="w-16 h-16 lg:w-20 lg:h-20 relative">
-              <PictureImage
-                src="/logo.png"
-                alt="Castilva Games"
-                loading="eager"
-                width={80}
-                height={80}
-                className="w-full h-full object-contain filter drop-shadow-lg"
-              />
-            </div>
-            <div className="text-left">
-              <span className="font-orbitron font-bold text-2xl lg:text-3xl text-amber-100 block tracking-wider">
-                CASTILVA
-              </span>
-              <span className="font-orbitron font-bold text-xl lg:text-2xl text-orange-500 tracking-widest">
-                GAMES
-              </span>
-            </div>
-          </div>
-        </div>
-
         {/* Title */}
         <h1
           ref={titleRef}
-          className="font-orbitron font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-amber-100 mb-6 tracking-tight perspective-1000"
+          className="hero-title-glow font-orbitron font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-amber-100 mb-6 tracking-tight perspective-1000"
         >
           {titleText.split('').map((char, index) => (
             <span
@@ -129,6 +104,7 @@ const Hero = () => {
         <p
           ref={subtitleRef}
           className="text-lg md:text-xl text-amber-100/70 max-w-2xl mx-auto mb-10 font-light"
+          style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.75)' }}
         >
           Lost in a sea of sand and rust. Is 'Harbor' the final refuge? Scavenge, fight and survive the wasteland.
         </p>
