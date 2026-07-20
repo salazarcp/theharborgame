@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://theharborgame.com/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/hero-bg.webp</image:loc>
+      <image:title>Harbor open-world multiplayer survival game</image:title>
+      <image:caption>Harbor in a post-apocalyptic desert wasteland.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://theharborgame.com/feature-harbor.jpg</image:loc>
+      <image:title>The Harbor safe zone</image:title>
+      <image:caption>The only safe zone in Harbor's open-world wasteland.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/tr/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/hero-bg.webp</image:loc>
+      <image:title>Harbor açık dünya multiplayer survival oyunu</image:title>
+      <image:caption>Harbor'ın post-apocalyptic çöl ve hayatta kalma dünyası.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/privacy-policy.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>

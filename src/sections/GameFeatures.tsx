@@ -180,7 +180,7 @@ const GameFeatures = () => {
             GAME <span className="text-gradient">FEATURES</span>
           </h2>
           <p className="text-amber-100/60 text-lg max-w-2xl mx-auto">
-            Experience the ultimate wasteland adventure with Last Harbor.
+            Explore Harbor's post-apocalyptic open world, from its only safe zone to high-risk resource routes, PvP arenas, and clan territory.
           </p>
         </div>
 

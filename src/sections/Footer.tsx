@@ -10,17 +10,17 @@ const Footer = () => {
   const [subscribed, setSubscribed] = useState(false);
 
   const quickLinks = [
-    { label: 'Games', href: '#games' },
-    { label: 'News', href: '#news' },
-    { label: 'Support', href: '#support' },
-    { label: 'Careers', href: '#careers' },
+    { label: 'About Harbor', href: '#overview' },
+    { label: 'Official Trailer', href: '#trailers' },
+    { label: 'Gameplay', href: '#games' },
+    { label: 'FAQ', href: '#faq' },
   ];
 
-  const legalLinks = [
+  const officialLinks = [
     { label: 'Privacy Policy', href: '/privacy-policy.html' },
-    { label: 'Terms of Service', href: '#terms' },
-    { label: 'Cookie Policy', href: '#cookies' },
-    { label: 'Security', href: '#security' },
+    { label: 'Steam', href: 'https://store.steampowered.com/app/2714930/Harbor' },
+    { label: 'Discord', href: 'https://discord.gg/DQaJMQGvNn' },
+    { label: 'YouTube', href: 'https://www.youtube.com/@CastilvaGames' },
   ];
 
   const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -66,7 +66,7 @@ const Footer = () => {
               <div className="w-10 h-10 relative">
                 <PictureImage
                   src="/logo.png"
-                  alt="Castilva Games"
+                  alt="CastilvaGames, developer of Harbor"
                   width={40}
                   height={40}
                   className="w-full h-full object-contain filter brightness-110"
@@ -77,7 +77,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-amber-100/50 text-sm leading-relaxed mb-6">
-              Survive in a world of sand and rust. Fight for resources, build your convoy, and conquer the wasteland.
+              Harbor is an open-world multiplayer survival FPS. Gather scarce resources, craft essentials, build shelters, trade, and defend what you have.
             </p>
 
             {/* Social Icons */}
@@ -122,11 +122,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal Links */}
+          {/* Official Links */}
           <div>
-            <h4 className="font-orbitron font-semibold text-amber-100 mb-6">Legal</h4>
+            <h4 className="font-orbitron font-semibold text-amber-100 mb-6">Official Links</h4>
             <ul className="space-y-3">
-              {legalLinks.map((link) => (
+              {officialLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
@@ -196,7 +196,7 @@ const Footer = () => {
 
             {/* Platform Logos */}
             <div className="flex items-center gap-6">
-              <span className="text-amber-100/70 text-xs">Available on:</span>
+              <span className="text-amber-100/70 text-xs">Coming to:</span>
               <div className="flex items-center gap-4">
                 {['Steam', 'Epic'].map((platform) => (
                   <span

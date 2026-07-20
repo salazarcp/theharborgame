@@ -109,7 +109,7 @@ const AvailableNow = () => {
 
         {/* Available Platforms */}
         <div className="text-center">
-          <p className="text-amber-100/50 text-sm mb-6">Available Platforms</p>
+          <p className="text-amber-100/50 text-sm mb-6">Planned Platforms</p>
           
           {/* Platform Cards */}
           <div
@@ -138,7 +138,7 @@ const AvailableNow = () => {
         {/* Additional Info */}
         <div className="mt-16 text-center">
           <p className="text-amber-100/40 text-sm">
-            Coming soon to Steam and Epic Games Store.
+            Planned for PC. Coming to Steam Early Access in 2026.
           </p>
         </div>
       </div>

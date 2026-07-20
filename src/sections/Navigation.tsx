@@ -17,9 +17,9 @@ const Navigation = () => {
 
   // BURASI GÜNCELLENDİ: Games -> HARBOR oldu, About silindi.
   const navItems = [
-    { label: 'HARBOR', href: '#games' },
-    // { label: 'NEWS', href: '#news' }, // LatestNews bölümü geçici olarak kaldırıldı
-    { label: 'COMMUNITY', href: '#community' },
+    { label: 'ABOUT', href: '#overview' },
+    { label: 'GAMEPLAY', href: '#games' },
+    { label: 'FAQ', href: '#faq' },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Navigation = () => {
             <div className="relative w-10 h-10">
               <PictureImage
                 src="/logo.png"
-                alt="Castilva Games"
+                alt="CastilvaGames, developer of Harbor"
                 loading="eager"
                 width={40}
                 height={40}
@@ -90,6 +90,15 @@ const Navigation = () => {
               </a>
             </div>
 
+            <a
+              href="/tr/"
+              lang="tr"
+              hrefLang="tr"
+              aria-label="T?rk?e"
+              className="text-amber-100/60 hover:text-orange-400 text-sm font-semibold transition-colors"
+            >
+              TR
+            </a>
             {/* CTA Button */}
             <a
               href="https://store.steampowered.com/app/2714930/Harbor"
@@ -105,6 +114,8 @@ const Navigation = () => {
           <button
             className="lg:hidden text-amber-100 p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -127,6 +138,15 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
+            <a
+              href="/tr/"
+              lang="tr"
+              hrefLang="tr"
+              className="block text-amber-100/80 hover:text-orange-400 py-2 font-rajdhani font-semibold"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              T?RK?E
+            </a>
             <a 
               href="https://store.steampowered.com/app/2714930/Harbor" 
               target="_blank"

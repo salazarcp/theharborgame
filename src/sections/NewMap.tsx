@@ -71,7 +71,7 @@ const NewMap = () => {
           <div className="relative rounded-2xl overflow-hidden border border-amber-900/30 shadow-2xl bg-black">
             <PictureImage
               src="/new-map.jpg"
-              alt="Game Difficulty Level Heat Map"
+              alt="Harbor open-world wasteland map with survival difficulty zones"
               width={1920}
               height={1080}
               className="w-full h-auto object-contain"

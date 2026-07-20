@@ -53,19 +53,20 @@ const Hero = () => {
     { name: 'Epic Games Store', logo: '/epic.svg', href: 'https://store.epicgames.com' },
   ];
 
-  const titleText = 'WISHLIST NOW';
+  const titleText = 'HARBOR';
 
   return (
     <section
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      aria-labelledby="hero-title"
     >
       {/* Background Image with Ken Burns Effect */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 ken-burns">
           <img
             src="/hero-bg.webp"
-            alt="Last Harbor - Desert Wasteland"
+            alt="Harbor open-world multiplayer survival game in a post-apocalyptic desert"
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -84,8 +85,13 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 container-custom text-center pt-20">
+        <p className="font-rajdhani font-semibold tracking-[0.22em] text-sm md:text-base text-orange-300 mb-5">
+          OPEN-WORLD MULTIPLAYER SURVIVAL GAME
+        </p>
+
         {/* Title */}
         <h1
+          id="hero-title"
           ref={titleRef}
           className="hero-title-glow font-orbitron font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-amber-100 mb-6 tracking-tight perspective-1000"
         >
@@ -106,7 +112,7 @@ const Hero = () => {
           className="text-lg md:text-xl text-amber-100/70 max-w-2xl mx-auto mb-10 font-light"
           style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.75)' }}
         >
-          Lost in a sea of sand and rust. Is 'Harbor' the final refuge? Scavenge, fight and survive the wasteland.
+          Scavenge, craft, build, drive, trade, and fight to survive a post-apocalyptic wasteland with online PvP and co-op. Is Harbor the final refuge?
         </p>
 
         {/* Platform Icons */}
@@ -156,7 +162,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-        <a href="#news" className="flex flex-col items-center gap-2 text-amber-100/50 hover:text-amber-100 transition-colors duration-300">
+        <a href="#overview" className="flex flex-col items-center gap-2 text-amber-100/50 hover:text-amber-100 transition-colors duration-300">
           <span className="text-xs font-rajdhani tracking-widest">SCROLL DOWN</span>
           <ChevronDown className="w-6 h-6 animate-bounce-arrow" />
         </a>

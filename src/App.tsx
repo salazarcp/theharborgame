@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navigation from './sections/Navigation';
 import Hero from './sections/Hero';
+import GameOverview from './sections/GameOverview';
 // import LatestNews from './sections/LatestNews'; // geçici olarak kaldırıldı, sonra geri eklenecek
 import WatchTrailers from './sections/WatchTrailers';
 import NewMap from './sections/NewMap';
@@ -10,6 +11,7 @@ import GameFeatures from './sections/GameFeatures';
 import AvailableNow from './sections/AvailableNow';
 import FAQ from './sections/FAQ';
 import Footer from './sections/Footer';
+import StructuredData from './components/StructuredData';
 import { Toaster } from 'sonner';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -46,14 +48,18 @@ function App() {
 
   return (
     <div ref={mainRef} className="min-h-screen bg-[#0a0a0f] overflow-x-hidden">
+      <StructuredData />
       <Navigation />
-      <Hero />
-      {/* <LatestNews /> */}
-      <WatchTrailers />
-      <NewMap />
-      <GameFeatures />
-      <AvailableNow />
-      <FAQ />
+      <main>
+        <Hero />
+        <GameOverview />
+        {/* <LatestNews /> */}
+        <WatchTrailers />
+        <NewMap />
+        <GameFeatures />
+        <AvailableNow />
+        <FAQ />
+      </main>
       <Footer />
       <Toaster position="top-right" richColors theme="dark" />
     </div>
