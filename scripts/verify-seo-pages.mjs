@@ -3,6 +3,7 @@ import path from 'node:path';
 
 const distDirectory = path.resolve('dist');
 const manifestPath = path.join(distDirectory, 'seo-manifest.json');
+const indexNowKey = '2421833290844345a8caca4492858067';
 
 const assert = (condition, message) => {
   if (!condition) throw new Error(message);
@@ -82,6 +83,7 @@ const robots = readFileSync(path.join(distDirectory, 'robots.txt'), 'utf8');
 const sitemap = readFileSync(path.join(distDirectory, 'sitemap.xml'), 'utf8');
 const llms = readFileSync(path.join(distDirectory, 'llms.txt'), 'utf8');
 const facts = JSON.parse(readFileSync(path.join(distDirectory, 'harbor-facts.json'), 'utf8'));
+const publishedIndexNowKey = readFileSync(path.join(distDirectory, `${indexNowKey}.txt`), 'utf8').trim();
 
 assert(robots.includes('User-agent: *') && robots.includes('Allow: /'), 'robots.txt does not allow crawling');
 assert(robots.includes('https://theharborgame.com/sitemap.xml'), 'robots.txt is missing the canonical sitemap URL');
@@ -94,5 +96,6 @@ assert(facts.steamAppId === 2714930, 'harbor-facts.json has the wrong Steam App 
 assert(facts.release?.status === 'unreleased', 'harbor-facts.json must identify the current unreleased status');
 assert(facts.release?.plannedWindow === '2026', 'harbor-facts.json has the wrong release window');
 assert(facts.platforms?.confirmed?.length === 1 && facts.platforms.confirmed[0] === 'Windows PC via Steam', 'harbor-facts.json has unsupported confirmed platforms');
+assert(publishedIndexNowKey === indexNowKey, 'IndexNow key file is missing or invalid');
 
-console.log(`Discovery files OK · ${pages.length} sitemap URLs · robots.txt · llms.txt · harbor-facts.json`);
+console.log(`Discovery files OK · ${pages.length} sitemap URLs · robots.txt · llms.txt · harbor-facts.json · IndexNow key`);
