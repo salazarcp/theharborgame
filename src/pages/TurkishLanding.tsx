@@ -4,6 +4,7 @@ import GameOverview from '@/sections/GameOverview';
 import KnowledgeHub from '@/sections/KnowledgeHub';
 import FAQ from '@/sections/FAQ';
 import PictureImage from '@/components/PictureImage';
+import { openAnalyticsSettings } from '@/lib/analytics';
 
 const STEAM_URL = 'https://store.steampowered.com/app/2714930/Harbor';
 
@@ -69,13 +70,13 @@ const TurkishLanding = () => (
 
         <div className="relative z-10 container-custom text-center pt-24">
           <p className="font-rajdhani font-semibold tracking-[0.22em] text-sm md:text-base text-orange-300 mb-5">
-            AÇIK DÜNYA MULTIPLAYER SURVIVAL OYUNU
+            REKABETÇİ POST-APOCALYPTIC AÇIK DÜNYA SURVIVAL
           </p>
           <h1 className="hero-title-glow font-orbitron font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-amber-100 mb-6 tracking-tight">
             HARBOR
           </h1>
           <p className="text-lg md:text-xl text-amber-100/75 max-w-3xl mx-auto mb-10 leading-relaxed" style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.8)' }}>
-            Kum ve pas denizinde kayboldunuz. Kaynak toplayın, üretin, üs kurun, araç kullanın ve online PvP ile co-op dünyasında hayatta kalın. Harbor son sığınağınız olabilir mi?
+            Tek güvenli bölge. İki kritik kaynak. Toplayın, üretin, üs kurun, ticaret yapın ve ölümün taşıdığınız her şeye mal olabileceği rekabetçi çorak dünyada hayatta kalın.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href={STEAM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 text-lg">
@@ -108,7 +109,7 @@ const TurkishLanding = () => (
                   Harbor; gerçekçi ve atmosferik bir post-apocalyptic açık dünyada FPS çatışmalarını, kaynak kıtlığını ve oyuncu kararlarını merkezine alır. Ölüm, uğruna savaştığınız her şeyi kaybetmek anlamına gelebilir.
                 </p>
                 <p>
-                  Temiz kan ve yakıt en kritik kaynaklardır. War Truck ile Blackrail treninin peşine araçlarla düşün; araç gereç, silah ve kıyafet üretin; sığınağınızı güçlendirin ve bölgenizi savunun.
+                  Temiz kan ve yakıt en kritik kaynaklardır. War Truck ile Blackrail treninin peşine araçlarla çıkın; araç gereç, silah ve kıyafet üretin; sığınağınızı güçlendirin ve bölgenizi savunun.
                 </p>
                 <p>
                   Harbor güvenli bölgesinde görev alın, ticaret yapın ve geçici güvenlik bulun. Kapıların dışında ise ittifak kurmakla hiçbir oyuncuya güvenmemek arasındaki seçim size aittir.
@@ -135,12 +136,12 @@ const TurkishLanding = () => (
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1410] via-[#241a14] to-[#1a1410]" />
         <div className="absolute inset-0 gradient-mesh" />
         <div className="container-custom relative z-10">
-          <p className="font-rajdhani font-semibold tracking-[0.24em] text-sm text-orange-400 mb-4">2026 · STEAM EARLY ACCESS</p>
+          <p className="font-rajdhani font-semibold tracking-[0.24em] text-sm text-orange-400 mb-4">2026 · WINDOWS PC · STEAM + EPIC GAMES STORE</p>
           <h2 className="font-orbitron font-bold text-4xl md:text-6xl text-amber-100 mb-5">
             HARBOR’I <span className="text-gradient">İSTEK LİSTENE EKLE</span>
           </h2>
           <p className="text-amber-100/65 text-lg max-w-2xl mx-auto mb-8">
-            Kapılar açıldığında haberdar olmak ve resmi geliştirme güncellemelerini takip etmek için Harbor’ı Steam’de istek listene ekle.
+            Steam sayfası açık; Harbor’ı istek listene ekle. Epic Games Store sayfası yayınlandığında resmi bağlantı burada paylaşılacak.
           </p>
           <a href={STEAM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 text-lg">
             STEAM SAYFASINA GİT <ExternalLink className="w-5 h-5" aria-hidden="true" />
@@ -156,6 +157,7 @@ const TurkishLanding = () => (
         </p>
         <div className="flex items-center gap-5 text-sm">
           <a href="/privacy-policy.html" className="text-amber-100/60 hover:text-orange-400">Gizlilik</a>
+          <button type="button" onClick={openAnalyticsSettings} className="text-amber-100/60 hover:text-orange-400">Analitik Ayarları</button>
           <a href="/tr/oynanis/" className="text-amber-100/60 hover:text-orange-400">Oynanış</a>
           <a href="/tr/cikis/" className="text-amber-100/60 hover:text-orange-400">Çıkış</a>
           <a href="/tr/basin/" className="text-amber-100/60 hover:text-orange-400">Basın</a>

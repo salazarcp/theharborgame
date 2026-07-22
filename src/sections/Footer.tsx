@@ -3,6 +3,7 @@ import { CheckCircle2, Youtube } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/lib/supabase';
 import PictureImage from '@/components/PictureImage';
+import { openAnalyticsSettings, trackAnalyticsEvent } from '@/lib/analytics';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -53,6 +54,10 @@ const Footer = () => {
       toast.success('Almost done. Check your inbox to confirm.');
       setSubscribed(true);
     }
+    trackAnalyticsEvent('sign_up', {
+      method: 'newsletter',
+      subscription_status: status ?? 'new',
+    });
     setEmail('');
   };
 
@@ -78,7 +83,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-amber-100/50 text-sm leading-relaxed mb-6">
-              Harbor is an open-world multiplayer survival FPS. Gather scarce resources, craft essentials, build shelters, trade, and defend what you have.
+              Harbor is CastilvaGames’ competitive post-apocalyptic open-world survival game. Gather scarce resources, build shelters, trade, and defend what you have.
             </p>
 
             {/* Social Icons */}
@@ -137,6 +142,15 @@ const Footer = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <button
+                  type="button"
+                  onClick={openAnalyticsSettings}
+                  className="text-left text-sm text-amber-100/50 transition-colors duration-300 hover:text-orange-400"
+                >
+                  Analytics Settings
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -198,13 +212,13 @@ const Footer = () => {
             {/* Platform Logos */}
             <div className="flex items-center gap-6">
               <span className="text-amber-100/70 text-xs">Planned for:</span>
-              <span className="text-amber-100/80 text-xs font-rajdhani font-semibold">Steam Early Access · Windows PC · 2026</span>
+              <span className="text-amber-100/80 text-xs font-rajdhani font-semibold">Windows PC · Steam Early Access + Epic Games Store · 2026</span>
             </div>
           </div>
 
           {/* Legal Text */}
           <p className="text-amber-100/70 text-[10px] mt-4 text-center md:text-left leading-relaxed">
-            Harbor is in development. Release timing, features, pricing, and system requirements may change. Check the official Steam page for the latest public information.
+            Harbor is in development. Release timing, features, pricing, and system requirements may change. Steam is public; the Epic Games Store page is not yet live.
           </p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 
 const distDirectory = path.resolve('dist');
@@ -50,6 +50,7 @@ for (const page of pages) {
   assert(html.includes(`<link rel="alternate" hreflang="x-default" href="${page.alternateEn}"`), `${prefix} wrong x-default hreflang`);
   assert(wordCount >= page.minWords, `${prefix} expected at least ${page.minWords} visible words, found ${wordCount}`);
   assert(!/[ÃÄÅ]|â€|T\?RK\?E/.test(html), `${prefix} contains likely encoding corruption`);
+  assert(!new RegExp('\\bLast' + ' Harbor\\b', 'i').test(html), `${prefix} contains an incorrect game title`);
 
   if (page.directAnswer) {
     assert(html.includes(page.directAnswer), `${prefix} missing the visible direct answer`);
@@ -84,6 +85,10 @@ const sitemap = readFileSync(path.join(distDirectory, 'sitemap.xml'), 'utf8');
 const llms = readFileSync(path.join(distDirectory, 'llms.txt'), 'utf8');
 const facts = JSON.parse(readFileSync(path.join(distDirectory, 'harbor-facts.json'), 'utf8'));
 const publishedIndexNowKey = readFileSync(path.join(distDirectory, `${indexNowKey}.txt`), 'utf8').trim();
+const bundledJavaScript = readdirSync(path.join(distDirectory, 'assets'))
+  .filter((file) => file.endsWith('.js'))
+  .map((file) => readFileSync(path.join(distDirectory, 'assets', file), 'utf8'))
+  .join('\n');
 
 assert(robots.includes('User-agent: *') && robots.includes('Allow: /'), 'robots.txt does not allow crawling');
 assert(robots.includes('https://theharborgame.com/sitemap.xml'), 'robots.txt is missing the canonical sitemap URL');
@@ -95,7 +100,13 @@ assert(facts.name === 'Harbor', 'harbor-facts.json has the wrong game entity');
 assert(facts.steamAppId === 2714930, 'harbor-facts.json has the wrong Steam App ID');
 assert(facts.release?.status === 'unreleased', 'harbor-facts.json must identify the current unreleased status');
 assert(facts.release?.plannedWindow === '2026', 'harbor-facts.json has the wrong release window');
-assert(facts.platforms?.confirmed?.length === 1 && facts.platforms.confirmed[0] === 'Windows PC via Steam', 'harbor-facts.json has unsupported confirmed platforms');
+assert(facts.release?.exactDate === null, 'harbor-facts.json must not invent an exact release date');
+assert(facts.platforms?.confirmed?.length === 1 && facts.platforms.confirmed[0] === 'Windows PC', 'harbor-facts.json has unsupported confirmed platforms');
+assert(facts.platforms?.storefronts?.some(({ name, url }) => name === 'Steam' && url?.includes('/app/2714930/Harbor')), 'harbor-facts.json is missing the official Steam storefront');
+assert(facts.platforms?.storefronts?.some(({ name, url }) => name === 'Epic Games Store' && url === null), 'harbor-facts.json must record the planned Epic storefront and pending URL');
+assert(bundledJavaScript.includes('G-XMBR4ENVMK'), 'production bundle is missing the GA4 measurement ID');
+assert(['steam_store_click', 'trailer_click', 'discord_click'].every((eventName) => bundledJavaScript.includes(eventName)), 'production bundle is missing analytics conversion events');
+assert(bundledJavaScript.includes('analytics_storage') && bundledJavaScript.includes('denied'), 'production bundle is missing consent-first analytics defaults');
 assert(publishedIndexNowKey === indexNowKey, 'IndexNow key file is missing or invalid');
 
 console.log(`Discovery files OK · ${pages.length} sitemap URLs · robots.txt · llms.txt · harbor-facts.json · IndexNow key`);

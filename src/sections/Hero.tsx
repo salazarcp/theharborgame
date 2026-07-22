@@ -85,7 +85,7 @@ const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 container-custom text-center pt-20">
         <p className="font-rajdhani font-semibold tracking-[0.22em] text-sm md:text-base text-orange-300 mb-5">
-          OPEN-WORLD MULTIPLAYER SURVIVAL GAME
+          COMPETITIVE POST-APOCALYPTIC OPEN-WORLD SURVIVAL
         </p>
 
         {/* Title */}
@@ -111,7 +111,7 @@ const Hero = () => {
           className="text-lg md:text-xl text-amber-100/70 max-w-2xl mx-auto mb-10 font-light"
           style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.75)' }}
         >
-          Scavenge, craft, build, drive, trade, and fight to survive a post-apocalyptic wasteland with online PvP and co-op. Is Harbor the final refuge?
+          One safe zone. Two critical resources. Scavenge, craft, build, trade, and survive a competitive wasteland where death can cost everything you carry.
         </p>
 
         {/* Platform Icons */}
@@ -135,6 +135,17 @@ const Hero = () => {
               />
             </a>
           ))}
+          <div
+            aria-label="Epic Games Store release planned for 2026; store page coming soon"
+            className="relative h-12 md:h-14 px-5 md:px-6 bg-amber-100/5 backdrop-blur-sm rounded-lg flex items-center justify-center border border-amber-500/20"
+          >
+            <img
+              src="/epic.svg"
+              alt="Epic Games Store"
+              className="h-6 md:h-7 w-auto opacity-70"
+            />
+            <span className="absolute -bottom-2 rounded bg-[#1a1410] px-2 py-0.5 text-[9px] font-bold tracking-wider text-orange-300">PLANNED</span>
+          </div>
         </div>
 
         {/* CTA Buttons */}

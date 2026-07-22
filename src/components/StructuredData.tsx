@@ -10,8 +10,8 @@ const STEAM_URL = 'https://store.steampowered.com/app/2714930/Harbor';
 const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
   const pageUrl = locale === 'tr' ? `${BASE_URL}/tr/` : `${BASE_URL}/`;
   const description = locale === 'tr'
-    ? 'Harbor, açık dünya survival crafting ile online PvP, online co-op, FPS, üs kurma, kaynak toplama ve araç kullanımını bir araya getiren, PC için geliştirilen post-apocalyptic multiplayer oyundur.'
-    : 'Harbor is an upcoming open-world multiplayer survival FPS for PC with online PvP, online co-op, crafting, shelter building, resource gathering, trading, exploration, and driving.';
+    ? 'Harbor, tek güvenli bölge ve kıt kaynaklar çevresinde online PvP, co-op, crafting, building ve ticareti birleştiren rekabetçi post-apocalyptic açık dünya survival oyunudur.'
+    : 'Harbor is a competitive post-apocalyptic open-world survival game built around one safe zone, scarce resources, online PvP, co-op, crafting, building, and trading.';
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -38,8 +38,8 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
         '@type': 'WebSite',
         '@id': `${BASE_URL}/#website`,
         url: `${BASE_URL}/`,
-        name: 'The Harbor Game',
-        alternateName: ['Harbor Game', 'Harbor'],
+        name: 'Harbor Official Website',
+        alternateName: 'theharborgame.com',
         description,
         inLanguage: ['en', 'tr'],
         publisher: { '@id': `${BASE_URL}/#organization` },
@@ -48,7 +48,12 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
         '@type': 'VideoGame',
         '@id': `${BASE_URL}/#game`,
         name: 'Harbor',
-        alternateName: ['The Harbor Game', 'Harbor Game'],
+        identifier: {
+          '@type': 'PropertyValue',
+          propertyID: 'Steam App ID',
+          value: '2714930',
+        },
+        disambiguatingDescription: 'Harbor is CastilvaGames’ competitive post-apocalyptic open-world survival game for Windows PC, identified on Steam as App 2714930.',
         url: pageUrl,
         mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
         description,
@@ -76,11 +81,26 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
         creator: { '@id': `${BASE_URL}/#organization` },
         publisher: { '@id': `${BASE_URL}/#organization` },
         sameAs: [STEAM_URL],
+        copyrightHolder: { '@id': `${BASE_URL}/#organization` },
         potentialAction: {
           '@type': 'ViewAction',
           name: locale === 'tr' ? 'Steam istek listesine ekle' : 'Wishlist Harbor on Steam',
           target: STEAM_URL,
         },
+      },
+      {
+        '@type': 'VideoObject',
+        '@id': `${BASE_URL}/#announcement-trailer`,
+        name: 'Harbor Announcement Trailer',
+        description: 'The official Harbor announcement trailer from CastilvaGames, showing the post-apocalyptic open world, survival atmosphere, and multiplayer action.',
+        thumbnailUrl: [`${BASE_URL}/trailer-thumb.webp`],
+        uploadDate: '2025-01-07T22:51:14-08:00',
+        duration: 'PT1M55S',
+        embedUrl: 'https://www.youtube.com/embed/3E5J4DY8OhI',
+        contentUrl: 'https://www.youtube.com/watch?v=3E5J4DY8OhI',
+        inLanguage: 'en',
+        publisher: { '@id': `${BASE_URL}/#organization` },
+        about: { '@id': `${BASE_URL}/#game` },
       },
       {
         '@type': 'WebPage',

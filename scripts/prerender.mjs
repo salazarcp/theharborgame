@@ -20,12 +20,12 @@ const vite = await createServer({
 
 const englishSeo = {
   title: 'Harbor | Open-World Multiplayer Survival Game',
-  description: 'Harbor is an upcoming open-world multiplayer survival FPS for PC. Scavenge, craft, build, drive, trade, and fight in online PvP and co-op.',
+  description: 'Harbor is a competitive post-apocalyptic open-world survival game for PC. One safe zone, scarce resources, building, trading, online PvP and co-op.',
 };
 
 const turkishSeo = {
   title: 'Harbor | Açık Dünya Multiplayer Survival Oyunu',
-  description: 'Harbor, PC için açık dünya multiplayer survival FPS oyunudur. Kaynak topla, üret, üs kur, araç kullan ve online PvP ile co-op dünyasında hayatta kal.',
+  description: 'Harbor, PC için rekabetçi post-apocalyptic açık dünya survival oyunudur. Tek güvenli bölge, kıt kaynaklar, building, online PvP ve co-op.',
 };
 
 const injectMarkup = (html, markup) => {

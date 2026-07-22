@@ -1,19 +1,16 @@
 {
   "name": "Harbor",
-  "alternateNames": [
-    "The Harbor Game",
-    "Harbor Game"
-  ],
+  "officialNamePolicy": "Use only Harbor as the game title. Steam App ID 2714930 and theharborgame.com identify this specific game.",
   "entityType": "VideoGame",
   "lastVerified": "2026-07-22",
-  "verificationPolicy": "Facts are limited to current first-party Harbor and Steam material. Unknown details are not estimated.",
+  "verificationPolicy": "Facts are limited to current first-party CastilvaGames, Harbor, and Steam material. Unknown details are not estimated.",
   "developer": "CastilvaGames",
   "publisher": "CastilvaGames",
   "steamAppId": 2714930,
   "release": {
     "status": "unreleased",
     "plannedWindow": "2026",
-    "model": "Steam Early Access",
+    "model": "Steam Early Access; Epic Games Store release planned",
     "exactDate": null,
     "price": null,
     "notes": [
@@ -24,16 +21,27 @@
   },
   "platforms": {
     "confirmed": [
-      "Windows PC via Steam"
+      "Windows PC"
+    ],
+    "storefronts": [
+      {
+        "name": "Steam",
+        "status": "Public page; Early Access planned for 2026",
+        "url": "https://store.steampowered.com/app/2714930/Harbor"
+      },
+      {
+        "name": "Epic Games Store",
+        "status": "Release planned for 2026; public store page pending",
+        "url": null
+      }
     ],
     "notCurrentlyAnnounced": [
-      "Epic Games Store",
       "PlayStation",
       "Xbox",
       "macOS",
       "Linux"
     ],
-    "note": "Not currently announced does not mean never; it records the public evidence on the verification date. Epic Online Services use does not by itself confirm an Epic Games Store release."
+    "note": "CastilvaGames confirms Steam and Epic Games Store as planned PC storefronts. The official Epic product URL will be added when public."
   },
   "genres": [
     "Open World Survival Craft",
@@ -140,6 +148,7 @@
     "website": "https://theharborgame.com/",
     "steam": "https://store.steampowered.com/app/2714930/Harbor",
     "trailer": "https://www.youtube.com/watch?v=3E5J4DY8OhI",
+    "epicGamesStore": null,
     "youtube": "https://www.youtube.com/@CastilvaGames",
     "discord": "https://discord.gg/DQaJMQGvNn",
     "pressKit": "https://theharborgame.com/press/",

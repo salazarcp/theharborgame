@@ -10,7 +10,7 @@ export const gameFaqs: Record<SiteLocale, FaqItem[]> = {
     {
       question: 'What is Harbor?',
       answer:
-        'Harbor is an upcoming first-person, open-world multiplayer survival game for PC from CastilvaGames. In a post-apocalyptic wasteland, players scavenge limited resources, craft essential gear, build shelters, trade, form alliances, and fight to survive.',
+        'Harbor is CastilvaGames’ competitive first-person, post-apocalyptic open-world survival game for Windows PC. Players scavenge limited resources, craft essential gear, build shelters, trade, form alliances, and fight to survive.',
     },
     {
       question: 'Is Harbor an open-world multiplayer survival game?',
@@ -50,7 +50,7 @@ export const gameFaqs: Record<SiteLocale, FaqItem[]> = {
     {
       question: 'When will Harbor be released?',
       answer:
-        'Harbor is planned to launch in Steam Early Access in 2026. The game is not available yet, so wishlist it on Steam for official release notifications and development updates.',
+        'Harbor is planned for Windows PC in 2026 through Steam Early Access and Epic Games Store. No exact day or month is announced. The Steam page is public; the Epic Games Store page is coming later.',
     },
     {
       question: 'Is Harbor suitable for new survival-game players?',
@@ -85,7 +85,7 @@ export const gameFaqs: Record<SiteLocale, FaqItem[]> = {
         'Evet. Topladığınız kaynaklarla araç gereç, silah, kıyafet ve diğer temel eşyaları üretebilirsiniz. Sığınak kurma, yapıları geliştirme, çalışma tezgâhları ve bölgenizi savunma da oynanışın parçasıdır.',
     },
     {
-      question: 'Harbor’da araç kullanma ve araç savaşları var mı?',
+      question: 'Harbor’da araç kullanma ve hareketli kaynak hedefleri var mı?',
       answer:
         'Araç kullanma Harbor’ın önemli parçalarından biridir. Değerli kaynak taşıyan War Truck ve Blackrail trenini yakalamak için araçlara ihtiyaç duyarsınız; yakıt ise çorak dünyanın en kritik kaynaklarından biridir.',
     },
@@ -102,7 +102,7 @@ export const gameFaqs: Record<SiteLocale, FaqItem[]> = {
     {
       question: 'Harbor ne zaman çıkacak?',
       answer:
-        'Harbor’ın 2026 yılında Steam Early Access olarak çıkması planlanıyor. Oyun henüz erişime açık değil; resmi çıkış bildirimi ve geliştirme güncellemeleri için Steam istek listenize ekleyebilirsiniz.',
+        'Harbor’ın 2026’da Windows PC için Steam Early Access ve Epic Games Store üzerinden çıkması planlanıyor. Kesin gün veya ay açıklanmadı. Steam sayfası açık; Epic Games Store sayfası daha sonra yayınlanacak.',
     },
     {
       question: 'Harbor yeni başlayanlar için uygun bir online survival oyunu mu?',
@@ -116,11 +116,11 @@ export const seoCopy = {
   en: {
     title: 'Harbor | Open-World Multiplayer Survival Game',
     description:
-      'Harbor is an upcoming open-world multiplayer survival FPS for PC. Scavenge, craft, build, drive, trade, and fight in online PvP and co-op.',
+      'Harbor is a competitive post-apocalyptic open-world survival game for PC. One safe zone, scarce resources, building, trading, online PvP and co-op.',
   },
   tr: {
     title: 'Harbor | Açık Dünya Multiplayer Survival Oyunu',
     description:
-      'Harbor, PC için açık dünya multiplayer survival FPS oyunudur. Kaynak topla, üret, üs kur, araç kullan ve online PvP ile co-op dünyasında hayatta kal.',
+      'Harbor, PC için rekabetçi post-apocalyptic açık dünya survival oyunudur. Tek güvenli bölge, kıt kaynaklar, building, online PvP ve co-op.',
   },
 } satisfies Record<SiteLocale, { title: string; description: string }>;

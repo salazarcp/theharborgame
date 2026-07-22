@@ -11,7 +11,7 @@ const overviewContent = {
     titleBefore: 'OPEN-WORLD MULTIPLAYER',
     titleAccent: 'SURVIVAL',
     paragraphs: [
-      'Harbor is an upcoming first-person, open-world multiplayer survival game for PC. Enter a post-apocalyptic wasteland where clean blood, fuel, and every resource you carry can decide whether you make it back alive.',
+      'Harbor is CastilvaGames’ competitive first-person, post-apocalyptic open-world survival game for Windows PC. Enter a wasteland where Clean Blood, Fuel, and every resource you carry can decide whether you make it back alive.',
       'Scavenge and craft essential gear, build and upgrade shelters, drive across the desert, trade inside the Harbor safe zone, or form alliances for online co-op. Beyond the gates, online PvP means every survivor may become your next threat.',
     ],
     cards: [
@@ -42,7 +42,7 @@ const overviewContent = {
     titleBefore: 'AÇIK DÜNYA MULTIPLAYER',
     titleAccent: 'SURVIVAL',
     paragraphs: [
-      'Harbor, PC için geliştirilen birinci şahıs bakış açılı açık dünya multiplayer survival oyunudur. Temiz kanın, yakıtın ve taşıdığınız her kaynağın hayatta kalıp kalmayacağınızı belirlediği post-apocalyptic bir çorak dünyaya adım atın.',
+      'Harbor, CastilvaGames’in Windows PC için geliştirdiği rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. Clean Blood, Fuel ve taşıdığınız her kaynağın dönüş yolunu belirlediği çorak dünyaya adım atın.',
       'Kaynak toplayın, temel ekipmanları üretin, sığınaklar kurup geliştirin, çölde araç kullanın ve Harbor güvenli bölgesinde ticaret yapın. Arkadaşlarınızla online co-op ittifakları kurabilir veya kapıların dışında yüksek riskli online PvP savaşlarına girebilirsiniz.',
     ],
     cards: [
@@ -63,7 +63,7 @@ const overviewContent = {
       },
       {
         title: 'ÇORAK DÜNYADA SÜR',
-        description: 'Açık dünyayı araçlarla aşın; yakıt ve değerli kaynak taşıyan hareketli hedeflerin peşine düşün.',
+        description: 'Açık dünyayı araçlarla aşın; yakıt ve değerli kaynak taşıyan hareketli hedefleri takip edin.',
         icon: Route,
       },
     ],

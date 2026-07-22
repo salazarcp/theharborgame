@@ -106,7 +106,7 @@ const LatestNews = () => {
             LATEST <span className="text-gradient">NEWS</span>
           </h2>
           <p className="text-amber-100/60 text-lg max-w-2xl mx-auto">
-            Stay updated with the latest developments, updates, and announcements from the Last Harbor universe.
+            Stay updated with the latest Harbor development news and announcements.
           </p>
         </div>
 

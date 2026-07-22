@@ -9,7 +9,8 @@ interface Platform {
   id: number;
   name: string;
   logo: string;
-  href: string;
+  href?: string;
+  status: string;
 }
 
 const platforms: Platform[] = [
@@ -18,6 +19,13 @@ const platforms: Platform[] = [
     name: 'Steam',
     logo: '/steam.svg',
     href: 'https://store.steampowered.com/app/2714930/Harbor',
+    status: 'Page live · Wishlist now',
+  },
+  {
+    id: 2,
+    name: 'Epic Games Store',
+    logo: '/epic.svg',
+    status: 'Planned · Store page coming soon',
   },
 ];
 
@@ -103,7 +111,7 @@ const AvailableNow = () => {
 
         {/* Available Platforms */}
         <div className="text-center">
-          <p className="text-amber-100/50 text-sm mb-6">Confirmed Store Platform</p>
+          <p className="text-amber-100/50 text-sm mb-6">Planned PC Stores</p>
           
           {/* Platform Cards */}
           <div
@@ -111,20 +119,31 @@ const AvailableNow = () => {
             className="flex flex-wrap justify-center gap-4 md:gap-6"
           >
             {platforms.map((platform) => (
-              <a
-                key={platform.id}
-                href={platform.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={platform.name}
-                className="platform-card group h-14 md:h-16 px-6 md:px-8 bg-amber-100/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-amber-500/30 transition-all duration-300 hover:bg-amber-500/20 hover:border-orange-500/50 hover:scale-105"
-              >
-                <img
-                  src={platform.logo}
-                  alt={platform.name}
-                  className="h-6 md:h-7 w-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-                />
-              </a>
+              <div key={platform.id} className="min-w-52">
+                {platform.href ? (
+                  <a
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={platform.name}
+                    className="platform-card group h-14 md:h-16 px-6 md:px-8 bg-amber-100/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-amber-500/30 transition-all duration-300 hover:bg-amber-500/20 hover:border-orange-500/50 hover:scale-105"
+                  >
+                    <img
+                      src={platform.logo}
+                      alt={platform.name}
+                      className="h-6 md:h-7 w-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </a>
+                ) : (
+                  <div
+                    aria-label={`${platform.name}: ${platform.status}`}
+                    className="platform-card h-14 md:h-16 px-6 md:px-8 bg-amber-100/5 backdrop-blur-sm rounded-lg flex items-center justify-center border border-amber-500/20"
+                  >
+                    <img src={platform.logo} alt={platform.name} className="h-7 md:h-8 w-auto opacity-70" />
+                  </div>
+                )}
+                <p className="mt-3 text-xs text-amber-100/55">{platform.status}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -132,7 +151,7 @@ const AvailableNow = () => {
         {/* Additional Info */}
         <div className="mt-16 text-center">
           <p className="text-amber-100/40 text-sm">
-            Planned for PC. Coming to Steam Early Access in 2026.
+            Planned for Windows PC in 2026. Steam page live; Epic Games Store page coming soon.
           </p>
         </div>
       </div>

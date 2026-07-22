@@ -1,4 +1,5 @@
 import App from './App';
+import AnalyticsConsentBanner from './components/AnalyticsConsent';
 import { getKnowledgePage } from './content/knowledgePages';
 import KnowledgePage from './pages/KnowledgePage';
 import TurkishLanding from './pages/TurkishLanding';
@@ -12,11 +13,14 @@ const isTurkishPath = (pathname: string) => /^\/tr(?:\/|$)/.test(pathname);
 const SiteRoot = ({ pathname }: SiteRootProps) => {
   const knowledgePage = getKnowledgePage(pathname);
 
-  if (knowledgePage) {
-    return <KnowledgePage page={knowledgePage} />;
-  }
-
-  return isTurkishPath(pathname) ? <TurkishLanding /> : <App />;
+  return (
+    <>
+      {knowledgePage
+        ? <KnowledgePage page={knowledgePage} />
+        : isTurkishPath(pathname) ? <TurkishLanding /> : <App />}
+      <AnalyticsConsentBanner pathname={pathname} />
+    </>
+  );
 };
 
 export default SiteRoot;

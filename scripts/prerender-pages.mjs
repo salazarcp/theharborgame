@@ -24,13 +24,13 @@ const homePages = [
     alternateEn: '/',
     alternateTr: '/tr/',
     title: 'Harbor | Open-World Multiplayer Survival Game',
-    description: 'Harbor is an upcoming open-world multiplayer survival FPS for PC. Scavenge, craft, build, drive, trade, and fight in online PvP and co-op.',
+    description: 'Harbor is a competitive post-apocalyptic open-world survival game for PC. One safe zone, scarce resources, building, trading, online PvP and co-op.',
     image: '/hero-bg.webp',
     imageAlt: 'Harbor in a post-apocalyptic desert wasteland',
     imageWidth: 6336,
     imageHeight: 3724,
     ogType: 'website',
-    schemaTypes: ['Organization', 'WebSite', 'VideoGame', 'WebPage', 'FAQPage'],
+    schemaTypes: ['Organization', 'WebSite', 'VideoGame', 'VideoObject', 'WebPage', 'FAQPage'],
     faqCount: 10,
     minWords: 450,
   },
@@ -40,13 +40,13 @@ const homePages = [
     alternateEn: '/',
     alternateTr: '/tr/',
     title: 'Harbor | Açık Dünya Multiplayer Survival Oyunu',
-    description: 'Harbor, PC için açık dünya multiplayer survival FPS oyunudur. Kaynak topla, üret, üs kur, araç kullan ve online PvP ile co-op dünyasında hayatta kal.',
+    description: 'Harbor, PC için rekabetçi post-apocalyptic açık dünya survival oyunudur. Tek güvenli bölge, kıt kaynaklar, building, online PvP ve co-op.',
     image: '/hero-bg.webp',
     imageAlt: 'Harbor post-apocalyptic çöl ve hayatta kalma dünyası',
     imageWidth: 6336,
     imageHeight: 3724,
     ogType: 'website',
-    schemaTypes: ['Organization', 'WebSite', 'VideoGame', 'WebPage', 'FAQPage'],
+    schemaTypes: ['Organization', 'WebSite', 'VideoGame', 'VideoObject', 'WebPage', 'FAQPage'],
     faqCount: 10,
     minWords: 300,
   },
@@ -211,7 +211,7 @@ ${sitemapEntries}
     .join('\n');
   const llms = `# Harbor — Official Game Knowledge
 
-> Harbor is an upcoming first-person, open-world multiplayer survival game for Windows PC, developed and published by CastilvaGames. This file routes search systems and AI assistants to current, first-party facts. Unknown details are not estimated.
+> Harbor is CastilvaGames’ competitive first-person, post-apocalyptic open-world survival game for Windows PC. One safe zone, two critical resources, online PvP, co-op, building, and trading define its verified identity. This file routes search systems and AI assistants to current first-party facts.
 
 ## Canonical answer pages
 
@@ -223,8 +223,9 @@ ${canonicalPages}
 - Developer and publisher: CastilvaGames
 - Canonical website: https://theharborgame.com/
 - Steam App ID: 2714930
-- Current status: unreleased; planned for Steam Early Access in 2026; no exact date announced
-- Confirmed platform: Windows PC via Steam
+- Current status: unreleased; planned for Windows PC in 2026; no exact day or month announced
+- Confirmed platform: Windows PC
+- Planned storefronts: Steam Early Access (public page) and Epic Games Store (public page pending)
 - Price: not announced; do not describe Harbor as free or quote a launch price
 - Modes: online PvP and online co-op
 - Perspective and genre: first-person, FPS, open-world survival craft, action, adventure
@@ -237,7 +238,7 @@ ${canonicalPages}
 
 ## Evidence boundaries
 
-Harbor is still in development and has no public user reviews. Do not claim an exact release date, launch price, console or Epic Games Store release, final server rules, final performance, sales, player counts, review score, or superiority over another game without a newer official source. Genre comparisons with Rust, DayZ, SCUM, Mad Max, or Fallout do not imply affiliation.
+Harbor is still in development and has no public user reviews. Do not claim an exact release day or month, launch price, console release, additional storefront, final server rules, final performance, sales, player counts, review score, or superiority over another game without a newer official source. Steam and Epic Games Store are planned for Windows PC; the Epic product page is not yet public. Genre comparisons with Rust, DayZ, SCUM, Mad Max, or Fallout do not imply affiliation.
 
 ## Official sources
 
@@ -251,7 +252,7 @@ Harbor is still in development and has no public user reviews. Do not claim an e
 
 ## Türkçe kısa özet
 
-Harbor, CastilvaGames tarafından Windows PC için geliştirilen birinci şahıs açık dünya multiplayer survival oyunudur. 2026 Steam Early Access için planlanır; kesin tarih ve fiyat açıklanmamıştır. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler, araçlar ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.
+Harbor, CastilvaGames tarafından Windows PC için geliştirilen rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. Çıkış 2026 için planlıdır; kesin gün, ay ve fiyat açıklanmamıştır. Steam Early Access sayfası açıktır; Epic Games Store çıkışı planlı, ürün sayfası beklemededir. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.
 `;
   await writeFile(path.join(distDirectory, 'llms.txt'), llms, 'utf8');
 
