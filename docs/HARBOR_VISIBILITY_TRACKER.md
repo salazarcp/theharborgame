@@ -6,11 +6,11 @@ Bu dosya yaşayan kontrol listesidir. Her cuma güncellenir. Durum değerleri: `
 
 | ID | İş | Sorumlu | Durum | Tamamlanma kanıtı |
 |---|---|---|---|---|
-| T-01 | Oyun adını yalnız Harbor olarak tekilleştir | Site | IN PROGRESS | Canlı kaynaklarda yanlış ad varyantı yok |
-| T-02 | 2026 çıkış penceresi, gün/ay yok | Site + Steam | IN PROGRESS | Site/Steam/facts aynı |
-| T-03 | Steam açık, Epic planlı/page pending bilgisini eşitle | Site | IN PROGRESS | EN/TR release ve facts doğrulandı |
-| T-04 | GA4 `G-XMBR4ENVMK` entegrasyonu | Site | IN PROGRESS | Kabul sonrası Realtime page_view |
-| T-05 | Consent-first yükleme | Site | IN PROGRESS | Kabul öncesi `gtag/js` isteği yok |
+| T-01 | Oyun adını yalnız Harbor olarak tekilleştir | Site | DONE | Canlı 10/10 sayfada yanlış ad varyantı yok |
+| T-02 | 2026 çıkış penceresi, gün/ay yok | Site + Steam | DONE | Site/Steam/facts 2026 gösteriyor |
+| T-03 | Steam açık, Epic planlı/page pending bilgisini eşitle | Site | DONE | Canlı EN/TR release ve facts doğrulandı |
+| T-04 | GA4 `G-XMBR4ENVMK` entegrasyonu | Site | IN PROGRESS | Bundle canlı; GA4 Realtime doğrulaması bekliyor |
+| T-05 | Consent-first yükleme | Site | DONE | Tarayıcı testi: ilk açılış 0, reject 0, accept 1 GA script |
 | T-04A | `prime-ecd60` GA4 mülkünün Harbor’a ayrıldığını doğrula/yeniden adlandır | CastilvaGames | TODO | Başka Firebase verisiyle karışmadığı doğrulandı |
 | T-06 | `steam_store_click` | Site | IN PROGRESS | GA4 DebugView event |
 | T-07 | `trailer_click` ve `discord_click` | Site | IN PROGRESS | GA4 DebugView event |
@@ -18,7 +18,7 @@ Bu dosya yaşayan kontrol listesidir. Her cuma güncellenir. Durum değerleri: `
 | T-09 | GA4 key event ayarları | CastilvaGames | TODO | Steam click + sign_up key event |
 | T-10 | GSC 10 canonical URL kontrolü | CastilvaGames | TODO | URL Inspection ekran kaydı |
 | T-11 | Steamworks wishlist baz çizgisi | CastilvaGames | TODO | Tarihli CSV/screenshot |
-| T-12 | Ana fragman VideoObject | Site | IN PROGRESS | Rich Results/schema doğrulama |
+| T-12 | Ana fragman VideoObject | Site | DONE | Canlı JSON-LD ve SEO verifier doğrulandı |
 | T-13 | Steam klipleri için 4 watch page | Site + Video | TODO | 4 canonical URL + VideoObject |
 | T-14 | Video sitemap | Site | TODO | GSC gönderildi |
 
