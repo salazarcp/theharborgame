@@ -19,12 +19,6 @@ const platforms: Platform[] = [
     logo: '/steam.svg',
     href: 'https://store.steampowered.com/app/2714930/Harbor',
   },
-  {
-    id: 2,
-    name: 'Epic Games Store',
-    logo: '/epic.svg',
-    href: 'https://store.epicgames.com',
-  },
 ];
 
 const AvailableNow = () => {
@@ -109,7 +103,7 @@ const AvailableNow = () => {
 
         {/* Available Platforms */}
         <div className="text-center">
-          <p className="text-amber-100/50 text-sm mb-6">Planned Platforms</p>
+          <p className="text-amber-100/50 text-sm mb-6">Confirmed Store Platform</p>
           
           {/* Platform Cards */}
           <div

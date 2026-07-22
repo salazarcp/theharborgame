@@ -11,9 +11,10 @@ const Footer = () => {
 
   const quickLinks = [
     { label: 'About Harbor', href: '#overview' },
-    { label: 'Official Trailer', href: '#trailers' },
-    { label: 'Gameplay', href: '#games' },
-    { label: 'FAQ', href: '#faq' },
+    { label: 'Gameplay Guide', href: '/gameplay/' },
+    { label: 'Release & PC Requirements', href: '/release/' },
+    { label: 'Rust, DayZ & SCUM Comparison', href: '/games-like-rust-dayz-scum/' },
+    { label: 'Press Kit', href: '/press/' },
   ];
 
   const officialLinks = [
@@ -196,23 +197,14 @@ const Footer = () => {
 
             {/* Platform Logos */}
             <div className="flex items-center gap-6">
-              <span className="text-amber-100/70 text-xs">Coming to:</span>
-              <div className="flex items-center gap-4">
-                {['Steam', 'Epic'].map((platform) => (
-                  <span
-                    key={platform}
-                    className="text-amber-100/80 text-xs font-rajdhani font-semibold"
-                  >
-                    {platform}
-                  </span>
-                ))}
-              </div>
+              <span className="text-amber-100/70 text-xs">Planned for:</span>
+              <span className="text-amber-100/80 text-xs font-rajdhani font-semibold">Steam Early Access · Windows PC · 2026</span>
             </div>
           </div>
 
           {/* Legal Text */}
           <p className="text-amber-100/70 text-[10px] mt-4 text-center md:text-left leading-relaxed">
-            Internet connection, Castilva ID user account (+13), third-party platform account, and acceptance of the Castilva Games Terms of Service and End User License Agreement are required to play. Age restrictions apply (13+).
+            Harbor is in development. Release timing, features, pricing, and system requirements may change. Check the official Steam page for the latest public information.
           </p>
         </div>
       </div>

@@ -50,7 +50,6 @@ const Hero = () => {
 
   const platforms = [
     { name: 'Steam', logo: '/steam.svg', href: 'https://store.steampowered.com/app/2714930/Harbor' },
-    { name: 'Epic Games Store', logo: '/epic.svg', href: 'https://store.epicgames.com' },
   ];
 
   const titleText = 'HARBOR';

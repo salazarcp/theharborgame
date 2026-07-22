@@ -1,6 +1,7 @@
 import { ExternalLink, Play } from 'lucide-react';
 import StructuredData from '@/components/StructuredData';
 import GameOverview from '@/sections/GameOverview';
+import KnowledgeHub from '@/sections/KnowledgeHub';
 import FAQ from '@/sections/FAQ';
 import PictureImage from '@/components/PictureImage';
 
@@ -26,9 +27,10 @@ const TurkishLanding = () => (
           </span>
         </a>
 
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden xl:flex items-center gap-7">
           <a href="#oyun" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">OYUN</a>
-          <a href="#oynanis" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">OYNANIŞ</a>
+          <a href="/tr/oynanis/" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">OYNANIŞ</a>
+          <a href="/tr/cikis/" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">ÇIKIŞ</a>
           <a href="#sss" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">SSS</a>
         </div>
 
@@ -89,6 +91,8 @@ const TurkishLanding = () => (
       </section>
 
       <GameOverview locale="tr" />
+
+      <KnowledgeHub locale="tr" />
 
       <section id="oynanis" className="relative section-padding bg-[#120e0a]" aria-labelledby="gameplay-title-tr">
         <div className="absolute inset-0 grid-pattern opacity-30" />
@@ -152,6 +156,9 @@ const TurkishLanding = () => (
         </p>
         <div className="flex items-center gap-5 text-sm">
           <a href="/privacy-policy.html" className="text-amber-100/60 hover:text-orange-400">Gizlilik</a>
+          <a href="/tr/oynanis/" className="text-amber-100/60 hover:text-orange-400">Oynanış</a>
+          <a href="/tr/cikis/" className="text-amber-100/60 hover:text-orange-400">Çıkış</a>
+          <a href="/tr/basin/" className="text-amber-100/60 hover:text-orange-400">Basın</a>
           <a href="https://discord.gg/DQaJMQGvNn" target="_blank" rel="noopener noreferrer" className="text-amber-100/60 hover:text-orange-400">Discord</a>
           <a href="https://www.youtube.com/@CastilvaGames" target="_blank" rel="noopener noreferrer" className="text-amber-100/60 hover:text-orange-400">YouTube</a>
           <a href="/" lang="en" hrefLang="en" className="text-orange-400 hover:text-orange-300">English</a>

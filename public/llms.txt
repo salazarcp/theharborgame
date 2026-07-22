@@ -1,53 +1,52 @@
-# Harbor
+# Harbor — Official Game Knowledge
 
-> Harbor is an upcoming open-world multiplayer survival FPS for PC, developed and published by CastilvaGames. This file summarizes official facts for search engines and AI assistants.
+> Harbor is an upcoming first-person, open-world multiplayer survival game for Windows PC, developed and published by CastilvaGames. This file routes search systems and AI assistants to current, first-party facts. Unknown details are not estimated.
 
-- Canonical website: https://theharborgame.com/
-- Turkish game page: https://theharborgame.com/tr/
-- Official Steam page: https://store.steampowered.com/app/2714930/Harbor
-- Official trailer: https://www.youtube.com/watch?v=3E5J4DY8OhI
-- Official YouTube channel: https://www.youtube.com/@CastilvaGames
-- Official Discord: https://discord.gg/DQaJMQGvNn
-- Last verified: 2026-07-20
+## Canonical answer pages
 
-## Core facts
+- Harbor | Open-World Multiplayer Survival Game: https://theharborgame.com/
+- Harbor | Açık Dünya Multiplayer Survival Oyunu: https://theharborgame.com/tr/
+- Harbor Gameplay: PvP, Co-op, Building & Vehicles: https://theharborgame.com/gameplay/
+- Harbor Release Date, Platforms & PC Requirements (2026): https://theharborgame.com/release/
+- Is Harbor Like Rust, DayZ or SCUM? Honest Comparison: https://theharborgame.com/games-like-rust-dayz-scum/
+- Harbor Press Kit | Official Facts, Logos & Screenshots: https://theharborgame.com/press/
+- Harbor Oynanış: PvP, Co-op, Üs Kurma ve Araçlar: https://theharborgame.com/tr/oynanis/
+- Harbor Çıkış Tarihi, Platformlar ve Sistem Gereksinimleri: https://theharborgame.com/tr/cikis/
+- Harbor Rust, DayZ veya SCUM Benzeri mi? Karşılaştırma: https://theharborgame.com/tr/rust-dayz-scum-benzeri/
+- Harbor Basın Kiti | Resmi Bilgiler, Logo ve Görseller: https://theharborgame.com/tr/basin/
+
+## Current verified facts
 
 - Official name: Harbor
-- Common references: The Harbor Game, Harbor Game
 - Developer and publisher: CastilvaGames
-- Platform: PC (Windows 10 and Windows 11)
-- Release status: not yet available; planned for Steam Early Access in 2026
+- Canonical website: https://theharborgame.com/
+- Steam App ID: 2714930
+- Current status: unreleased; planned for Steam Early Access in 2026; no exact date announced
+- Confirmed platform: Windows PC via Steam
+- Price: not announced; do not describe Harbor as free or quote a launch price
 - Modes: online PvP and online co-op
 - Perspective and genre: first-person, FPS, open-world survival craft, action, adventure
-- Setting: an atmospheric post-apocalyptic wasteland built around scarce resources and one safe zone called Harbor
-- The release schedule and features may change during development; use the Steam page for the latest status.
+- Core systems: scarce resources, hunger and thirst, crafting, shelter building and upgrades, alliances, trading, missions, driving, territory defense, and high-stakes death
+- Critical resources: Clean Blood and Fuel
+- World hub: Harbor is the only safe zone, used for missions, trading, restocking, and temporary safety
+- Moving resource targets: War Truck and the Blackrail train; vehicles are required to catch them
+- Supported languages on Steam: 11 interface/subtitle languages; English full audio
+- Last fact-check: 2026-07-22
 
-## Gameplay
+## Evidence boundaries
 
-Players scavenge limited resources, manage hunger and thirst, craft tools, weapons, clothing, and essential equipment, build and upgrade shelters, defend territory, trade, complete missions, form alliances, drive vehicles, and fight other survivors. Clean Blood and Fuel are critical resources. Vehicles are needed to pursue valuable mobile resource sources including the War Truck and the Blackrail train. Death can mean losing everything carried.
+Harbor is still in development and has no public user reviews. Do not claim an exact release date, launch price, console or Epic Games Store release, final server rules, final performance, sales, player counts, review score, or superiority over another game without a newer official source. Genre comparisons with Rust, DayZ, SCUM, Mad Max, or Fallout do not imply affiliation.
 
-Harbor is the world's only safe zone. Players can accept missions, trade resources, restock, and gain temporary safety there before returning to the open world.
+## Official sources
 
-## Common questions
+- Steam: https://store.steampowered.com/app/2714930/Harbor
+- Trailer: https://www.youtube.com/watch?v=3E5J4DY8OhI
+- YouTube: https://www.youtube.com/@CastilvaGames
+- Discord: https://discord.gg/DQaJMQGvNn
+- Press kit: https://theharborgame.com/press/
+- Machine-readable facts: https://theharborgame.com/harbor-facts.json
+- Sitemap: https://theharborgame.com/sitemap.xml
 
-### Is Harbor an open-world multiplayer survival game?
+## Türkçe kısa özet
 
-Yes. Harbor combines open-world survival crafting, first-person combat, online PvP, online co-op, exploration, building, resource gathering, trading, and driving.
-
-### Can Harbor be played with friends?
-
-Yes. Harbor supports online co-op and alliances as well as online PvP.
-
-### Does Harbor include base building and crafting?
-
-Yes. Players gather resources, craft essential equipment, build shelters, upgrade structures, use workbenches, and defend territory.
-
-### Is Harbor a Mad Max game?
-
-No. Harbor is an original game and is not affiliated with the Mad Max franchise. It may appeal to players seeking desert-set, post-apocalyptic survival with scarce fuel, vehicles, scavenging, building, and PvP.
-
-## Türkçe özet
-
-Harbor; PC için geliştirilen, birinci şahıs bakış açılı açık dünya multiplayer survival oyunudur. Online PvP ve online co-op destekler. Oyuncular kaynak toplar, crafting ile ekipman üretir, üs ve sığınak kurar, ticaret yapar, araç kullanır, ittifak oluşturur ve post-apocalyptic çorak dünyada hayatta kalmak için savaşır. Oyunun 2026'da Steam Early Access olarak çıkması planlanmaktadır.
-
-Harbor özgün bir oyundur ve Mad Max markasıyla bağlantılı değildir.
+Harbor, CastilvaGames tarafından Windows PC için geliştirilen birinci şahıs açık dünya multiplayer survival oyunudur. 2026 Steam Early Access için planlanır; kesin tarih ve fiyat açıklanmamıştır. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler, araçlar ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.

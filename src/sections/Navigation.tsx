@@ -15,10 +15,12 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // BURASI GÜNCELLENDİ: Games -> HARBOR oldu, About silindi.
   const navItems = [
     { label: 'ABOUT', href: '#overview' },
-    { label: 'GAMEPLAY', href: '#games' },
+    { label: 'GAMEPLAY', href: '/gameplay/' },
+    { label: 'RELEASE', href: '/release/' },
+    { label: 'COMPARE', href: '/games-like-rust-dayz-scum/' },
+    { label: 'PRESS', href: '/press/' },
     { label: 'FAQ', href: '#faq' },
   ];
 
@@ -50,7 +52,7 @@ const Navigation = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden xl:flex items-center gap-5">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -63,7 +65,7 @@ const Navigation = () => {
           </div>
 
           {/* Right Side */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden xl:flex items-center gap-6">
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               <a
@@ -94,7 +96,7 @@ const Navigation = () => {
               href="/tr/"
               lang="tr"
               hrefLang="tr"
-              aria-label="T?rk?e"
+              aria-label="Türkçe"
               className="text-amber-100/60 hover:text-orange-400 text-sm font-semibold transition-colors"
             >
               TR
@@ -112,7 +114,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-amber-100 p-2"
+            className="xl:hidden text-amber-100 p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={isMobileMenuOpen}
@@ -123,7 +125,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          className={`xl:hidden overflow-hidden transition-all duration-300 ${
             isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
@@ -145,7 +147,7 @@ const Navigation = () => {
               className="block text-amber-100/80 hover:text-orange-400 py-2 font-rajdhani font-semibold"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              T?RK?E
+              TÜRKÇE
             </a>
             <a 
               href="https://store.steampowered.com/app/2714930/Harbor" 

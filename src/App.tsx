@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navigation from './sections/Navigation';
 import Hero from './sections/Hero';
 import GameOverview from './sections/GameOverview';
+import KnowledgeHub from './sections/KnowledgeHub';
 // import LatestNews from './sections/LatestNews'; // geçici olarak kaldırıldı, sonra geri eklenecek
 import WatchTrailers from './sections/WatchTrailers';
 import NewMap from './sections/NewMap';
@@ -53,6 +54,7 @@ function App() {
       <main>
         <Hero />
         <GameOverview />
+        <KnowledgeHub />
         {/* <LatestNews /> */}
         <WatchTrailers />
         <NewMap />

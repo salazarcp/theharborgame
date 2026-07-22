@@ -1,0 +1,163 @@
+{
+  "name": "Harbor",
+  "alternateNames": [
+    "The Harbor Game",
+    "Harbor Game"
+  ],
+  "entityType": "VideoGame",
+  "lastVerified": "2026-07-22",
+  "verificationPolicy": "Facts are limited to current first-party Harbor and Steam material. Unknown details are not estimated.",
+  "developer": "CastilvaGames",
+  "publisher": "CastilvaGames",
+  "steamAppId": 2714930,
+  "release": {
+    "status": "unreleased",
+    "plannedWindow": "2026",
+    "model": "Steam Early Access",
+    "exactDate": null,
+    "price": null,
+    "notes": [
+      "No exact release day or month is currently announced.",
+      "No launch price is currently published.",
+      "The developer says the full version is expected to cost more than the Early Access version, but no amount is listed."
+    ]
+  },
+  "platforms": {
+    "confirmed": [
+      "Windows PC via Steam"
+    ],
+    "notCurrentlyAnnounced": [
+      "Epic Games Store",
+      "PlayStation",
+      "Xbox",
+      "macOS",
+      "Linux"
+    ],
+    "note": "Not currently announced does not mean never; it records the public evidence on the verification date. Epic Online Services use does not by itself confirm an Epic Games Store release."
+  },
+  "genres": [
+    "Open World Survival Craft",
+    "Survival",
+    "Multiplayer",
+    "First-Person Shooter",
+    "Action",
+    "Adventure",
+    "Indie",
+    "Post-apocalyptic",
+    "Building",
+    "Driving"
+  ],
+  "modes": [
+    "Online PvP",
+    "Online co-op"
+  ],
+  "perspective": "First-person",
+  "setting": "A post-apocalyptic open-world wasteland built around scarce resources and one safe zone called Harbor.",
+  "gameplay": {
+    "coreObjective": "Survive and protect the limited resources collected in the wasteland.",
+    "confirmedSystems": [
+      "Hunger and thirst",
+      "Resource scavenging",
+      "Crafting tools, weapons, clothing, and essential equipment",
+      "Shelter building",
+      "Three-stage structure upgrades",
+      "Redesigned workbenches",
+      "Territory defense",
+      "Online PvP",
+      "Online co-op",
+      "Player alliances",
+      "Resource trading",
+      "Missions",
+      "Open-world exploration",
+      "Driving",
+      "High-stakes death where carried progress can be lost"
+    ],
+    "criticalResources": [
+      "Clean Blood",
+      "Fuel"
+    ],
+    "safeZone": {
+      "name": "Harbor",
+      "status": "The game world's only safe zone",
+      "uses": [
+        "Accept missions",
+        "Trade resources",
+        "Restock",
+        "Gain temporary safety"
+      ]
+    },
+    "movingResourceTargets": [
+      "War Truck",
+      "Blackrail train"
+    ],
+    "vehicleFact": "Vehicles are required to catch the War Truck and train that provide valuable resources."
+  },
+  "systemRequirements": {
+    "minimum": {
+      "os": "Windows 10 or Windows 11, 64-bit",
+      "processor": "Intel Core i3-4170 or AMD FX-8120",
+      "memory": "12 GB RAM",
+      "graphics": "Compatible GeForce GTX 1080-2070 3GB+ or AMD equivalent, as currently written on Steam",
+      "directX": "Version 12",
+      "storage": "15 GB available space"
+    },
+    "recommended": {
+      "os": "Windows 10 or Windows 11, 64-bit",
+      "processor": "Intel Core i5-8400 or AMD Ryzen 7 1800X",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce RTX 2070 or AMD Radeon RX 5700 XT",
+      "directX": "Version 12",
+      "storage": "15 GB available space"
+    },
+    "antiCheat": "Easy Anti-Cheat",
+    "bootProtection": "Secure Boot and TPM 2.0 are listed as required",
+    "changeWarning": "Requirements may change during development; the official Steam page is the controlling source."
+  },
+  "languages": {
+    "interfaceAndSubtitles": [
+      "English",
+      "French",
+      "Italian",
+      "German",
+      "Spanish - Spain",
+      "Simplified Chinese",
+      "Japanese",
+      "Korean",
+      "Portuguese - Portugal",
+      "Russian",
+      "Turkish"
+    ],
+    "fullAudio": [
+      "English"
+    ]
+  },
+  "comparisonBoundaries": {
+    "affiliations": "Harbor is an original game and is not affiliated with Rust, DayZ, SCUM, Mad Max, Fallout, or their owners.",
+    "quality": "Harbor is unreleased and has no public user reviews, so superiority or final-quality claims are unsupported.",
+    "zombies": "Zombies or infected enemies are not identified as Harbor's defining threat in the current official Steam description."
+  },
+  "officialLinks": {
+    "website": "https://theharborgame.com/",
+    "steam": "https://store.steampowered.com/app/2714930/Harbor",
+    "trailer": "https://www.youtube.com/watch?v=3E5J4DY8OhI",
+    "youtube": "https://www.youtube.com/@CastilvaGames",
+    "discord": "https://discord.gg/DQaJMQGvNn",
+    "pressKit": "https://theharborgame.com/press/",
+    "sitemap": "https://theharborgame.com/sitemap.xml",
+    "llms": "https://theharborgame.com/llms.txt"
+  },
+  "canonicalPages": {
+    "englishHome": "https://theharborgame.com/",
+    "turkishHome": "https://theharborgame.com/tr/",
+    "englishGameplay": "https://theharborgame.com/gameplay/",
+    "turkishGameplay": "https://theharborgame.com/tr/oynanis/",
+    "englishRelease": "https://theharborgame.com/release/",
+    "turkishRelease": "https://theharborgame.com/tr/cikis/",
+    "englishComparison": "https://theharborgame.com/games-like-rust-dayz-scum/",
+    "turkishComparison": "https://theharborgame.com/tr/rust-dayz-scum-benzeri/",
+    "englishPress": "https://theharborgame.com/press/",
+    "turkishPress": "https://theharborgame.com/tr/basin/"
+  },
+  "mediaContact": "info@castilva.com",
+  "copyright": "© 2026 CastilvaGames. All rights reserved."
+}

@@ -6,7 +6,7 @@
 >
   <url>
     <loc>https://theharborgame.com/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/" />
@@ -14,18 +14,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/" />
     <image:image>
       <image:loc>https://theharborgame.com/hero-bg.webp</image:loc>
-      <image:title>Harbor open-world multiplayer survival game</image:title>
-      <image:caption>Harbor in a post-apocalyptic desert wasteland.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://theharborgame.com/feature-harbor.jpg</image:loc>
-      <image:title>The Harbor safe zone</image:title>
-      <image:caption>The only safe zone in Harbor's open-world wasteland.</image:caption>
+      <image:title>Harbor in a post-apocalyptic desert wasteland</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://theharborgame.com/tr/</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/" />
@@ -33,13 +27,116 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/" />
     <image:image>
       <image:loc>https://theharborgame.com/hero-bg.webp</image:loc>
-      <image:title>Harbor açık dünya multiplayer survival oyunu</image:title>
-      <image:caption>Harbor'ın post-apocalyptic çöl ve hayatta kalma dünyası.</image:caption>
+      <image:title>Harbor post-apocalyptic çöl ve hayatta kalma dünyası</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/gameplay/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/gameplay/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/oynanis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/gameplay/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/feature-harbor.jpg</image:loc>
+      <image:title>The Harbor safe zone in the open-world multiplayer survival game Harbor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/release/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/release/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/cikis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/release/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/hero-bg.webp</image:loc>
+      <image:title>Harbor post-apocalyptic open-world survival game key art</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/games-like-rust-dayz-scum/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/rust-dayz-scum-benzeri/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/feature-rulers.jpg</image:loc>
+      <image:title>Clan territory in Harbor, an upcoming open-world multiplayer survival game</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/press/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/press/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/basin/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/press/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/trailer-thumb.webp</image:loc>
+      <image:title>Harbor official trailer artwork</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/tr/oynanis/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/gameplay/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/oynanis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/gameplay/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/feature-harbor.jpg</image:loc>
+      <image:title>Harbor açık dünya multiplayer survival oyunundaki güvenli bölge</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/tr/cikis/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/release/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/cikis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/release/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/hero-bg.webp</image:loc>
+      <image:title>Harbor post-apocalyptic açık dünya survival oyunu ana görseli</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/tr/rust-dayz-scum-benzeri/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/rust-dayz-scum-benzeri/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/feature-rulers.jpg</image:loc>
+      <image:title>Harbor açık dünya multiplayer survival oyunundaki klan bölgesi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/tr/basin/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/press/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/basin/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/press/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/trailer-thumb.webp</image:loc>
+      <image:title>Harbor resmi fragman görseli</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://theharborgame.com/privacy-policy.html</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
