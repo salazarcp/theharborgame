@@ -4,6 +4,7 @@ import { toast } from 'sonner';
 import { supabase } from '@/lib/supabase';
 import PictureImage from '@/components/PictureImage';
 import { openAnalyticsSettings, trackAnalyticsEvent } from '@/lib/analytics';
+import { DEVELOPER, STEAM_URL } from '@/content/gameIdentity';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -14,15 +15,16 @@ const Footer = () => {
     { label: 'About Harbor', href: '#overview' },
     { label: 'Gameplay Guide', href: '/gameplay/' },
     { label: 'Release & PC Requirements', href: '/release/' },
+    { label: 'Official Trailer', href: '/trailer/' },
     { label: 'Rust, DayZ & SCUM Comparison', href: '/games-like-rust-dayz-scum/' },
     { label: 'Press Kit', href: '/press/' },
   ];
 
   const officialLinks = [
     { label: 'Privacy Policy', href: '/privacy-policy.html' },
-    { label: 'Steam', href: 'https://store.steampowered.com/app/2714930/Harbor' },
-    { label: 'Discord', href: 'https://discord.gg/DQaJMQGvNn' },
-    { label: 'YouTube', href: 'https://www.youtube.com/@CastilvaGames' },
+    { label: 'Steam', href: STEAM_URL },
+    { label: 'Discord', href: DEVELOPER.discord },
+    { label: 'YouTube', href: DEVELOPER.youtube },
   ];
 
   const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -89,7 +91,7 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               <a
-                href="https://discord.gg/DQaJMQGvNn"
+                href={DEVELOPER.discord}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-amber-100/5 rounded-lg flex items-center justify-center text-amber-100/50 hover:text-amber-100 hover:bg-orange-500/20 transition-all duration-300"
@@ -100,7 +102,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.youtube.com/@CastilvaGames"
+                href={DEVELOPER.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-amber-100/5 rounded-lg flex items-center justify-center text-amber-100/50 hover:text-amber-100 hover:bg-orange-500/20 transition-all duration-300"

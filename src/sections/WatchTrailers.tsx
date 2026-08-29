@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'; // useState eklendi
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Play, ExternalLink } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
+import { TRAILER_EMBED_URL } from '@/content/gameIdentity';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,8 +72,8 @@ const WatchTrailers = () => {
                   alt="Harbor - Official Trailer"
                   loading="lazy"
                   decoding="async"
-                  width={1280}
-                  height={720}
+                  width={6336}
+                  height={3724}
                   className="w-full h-full object-cover"
                 />
                 
@@ -104,7 +105,7 @@ const WatchTrailers = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/3E5J4DY8OhI?autoplay=1&rel=0"
+                src={`${TRAILER_EMBED_URL}?autoplay=1&rel=0`}
                 title="Harbor - Official Trailer"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -116,16 +117,14 @@ const WatchTrailers = () => {
           </div>
         </div>
 
-        {/* Watch on YouTube Link (Alt kısımdaki linki koruduk, isteyen YouTube'a gidebilir) */}
+        {/* Dedicated trailer page */}
         <div className="text-center">
           <a 
-            href="https://youtu.be/3E5J4DY8OhI"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/trailer/"
             className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-rajdhani font-semibold text-lg transition-colors duration-300"
           >
-            <span>Watch on YouTube</span>
-            <ExternalLink className="w-4 h-4" />
+            <span>Open the official trailer page</span>
+            <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </div>

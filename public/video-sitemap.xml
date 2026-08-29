@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+  <url>
+    <loc>https://theharborgame.com/trailer/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://theharborgame.com/trailer-thumb.webp</video:thumbnail_loc>
+      <video:title>Harbor Announcement Trailer</video:title>
+      <video:description>The official Harbor announcement trailer from CastilvaGames, introducing the post-apocalyptic open-world survival game.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/3E5J4DY8OhI</video:player_loc>
+      <video:duration>115</video:duration>
+      <video:publication_date>2025-01-07T22:51:14-08:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://theharborgame.com/tr/fragman/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://theharborgame.com/trailer-thumb.webp</video:thumbnail_loc>
+      <video:title>Harbor Announcement Trailer</video:title>
+      <video:description>CastilvaGames’in post-apocalyptic açık dünya survival oyunu Harbor’ı tanıtan resmi duyuru fragmanı.</video:description>
+      <video:player_loc allow_embed="yes">https://www.youtube-nocookie.com/embed/3E5J4DY8OhI</video:player_loc>
+      <video:duration>115</video:duration>
+      <video:publication_date>2025-01-07T22:51:14-08:00</video:publication_date>
+    </video:video>
+  </url>
+</urlset>

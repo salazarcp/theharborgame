@@ -16,6 +16,8 @@ const labels = {
     contents: 'On this page',
     faq: 'Questions answered',
     sources: 'Sources',
+    video: 'Official video',
+    watchOriginal: 'Watch the original on YouTube',
     download: 'Download original',
     factsSource: 'Verified against official first-party sources. Changing release details are dated and unknowns are left unknown.',
     steam: 'Wishlist on Steam',
@@ -29,6 +31,8 @@ const labels = {
     contents: 'Bu sayfada',
     faq: 'Yanıtlanan sorular',
     sources: 'Kaynaklar',
+    video: 'Resmi video',
+    watchOriginal: 'Özgün videoyu YouTube’da izle',
     download: 'Orijinali indir',
     factsSource: 'Resmi birinci taraf kaynaklarla doğrulandı. Değişebilen bilgiler tarihlendirildi; bilinmeyenler tahmin edilmedi.',
     steam: 'Steam istek listesi',
@@ -78,7 +82,9 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
                     ? (page.locale === 'tr' ? 'ÇIKIŞ' : 'RELEASE')
                     : item.key === 'comparison'
                       ? (page.locale === 'tr' ? 'KARŞILAŞTIR' : 'COMPARE')
-                      : (page.locale === 'tr' ? 'BASIN' : 'PRESS')}
+                      : item.key === 'press'
+                        ? (page.locale === 'tr' ? 'BASIN' : 'PRESS')
+                        : (page.locale === 'tr' ? 'FRAGMAN' : 'TRAILER')}
               </a>
             ))}
           </nav>
@@ -124,8 +130,8 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
               src={page.heroImage}
               alt=""
               loading="eager"
-              width={1920}
-              height={1080}
+              width={page.heroWidth}
+              height={page.heroHeight}
               className="h-full w-full object-cover opacity-25"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/55 via-[#0a0a0f]/85 to-[#0a0a0f]" />
@@ -172,6 +178,7 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
             <nav className="sticky top-28 rounded-xl border border-amber-900/25 bg-[#120e0a] p-5" aria-label={copy.contents}>
               <p className="mb-4 font-orbitron text-xs font-bold uppercase tracking-wider text-orange-400">{copy.contents}</p>
               <ol className="space-y-3 text-sm">
+                {page.video && <li><a href="#video" className="text-amber-100/60 hover:text-orange-300">{copy.video}</a></li>}
                 <li><a href="#facts" className="text-amber-100/60 hover:text-orange-300">{page.factsTitle}</a></li>
                 {page.sections.map((section) => (
                   <li key={section.id}><a href={`#${section.id}`} className="text-amber-100/60 hover:text-orange-300">{section.title}</a></li>
@@ -184,6 +191,41 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
           </aside>
 
           <article className="min-w-0 space-y-16">
+            {page.video && (
+              <section id="video" aria-labelledby="video-title" className="scroll-mt-28">
+                <h2 id="video-title" className="mb-7 font-orbitron text-3xl font-bold text-amber-100 md:text-4xl">{copy.video}</h2>
+                <figure className="overflow-hidden rounded-2xl border border-amber-900/30 bg-[#120e0a] shadow-2xl shadow-black/30">
+                  <div className="relative aspect-video bg-black">
+                    <iframe
+                      src={page.video.embedUrl}
+                      title={page.video.name}
+                      width="1280"
+                      height="720"
+                      loading="eager"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="absolute inset-0 h-full w-full border-0"
+                    />
+                  </div>
+                  <figcaption className="p-5 md:flex md:items-start md:justify-between md:gap-8">
+                    <div>
+                      <h3 className="font-orbitron text-base font-bold text-amber-100">{page.video.name}</h3>
+                      <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-100/60">{page.video.description}</p>
+                    </div>
+                    <a
+                      href={page.video.watchUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex flex-none items-center gap-2 font-semibold text-orange-400 hover:text-orange-300 md:mt-0"
+                    >
+                      {copy.watchOriginal} <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                    </a>
+                  </figcaption>
+                </figure>
+              </section>
+            )}
+
             <section id="facts" aria-labelledby="facts-title" className="scroll-mt-28">
               <h2 id="facts-title" className="mb-7 font-orbitron text-3xl font-bold text-amber-100 md:text-4xl">{page.factsTitle}</h2>
               <dl className="overflow-hidden rounded-2xl border border-amber-900/25 bg-[#120e0a]">

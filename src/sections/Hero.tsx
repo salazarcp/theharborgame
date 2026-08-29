@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ChevronDown, Play } from 'lucide-react';
+import { STEAM_URL } from '@/content/gameIdentity';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -49,7 +50,7 @@ const Hero = () => {
   }, []);
 
   const platforms = [
-    { name: 'Steam', logo: '/steam.svg', href: 'https://store.steampowered.com/app/2714930/Harbor' },
+    { name: 'Steam', logo: '/steam.svg', href: STEAM_URL },
   ];
 
   const titleText = 'HARBOR';
@@ -69,8 +70,8 @@ const Hero = () => {
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            width={1920}
-            height={1080}
+            width={6336}
+            height={3724}
             className="w-full h-full object-cover"
           />
         </div>
@@ -151,7 +152,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div ref={buttonsRef} className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
-            href="https://store.steampowered.com/app/2714930/Harbor" 
+            href={STEAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex items-center gap-2 text-lg"
@@ -159,9 +160,7 @@ const Hero = () => {
             <span>WISHLIST NOW</span>
           </a>
           <a 
-            href="https://youtu.be/3E5J4DY8OhI" 
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/trailer/"
             className="btn-secondary flex items-center gap-2 text-lg"
           >
             <Play className="w-5 h-5" />

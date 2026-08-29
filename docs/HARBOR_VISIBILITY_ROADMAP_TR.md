@@ -1,8 +1,17 @@
 # Harbor SEO + GEO + Steam Görünürlük Yol Haritası
 
-Son güncelleme: 22 Temmuz 2026
+Son güncelleme: 29 Ağustos 2026
 Odak: `theharborgame.com`, Steam App `2714930`, ardından Epic Games Store
 Çıkış penceresi: yalnızca **2026**; kesin gün veya ay kullanılmayacak.
+
+### 29 Ağustos teknik düzeltme durumu
+
+Aşağıdaki işler uygulanıyor; production build, SEO doğrulayıcı ve canlı ortam kanıtı tamamlanmadan **DONE** sayılmaz:
+
+- Geliştirici **CastilvaGames**, ticari oyun yayıncısı **Wandering Wizard** olarak ayrılıyor. Yalnız `VideoGame.publisher` Wandering Wizard’a bağlanacak; site, makale, fragman, creator ve telif ilişkileri CastilvaGames’te kalacak.
+- Tek doğrulanmış ana fragman için `/trailer/` ve `/tr/fragman/` watch sayfaları hazırlanıyor. `VideoObject` yalnız videonun ilk HTML’de bulunduğu bu sayfalarda kullanılacak; ana sayfada kullanılmayacak.
+- Görünür SSS içerikleri korunacak, ancak artık bir başarı metriği olmayan `FAQPage` JSON-LD kaldırılacak.
+- Video sitemap üretimi doğrulanacak. IndexNow yalnız başarılı production deploy sonrasında değişen canonical URL’leri bildirecek; preview/branch deploy bildirim göndermeyecek. IndexNow keşfi hızlandırabilir, indeksleme veya sıralama garantisi vermez.
 
 ## 1. Stratejik karar
 
@@ -25,7 +34,8 @@ Bu yapı Harbor’ı yalnızca “bir başka survival oyunu” olmaktan çıkar�
 ### Marka sınırları
 
 - Oyunun adı yalnızca **Harbor**.
-- Geliştirici ve yayıncı: **CastilvaGames**.
+- Geliştirici: **CastilvaGames**.
+- Ticari oyun yayıncısı: **Wandering Wizard**.
 - Kesin ay veya gün yok; yalnızca **2026**.
 - Platform: **Windows PC**.
 - Steam sayfası açık ve Early Access listeliyor.
@@ -63,7 +73,7 @@ Yerel görünürlük raporundaki 209 geçerli kontrolde Harbor 20 kez görünmü
 - Hiçbir izlenen sağlayıcıda Harbor’ı %0’da bırakmamak.
 - Harbor’a kaynak veren en az 5 bağımsız, alakalı alan adı kazanmak.
 - 8 gerçek Steam News gönderisi, 8 kısa video/klip ve en az 4 site devlog/watch sayfası yayınlamak.
-- 10 ana EN/TR URL’nin tamamını indekslenmiş durumda tutmak.
+- 12 ana EN/TR URL’nin tamamını indekslenmiş durumda tutmak.
 - Her içerik kampanyasında ölçülebilir Steam tıklaması üretmek.
 
 ## 4. Citation flywheel
@@ -90,6 +100,7 @@ GA4 mülkü: `G-XMBR4ENVMK`
 |---|---|---|
 | `steam_store_click` | Siteden resmi Steam App 2714930 sayfasına çıkış | Evet |
 | `trailer_click` | Resmi fragmana çıkış | Hayır |
+| `trailer_page_click` | Site içindeki EN/TR fragman izleme sayfasına geçiş | Hayır |
 | `discord_click` | Discord topluluğuna çıkış | İkincil |
 | `sign_up` / method=`newsletter` | Bülten kaydı | Evet |
 | `epic_store_click` | Epic ürün URL’si yayınlandıktan sonra tıklama | Daha sonra |
@@ -119,7 +130,10 @@ Teslimler:
 - 2026 çıkış penceresini gün/ay vermeden sabitle.
 - Steam açık / Epic planlı–URL bekleniyor durumunu EN/TR sayfalarda ve makine okunur kaynaklarda eşitle.
 - Steam App ID 2714930 kimliğini VideoGame şemasına ekle.
-- Ana fragman için doğrulanmış `VideoObject` ekle.
+- `VideoGame.publisher` için Wandering Wizard, site/creator/telif yayıncısı için CastilvaGames ilişkisini doğrula.
+- Ana fragmanı EN/TR dedicated watch sayfalarına taşı; `VideoObject`ı yalnız iframe’in ilk HTML’de bulunduğu bu sayfalarda kullan.
+- Görünür SSS içeriğini korurken `FAQPage` JSON-LD’yi kaldır.
+- Başarılı production deploy sonrasında çalışan, preview/branch deploy’larını dışlayan IndexNow bildirimini doğrula.
 - GA4’ü izin gelmeden script/çerez yüklemeyecek biçimde kur.
 - Steam, fragman, Discord ve bülten event’lerini ekle.
 - Gizlilik politikasını analitik ölçüm için güncelle.
@@ -130,13 +144,13 @@ Tamamlanma kanıtı:
 - İlk ziyarette GA script’i yoktur.
 - Kabulden sonra GA script’i yüklenir ve `page_view` gönderilir.
 - Reddetmede script yüklenmez.
-- Canlı `/`, `/tr/`, `/release/`, `/tr/cikis/`, `harbor-facts.json` ve `llms.txt` doğru metni gösterir.
+- Canlı `/`, `/tr/`, `/trailer/`, `/tr/fragman/`, `/release/`, `/tr/cikis/`, `harbor-facts.json`, `llms.txt` ve `video-sitemap.xml` doğru ilişkileri gösterir.
 
 ### Hafta 1 — Ölçüm doğrulama ve baz çizgi
 
 - GA4 Realtime/DebugView’da event’leri tek tek doğrula.
 - `steam_store_click` ve `sign_up` event’lerini GA4 Key Event olarak işaretle.
-- GSC’de domain property, sitemap ve 10 canonical URL’nin durumunu kaydet.
+- GSC’de domain property, sitemap, video sitemap ve 12 canonical URL’nin durumunu kaydet.
 - Steamworks’ten günlük wishlist, takipçi, mağaza ziyareti ve kaynak baz çizgisini dışa aktar.
 - Ekip/IP iç trafiğini GA4’te filtrelemek için ofis/test kaynaklarını belirle.
 - Haftalık scorecard’ın ilk satırını doldur.
@@ -149,7 +163,7 @@ Başarı koşulu: site tıklaması ile Steamworks wishlist değişiminin aynı t
 - Steam kısa açıklamasını ana konumlandırmayla hizala.
 - İlk iki görünür cümlede “competitive post-apocalyptic open-world survival” ve 1–2–2 kancasını kullan.
 - Tag sırasını gerçek oyun odağına göre kontrol et: Open World Survival Craft, Survival, Multiplayer, Online PvP, Online Co-op, FPS, Building.
-- Geliştirici/yayıncı adını her yerde CastilvaGames yap.
+- Geliştirici adını CastilvaGames, ticari yayıncı adını Wandering Wizard olarak tüm doğrulanabilir yüzeylerde ayır.
 - Web sitesi, Discord, YouTube ve basın kiti bağlantılarını doğrula.
 - 2026 dışında kesin tarih olmadığını tekrar kontrol et.
 - Steam görsellerindeki kısa metinleri ve videoları site/YouTube yeniden kullanım envanterine al.
@@ -169,12 +183,12 @@ Başarı koşulu: iki Steam News, iki video varlığı ve kaynakları ayrıştı
 ### Hafta 4 — Video arama yüzeyi
 
 - Steam sayfasındaki kısa videoların özgün master dosyalarını topla; Steam CDN’den kopyalamak yerine sahibi olunan dosyaları kullan.
-- Her klip için ayrı, videonun ana içerik olduğu site watch sayfası oluştur.
-- Her sayfaya özgün başlık, transkript, 100–250 kelimelik bağlam, thumbnail, `VideoObject`, duration ve uploadDate ekle.
+- Her benzersiz klip için videonun ana içerik olduğu site watch sayfası oluştur; aynı videonun EN/TR sayfalarını gerçek yerelleştirilmiş metinle sun.
+- Her watch sayfasına özgün başlık, 100–250 kelimelik bağlam, thumbnail, `VideoObject`, duration ve uploadDate ekle. Transkripti yalnız resmi ya da doğrulanmış bir metin kaynağı varsa yayınla; yoksa uydurma.
 - Video sitemap oluştur ve GSC’ye gönder.
 - Aynı varlıkları YouTube’a açıklayıcı başlık, bölüm ve canonical site linkiyle yükle.
 
-Başarı koşulu: en az 4 doğrulanabilir video watch sayfası ve Google video indeksleme raporunda keşif.
+Başarı koşulu: mevcut tek doğrulanmış ana fragman için 2 yerelleştirilmiş watch sayfası, geçerli video sitemap ve Google video indeksleme raporunda keşif. Yeni benzersiz klipler hazır oldukça her biri için ayrı watch sayfası açılır; dört klip varmış gibi içerik uydurulmaz.
 
 ### Hafta 5 — Konu otoritesi: kıtlık ve ekonomi
 
@@ -218,7 +232,7 @@ Başarı koşulu: bağlantı bırakılan paylaşım sayısı değil; cevap, kayd
 
 - EN/TR ana içerikleri güncelle; Almanca, Fransızca, İspanyolca için yalnızca kaliteli insan kontrolü varsa yüksek niyetli landing sayfaları değerlendir.
 - Otomatik çeviriyle onlarca ince sayfa üretme.
-- Her dilde Harbor adı, CastilvaGames, Steam App ID, 2026 ve platform bilgilerinin aynı olduğunu doğrula.
+- Her dilde Harbor adı, CastilvaGames geliştirici kimliği, Wandering Wizard yayıncı kimliği, Steam App ID, 2026 ve platform bilgilerinin aynı olduğunu doğrula.
 - Türkçe creator ve basın kampanyasını ayrı yürüt.
 
 ### Hafta 10 — Bilgi kazanımı ve özgün kaynak
@@ -309,6 +323,8 @@ Ayda bir büyük site güncellemesi yerine, doğrulanabilir küçük güncelleme
 - Rakip marka ile bağlantı varmış gibi “Mad Max universe” kullanımı
 - Her videoyu aynı metinle farklı URL’de çoğaltma
 - `llms.txt` dosyasını tek başına bir sıralama faktörü gibi görme
+- Görünür SSS içeriğini `FAQPage` rich result garantisi gibi raporlama
+- IndexNow gönderimini indeksleme veya sıralama garantisi gibi raporlama
 - AI crawler’lara açık olup kullanıcıya zayıf içerik sunma
 
 ## 9. 12 hafta sonrasında

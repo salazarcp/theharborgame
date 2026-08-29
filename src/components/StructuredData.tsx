@@ -1,11 +1,16 @@
-import { gameFaqs, type SiteLocale } from '@/content/gameContent';
+import type { SiteLocale } from '@/content/gameContent';
+import {
+  BASE_URL,
+  DEVELOPER,
+  GAME_PLATFORM,
+  GAME_PUBLISHER,
+  STEAM_APP_ID,
+  STEAM_URL,
+} from '@/content/gameIdentity';
 
 interface StructuredDataProps {
   locale?: SiteLocale;
 }
-
-const BASE_URL = 'https://theharborgame.com';
-const STEAM_URL = 'https://store.steampowered.com/app/2714930/Harbor';
 
 const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
   const pageUrl = locale === 'tr' ? `${BASE_URL}/tr/` : `${BASE_URL}/`;
@@ -18,10 +23,10 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
     '@graph': [
       {
         '@type': 'Organization',
-        '@id': `${BASE_URL}/#organization`,
-        name: 'CastilvaGames',
-        alternateName: 'Castilva Games',
-        url: `${BASE_URL}/`,
+        '@id': DEVELOPER.id,
+        name: DEVELOPER.name,
+        alternateName: DEVELOPER.alternateName,
+        url: DEVELOPER.website,
         logo: {
           '@type': 'ImageObject',
           url: `${BASE_URL}/logo.png`,
@@ -29,10 +34,16 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
           height: 350,
         },
         sameAs: [
-          'https://www.youtube.com/@CastilvaGames',
-          'https://discord.gg/DQaJMQGvNn',
-          STEAM_URL,
+          DEVELOPER.youtube,
+          DEVELOPER.discord,
         ],
+      },
+      {
+        '@type': 'Organization',
+        '@id': GAME_PUBLISHER.id,
+        name: GAME_PUBLISHER.name,
+        url: GAME_PUBLISHER.website,
+        sameAs: [GAME_PUBLISHER.steam],
       },
       {
         '@type': 'WebSite',
@@ -42,7 +53,7 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
         alternateName: 'theharborgame.com',
         description,
         inLanguage: ['en', 'tr'],
-        publisher: { '@id': `${BASE_URL}/#organization` },
+        publisher: { '@id': DEVELOPER.id },
       },
       {
         '@type': 'VideoGame',
@@ -51,7 +62,7 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
         identifier: {
           '@type': 'PropertyValue',
           propertyID: 'Steam App ID',
-          value: '2714930',
+          value: STEAM_APP_ID,
         },
         disambiguatingDescription: 'Harbor is CastilvaGames’ competitive post-apocalyptic open-world survival game for Windows PC, identified on Steam as App 2714930.',
         url: pageUrl,
@@ -73,34 +84,20 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
           'Building',
           'Driving',
         ],
-        gamePlatform: 'PC (Windows)',
+        gamePlatform: GAME_PLATFORM,
         operatingSystem: ['Windows 10', 'Windows 11'],
         playMode: ['https://schema.org/MultiPlayer', 'https://schema.org/CoOp'],
         applicationCategory: 'Game',
         inLanguage: ['en', 'fr', 'it', 'de', 'es', 'zh-Hans', 'ja', 'ko', 'pt-PT', 'ru', 'tr'],
-        creator: { '@id': `${BASE_URL}/#organization` },
-        publisher: { '@id': `${BASE_URL}/#organization` },
+        creator: { '@id': DEVELOPER.id },
+        publisher: { '@id': GAME_PUBLISHER.id },
         sameAs: [STEAM_URL],
-        copyrightHolder: { '@id': `${BASE_URL}/#organization` },
+        copyrightHolder: { '@id': DEVELOPER.id },
         potentialAction: {
           '@type': 'ViewAction',
           name: locale === 'tr' ? 'Steam istek listesine ekle' : 'Wishlist Harbor on Steam',
           target: STEAM_URL,
         },
-      },
-      {
-        '@type': 'VideoObject',
-        '@id': `${BASE_URL}/#announcement-trailer`,
-        name: 'Harbor Announcement Trailer',
-        description: 'The official Harbor announcement trailer from CastilvaGames, showing the post-apocalyptic open world, survival atmosphere, and multiplayer action.',
-        thumbnailUrl: [`${BASE_URL}/trailer-thumb.webp`],
-        uploadDate: '2025-01-07T22:51:14-08:00',
-        duration: 'PT1M55S',
-        embedUrl: 'https://www.youtube.com/embed/3E5J4DY8OhI',
-        contentUrl: 'https://www.youtube.com/watch?v=3E5J4DY8OhI',
-        inLanguage: 'en',
-        publisher: { '@id': `${BASE_URL}/#organization` },
-        about: { '@id': `${BASE_URL}/#game` },
       },
       {
         '@type': 'WebPage',
@@ -113,20 +110,6 @@ const StructuredData = ({ locale = 'en' }: StructuredDataProps) => {
         inLanguage: locale,
         isPartOf: { '@id': `${BASE_URL}/#website` },
         about: { '@id': `${BASE_URL}/#game` },
-      },
-      {
-        '@type': 'FAQPage',
-        '@id': `${pageUrl}#faq`,
-        url: `${pageUrl}#${locale === 'tr' ? 'sss' : 'faq'}`,
-        inLanguage: locale,
-        mainEntity: gameFaqs[locale].map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: answer,
-          },
-        })),
       },
     ],
   };

@@ -16,11 +16,13 @@ Bu dosya yaşayan kontrol listesidir. Her cuma güncellenir. Durum değerleri: `
 | T-07 | `trailer_click` ve `discord_click` | Site | IN PROGRESS | GA4 DebugView event |
 | T-08 | Newsletter `sign_up` | Site | IN PROGRESS | Yalnız başarılı API yanıtında event |
 | T-09 | GA4 key event ayarları | CastilvaGames | TODO | Steam click + sign_up key event |
-| T-10 | GSC 10 canonical URL kontrolü | CastilvaGames | TODO | URL Inspection ekran kaydı |
+| T-10 | GSC 12 canonical URL kontrolü | CastilvaGames | TODO | 12 URL için URL Inspection ekran kaydı |
 | T-11 | Steamworks wishlist baz çizgisi | CastilvaGames | TODO | Tarihli CSV/screenshot |
-| T-12 | Ana fragman VideoObject | Site | DONE | Canlı JSON-LD ve SEO verifier doğrulandı |
-| T-13 | Steam klipleri için 4 watch page | Site + Video | TODO | 4 canonical URL + VideoObject |
-| T-14 | Video sitemap | Site | TODO | GSC gönderildi |
+| T-12 | `VideoObject`ı yalnız dedicated watch sayfalarında kullan | Site | IN PROGRESS | EN/TR ilk HTML’de iframe + sayfaya bağlı geçerli JSON-LD |
+| T-13 | Tek doğrulanmış ana fragman için EN/TR watch page | Site + Video | IN PROGRESS | `/trailer/` + `/tr/fragman/` canonical URL ve yerelleştirilmiş içerik |
+| T-14 | Video sitemap | Site | IN PROGRESS | Build doğrulaması + production URL + GSC gönderimi |
+| T-15 | Görünür SSS’yi koru, `FAQPage` JSON-LD’yi kaldır | Site | IN PROGRESS | 12 prerender HTML’de `FAQPage` yok; görünür SSS yerinde |
+| T-16 | IndexNow’u başarılı production deploy sonrasına bağla | Site | IN PROGRESS | Production deploy sonrası bildirim; preview/branch deploy’da 0 istek |
 
 ## B. Entity ve içerik
 
@@ -34,6 +36,7 @@ Bu dosya yaşayan kontrol listesidir. Her cuma güncellenir. Durum değerleri: `
 | E-06 | Press kit creator paketini genişlet | Editorial | TODO | Klip master dosyaları |
 | E-07 | Gerçek geliştirici byline/biyografi | CastilvaGames | TODO | Yayınlanabilir isimler |
 | E-08 | Aylık facts changelog | Editorial | TODO | İlk dev note |
+| E-09 | CastilvaGames geliştirici / Wandering Wizard ticari yayıncı ayrımı | Site + Steam | IN PROGRESS | Görünür metin, facts, JSON-LD ve canlı Steam kaydı tutarlı |
 
 ## C. Steam News yayın kuyruğu
 
@@ -60,7 +63,7 @@ Bu dosya yaşayan kontrol listesidir. Her cuma güncellenir. Durum değerleri: `
 
 ## E. Haftalık scorecard
 
-| Hafta | GSC tıklama | GSC gösterim | Indexed / 10 | AI cevap payı | ChatGPT | Perplexity | Gemini | Claude | Google AI | Steam clicks | Newsletter | Wishlist delta | Bağımsız citation |
+| Hafta | GSC tıklama | GSC gösterim | Indexed / 12 | AI cevap payı | ChatGPT | Perplexity | Gemini | Claude | Google AI | Steam clicks | Newsletter | Wishlist delta | Bağımsız citation |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Baseline | — | — | — | 20/209 (%10) | 3/40 | 3/40 | 4/40 | 0/9 | 10/80 | — | — | — | — |
 | W1 | | | | | | | | | | | | | |
@@ -78,6 +81,7 @@ Not: “Google AI” sütunu AI Overviews + AI Mode toplamıdır; ayrıntı ham 
 
 - [ ] Başlıkta oyun adı Harbor mı?
 - [ ] CastilvaGames doğru yazılmış mı?
+- [ ] CastilvaGames geliştirici, Wandering Wizard ticari oyun yayıncısı olarak doğru ayrılmış mı?
 - [ ] Release yalnız 2026 mı; gün/ay uydurulmuş mu?
 - [ ] Steam App ID/link doğru mu?
 - [ ] Epic linki yalnız gerçek ürün URL’si varsa mı kullanılmış?

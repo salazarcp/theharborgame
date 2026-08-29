@@ -1,5 +1,12 @@
 import type { KnowledgePageData } from '@/content/knowledgePages';
-import { BASE_URL, STEAM_URL } from '@/content/knowledgePages';
+import {
+  BASE_URL,
+  DEVELOPER,
+  GAME_PLATFORM,
+  GAME_PUBLISHER,
+  STEAM_APP_ID,
+  STEAM_URL,
+} from '@/content/gameIdentity';
 
 interface KnowledgeStructuredDataProps {
   page: KnowledgePageData;
@@ -28,7 +35,8 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
       caption: page.heroAlt,
     },
     breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
-    publisher: { '@id': `${BASE_URL}/#organization` },
+    publisher: { '@id': DEVELOPER.id },
+    ...(page.video ? { mainEntity: { '@id': `${pageUrl}#video` } } : {}),
   };
 
   const article = page.schemaType === 'Article' ? {
@@ -40,11 +48,26 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
     inLanguage: page.locale,
     datePublished: page.publishedDate,
     dateModified: page.modifiedDate,
-    author: { '@id': `${BASE_URL}/#organization` },
-    publisher: { '@id': `${BASE_URL}/#organization` },
+    author: { '@id': DEVELOPER.id },
+    publisher: { '@id': DEVELOPER.id },
     image: `${BASE_URL}${page.heroImage}`,
     about: { '@id': `${BASE_URL}/#game` },
     citation: page.sources.map(({ url }) => url),
+  } : null;
+
+  const video = page.video ? {
+    '@type': 'VideoObject',
+    '@id': `${pageUrl}#video`,
+    url: pageUrl,
+    name: page.video.name,
+    description: page.video.description,
+    thumbnailUrl: `${BASE_URL}${page.video.thumbnailUrl}`,
+    uploadDate: page.video.uploadDate,
+    duration: page.video.duration,
+    embedUrl: page.video.embedUrl,
+    publisher: { '@id': DEVELOPER.id },
+    mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
+    sameAs: [page.video.watchUrl],
   } : null;
 
   const structuredData = {
@@ -52,20 +75,26 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
     '@graph': [
       {
         '@type': 'Organization',
-        '@id': `${BASE_URL}/#organization`,
-        name: 'CastilvaGames',
-        alternateName: 'Castilva Games',
-        url: `${BASE_URL}/`,
+        '@id': DEVELOPER.id,
+        name: DEVELOPER.name,
+        alternateName: DEVELOPER.alternateName,
+        url: DEVELOPER.website,
         email: 'info@castilva.com',
         logo: {
           '@type': 'ImageObject',
           url: `${BASE_URL}/logo.png`,
         },
         sameAs: [
-          'https://www.youtube.com/@CastilvaGames',
-          'https://discord.gg/DQaJMQGvNn',
-          STEAM_URL,
+          DEVELOPER.youtube,
+          DEVELOPER.discord,
         ],
+      },
+      {
+        '@type': 'Organization',
+        '@id': GAME_PUBLISHER.id,
+        name: GAME_PUBLISHER.name,
+        url: GAME_PUBLISHER.website,
+        sameAs: [GAME_PUBLISHER.steam],
       },
       {
         '@type': 'WebSite',
@@ -74,7 +103,7 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
         name: 'Harbor Official Website',
         alternateName: 'theharborgame.com',
         inLanguage: ['en', 'tr'],
-        publisher: { '@id': `${BASE_URL}/#organization` },
+        publisher: { '@id': DEVELOPER.id },
       },
       {
         '@type': 'VideoGame',
@@ -83,7 +112,7 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
         identifier: {
           '@type': 'PropertyValue',
           propertyID: 'Steam App ID',
-          value: '2714930',
+          value: STEAM_APP_ID,
         },
         disambiguatingDescription: 'Harbor is CastilvaGames’ competitive post-apocalyptic open-world survival game for Windows PC, identified on Steam as App 2714930.',
         url: `${BASE_URL}/`,
@@ -104,15 +133,15 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
           'Building',
           'Driving',
         ],
-        gamePlatform: 'Windows PC',
+        gamePlatform: GAME_PLATFORM,
         operatingSystem: 'Windows 10 or Windows 11, 64-bit',
         playMode: ['https://schema.org/MultiPlayer', 'https://schema.org/CoOp'],
         applicationCategory: 'Game',
         inLanguage: ['en', 'fr', 'it', 'de', 'es', 'zh-Hans', 'ja', 'ko', 'pt-PT', 'ru', 'tr'],
-        creator: { '@id': `${BASE_URL}/#organization` },
-        publisher: { '@id': `${BASE_URL}/#organization` },
+        creator: { '@id': DEVELOPER.id },
+        publisher: { '@id': GAME_PUBLISHER.id },
         sameAs: [STEAM_URL],
-        copyrightHolder: { '@id': `${BASE_URL}/#organization` },
+        copyrightHolder: { '@id': DEVELOPER.id },
         potentialAction: {
           '@type': 'ViewAction',
           name: page.locale === 'tr' ? 'Harbor Steam sayfasını aç' : 'View Harbor on Steam',
@@ -121,6 +150,7 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
       },
       webPage,
       ...(article ? [article] : []),
+      ...(video ? [video] : []),
       {
         '@type': 'BreadcrumbList',
         '@id': `${pageUrl}#breadcrumb`,
@@ -138,20 +168,6 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
             item: pageUrl,
           },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        '@id': `${pageUrl}#faq`,
-        url: `${pageUrl}#faq`,
-        inLanguage: page.locale,
-        mainEntity: page.faqs.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: answer,
-          },
-        })),
       },
     ],
   };

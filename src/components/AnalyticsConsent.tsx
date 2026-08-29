@@ -15,7 +15,11 @@ interface AnalyticsConsentBannerProps {
 
 const classifyLink = (href: string) => {
   if (href.includes('store.steampowered.com/app/2714930')) return 'steam_store_click';
-  if (href.includes('youtu.be/3E5J4DY8OhI') || href.includes('youtube.com/watch?v=3E5J4DY8OhI')) return 'trailer_click';
+  if (
+    href.includes('youtu.be/3E5J4DY8OhI')
+    || href.includes('youtube.com/watch?v=3E5J4DY8OhI')
+  ) return 'trailer_click';
+  if (/\/(?:trailer|tr\/fragman)\/(?:[?#]|$)/.test(href)) return 'trailer_page_click';
   if (href.includes('discord.gg/')) return 'discord_click';
   if (href.includes('store.epicgames.com/')) return 'epic_store_click';
   return null;

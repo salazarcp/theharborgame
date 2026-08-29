@@ -6,9 +6,7 @@
 >
   <url>
     <loc>https://theharborgame.com/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/" />
@@ -19,9 +17,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/tr/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/" />
@@ -32,9 +28,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/gameplay/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/gameplay/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/oynanis/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/gameplay/" />
@@ -45,9 +39,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/release/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/release/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/cikis/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/release/" />
@@ -58,9 +50,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/games-like-rust-dayz-scum/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/rust-dayz-scum-benzeri/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
@@ -71,9 +61,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/press/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/press/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/basin/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/press/" />
@@ -83,10 +71,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://theharborgame.com/trailer/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/trailer/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/fragman/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/trailer/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/trailer-thumb.webp</image:loc>
+      <image:title>Harbor Announcement Trailer official thumbnail</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://theharborgame.com/tr/oynanis/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/gameplay/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/oynanis/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/gameplay/" />
@@ -97,9 +94,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/tr/cikis/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/release/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/cikis/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/release/" />
@@ -110,9 +105,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/tr/rust-dayz-scum-benzeri/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/rust-dayz-scum-benzeri/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/games-like-rust-dayz-scum/" />
@@ -123,9 +116,7 @@
   </url>
   <url>
     <loc>https://theharborgame.com/tr/basin/</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/press/" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/basin/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/press/" />
@@ -135,9 +126,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://theharborgame.com/tr/fragman/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharborgame.com/trailer/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://theharborgame.com/tr/fragman/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theharborgame.com/trailer/" />
+    <image:image>
+      <image:loc>https://theharborgame.com/trailer-thumb.webp</image:loc>
+      <image:title>Harbor Announcement Trailer resmi küçük resmi</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://theharborgame.com/privacy-policy.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <lastmod>2026-08-29</lastmod>
   </url>
 </urlset>

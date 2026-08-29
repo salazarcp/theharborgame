@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import PictureImage from '@/components/PictureImage';
+import { DEVELOPER, STEAM_URL } from '@/content/gameIdentity';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +20,7 @@ const Navigation = () => {
     { label: 'ABOUT', href: '#overview' },
     { label: 'GAMEPLAY', href: '/gameplay/' },
     { label: 'RELEASE', href: '/release/' },
+    { label: 'TRAILER', href: '/trailer/' },
     { label: 'COMPARE', href: '/games-like-rust-dayz-scum/' },
     { label: 'PRESS', href: '/press/' },
     { label: 'FAQ', href: '#faq' },
@@ -69,7 +71,7 @@ const Navigation = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               <a
-                href="https://discord.gg/DQaJMQGvNn"
+                href={DEVELOPER.discord}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Discord"
@@ -80,7 +82,7 @@ const Navigation = () => {
                 </svg>
               </a>
               <a
-                href="https://www.youtube.com/@CastilvaGames"
+                href={DEVELOPER.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -103,7 +105,7 @@ const Navigation = () => {
             </a>
             {/* CTA Button */}
             <a
-              href="https://store.steampowered.com/app/2714930/Harbor"
+              href={STEAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm font-orbitron tracking-wider"
@@ -150,7 +152,7 @@ const Navigation = () => {
               TÜRKÇE
             </a>
             <a 
-              href="https://store.steampowered.com/app/2714930/Harbor" 
+              href={STEAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full text-center block mt-4"

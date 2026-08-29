@@ -5,8 +5,7 @@ import KnowledgeHub from '@/sections/KnowledgeHub';
 import FAQ from '@/sections/FAQ';
 import PictureImage from '@/components/PictureImage';
 import { openAnalyticsSettings } from '@/lib/analytics';
-
-const STEAM_URL = 'https://store.steampowered.com/app/2714930/Harbor';
+import { DEVELOPER, STEAM_URL } from '@/content/gameIdentity';
 
 const TurkishLanding = () => (
   <div className="min-h-screen bg-[#0a0a0f] overflow-x-hidden">
@@ -32,6 +31,7 @@ const TurkishLanding = () => (
           <a href="#oyun" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">OYUN</a>
           <a href="/tr/oynanis/" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">OYNANIŞ</a>
           <a href="/tr/cikis/" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">ÇIKIŞ</a>
+          <a href="/tr/fragman/" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">FRAGMAN</a>
           <a href="#sss" className="nav-link font-rajdhani font-semibold text-sm tracking-wider">SSS</a>
         </div>
 
@@ -60,8 +60,8 @@ const TurkishLanding = () => (
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            width={1920}
-            height={1080}
+            width={6336}
+            height={3724}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#1a1410]/45 via-[#1a1410]/35 to-[#1a1410]" />
@@ -83,7 +83,7 @@ const TurkishLanding = () => (
               <span>STEAM İSTEK LİSTESİ</span>
               <ExternalLink className="w-5 h-5" aria-hidden="true" />
             </a>
-            <a href="https://youtu.be/3E5J4DY8OhI" target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center gap-2 text-lg">
+            <a href="/tr/fragman/" className="btn-secondary inline-flex items-center gap-2 text-lg">
               <Play className="w-5 h-5" aria-hidden="true" />
               <span>FRAGMANI İZLE</span>
             </a>
@@ -121,7 +121,7 @@ const TurkishLanding = () => (
                 src="/feature-harbor.jpg"
                 alt="Harbor oyunundaki güvenli bölge ve açık dünya survival ortamı"
                 width={1920}
-                height={1080}
+                height={935}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#120e0a]/65 via-transparent to-transparent" />
@@ -160,9 +160,10 @@ const TurkishLanding = () => (
           <button type="button" onClick={openAnalyticsSettings} className="text-amber-100/60 hover:text-orange-400">Analitik Ayarları</button>
           <a href="/tr/oynanis/" className="text-amber-100/60 hover:text-orange-400">Oynanış</a>
           <a href="/tr/cikis/" className="text-amber-100/60 hover:text-orange-400">Çıkış</a>
+          <a href="/tr/fragman/" className="text-amber-100/60 hover:text-orange-400">Fragman</a>
           <a href="/tr/basin/" className="text-amber-100/60 hover:text-orange-400">Basın</a>
-          <a href="https://discord.gg/DQaJMQGvNn" target="_blank" rel="noopener noreferrer" className="text-amber-100/60 hover:text-orange-400">Discord</a>
-          <a href="https://www.youtube.com/@CastilvaGames" target="_blank" rel="noopener noreferrer" className="text-amber-100/60 hover:text-orange-400">YouTube</a>
+          <a href={DEVELOPER.discord} target="_blank" rel="noopener noreferrer" className="text-amber-100/60 hover:text-orange-400">Discord</a>
+          <a href={DEVELOPER.youtube} target="_blank" rel="noopener noreferrer" className="text-amber-100/60 hover:text-orange-400">YouTube</a>
           <a href="/" lang="en" hrefLang="en" className="text-orange-400 hover:text-orange-300">English</a>
         </div>
       </div>

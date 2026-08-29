@@ -2,10 +2,14 @@
   "name": "Harbor",
   "officialNamePolicy": "Use only Harbor as the game title. Steam App ID 2714930 and theharborgame.com identify this specific game.",
   "entityType": "VideoGame",
-  "lastVerified": "2026-07-22",
-  "verificationPolicy": "Facts are limited to current first-party CastilvaGames, Harbor, and Steam material. Unknown details are not estimated.",
+  "lastVerified": "2026-08-29",
+  "verificationPolicy": "Facts are checked against current first-party CastilvaGames and Harbor material, the official Steam App 2714930 listing, Wandering Wizard's official website, and its Steam publisher page. Unknown details are not estimated, and changeable claims must be reverified before reuse.",
   "developer": "CastilvaGames",
-  "publisher": "CastilvaGames",
+  "publisher": "Wandering Wizard",
+  "publisherLinks": {
+    "website": "https://www.wanderingwizard.com/",
+    "steam": "https://store.steampowered.com/publisher/WanderingWizard/"
+  },
   "steamAppId": 2714930,
   "release": {
     "status": "unreleased",
@@ -16,7 +20,7 @@
     "notes": [
       "No exact release day or month is currently announced.",
       "No launch price is currently published.",
-      "The developer says the full version is expected to cost more than the Early Access version, but no amount is listed."
+      "The Steam Early Access Q&A says the full version is expected to cost more than the Early Access version, but no amount is listed."
     ]
   },
   "platforms": {
@@ -41,7 +45,7 @@
       "macOS",
       "Linux"
     ],
-    "note": "CastilvaGames confirms Steam and Epic Games Store as planned PC storefronts. The official Epic product URL will be added when public."
+    "note": "Official Harbor material lists Steam and Epic Games Store as planned PC storefronts. The official Epic product URL will be added when public."
   },
   "genres": [
     "Open World Survival Craft",
@@ -148,11 +152,16 @@
     "website": "https://theharborgame.com/",
     "steam": "https://store.steampowered.com/app/2714930/Harbor",
     "trailer": "https://www.youtube.com/watch?v=3E5J4DY8OhI",
+    "englishTrailerPage": "https://theharborgame.com/trailer/",
+    "turkishTrailerPage": "https://theharborgame.com/tr/fragman/",
     "epicGamesStore": null,
     "youtube": "https://www.youtube.com/@CastilvaGames",
     "discord": "https://discord.gg/DQaJMQGvNn",
+    "publisherWebsite": "https://www.wanderingwizard.com/",
+    "publisherSteam": "https://store.steampowered.com/publisher/WanderingWizard/",
     "pressKit": "https://theharborgame.com/press/",
     "sitemap": "https://theharborgame.com/sitemap.xml",
+    "videoSitemap": "https://theharborgame.com/video-sitemap.xml",
     "llms": "https://theharborgame.com/llms.txt"
   },
   "canonicalPages": {
@@ -164,6 +173,8 @@
     "turkishRelease": "https://theharborgame.com/tr/cikis/",
     "englishComparison": "https://theharborgame.com/games-like-rust-dayz-scum/",
     "turkishComparison": "https://theharborgame.com/tr/rust-dayz-scum-benzeri/",
+    "englishTrailer": "https://theharborgame.com/trailer/",
+    "turkishTrailer": "https://theharborgame.com/tr/fragman/",
     "englishPress": "https://theharborgame.com/press/",
     "turkishPress": "https://theharborgame.com/tr/basin/"
   },

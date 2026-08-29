@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ExternalLink } from 'lucide-react';
+import { STEAM_URL } from '@/content/gameIdentity';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +19,7 @@ const platforms: Platform[] = [
     id: 1,
     name: 'Steam',
     logo: '/steam.svg',
-    href: 'https://store.steampowered.com/app/2714930/Harbor',
+    href: STEAM_URL,
     status: 'Page live · Wishlist now',
   },
   {
@@ -99,7 +100,7 @@ const AvailableNow = () => {
 
           {/* CTA Button */}
           <a 
-            href="https://store.steampowered.com/app/2714930/Harbor"
+            href={STEAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center gap-2 text-lg mb-12"

@@ -1,8 +1,15 @@
 import type { FaqItem, SiteLocale } from './gameContent';
+import {
+  BASE_URL,
+  DEVELOPER,
+  FACT_CHECK_DATE,
+  GAME_PUBLISHER,
+  STEAM_URL,
+  TRAILER_EMBED_URL,
+  TRAILER_URL,
+} from './gameIdentity';
 
-export const BASE_URL = 'https://theharborgame.com';
-export const STEAM_URL = 'https://store.steampowered.com/app/2714930/Harbor';
-export const TRAILER_URL = 'https://www.youtube.com/watch?v=3E5J4DY8OhI';
+export { BASE_URL, STEAM_URL, TRAILER_URL } from './gameIdentity';
 
 export interface KnowledgeSource {
   label: string;
@@ -45,6 +52,17 @@ export interface KnowledgeAsset {
   alt: string;
 }
 
+export interface KnowledgeVideo {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  embedUrl: string;
+  watchUrl: string;
+  uploadDate: string;
+  duration: string;
+  durationSeconds: number;
+}
+
 export interface RelatedPage {
   href: string;
   label: string;
@@ -52,7 +70,7 @@ export interface RelatedPage {
 }
 
 export interface KnowledgePageData {
-  key: 'gameplay' | 'release' | 'comparison' | 'press';
+  key: 'gameplay' | 'release' | 'comparison' | 'press' | 'trailer';
   locale: SiteLocale;
   route: string;
   alternateRoute: string;
@@ -65,6 +83,8 @@ export interface KnowledgePageData {
   publishedDate: string;
   modifiedDate: string;
   heroImage: string;
+  heroWidth: number;
+  heroHeight: number;
   heroAlt: string;
   badges: string[];
   factsTitle: string;
@@ -76,18 +96,20 @@ export interface KnowledgePageData {
   sources: KnowledgeSource[];
   assets?: KnowledgeAsset[];
   assetsTitle?: string;
+  video?: KnowledgeVideo;
+  minWords?: number;
   relatedTitle: string;
   related: RelatedPage[];
   ctaTitle: string;
   ctaText: string;
   ctaLabel: string;
-  schemaType: 'Article' | 'AboutPage';
+  schemaType: 'Article' | 'AboutPage' | 'WebPage';
 }
 
 const officialHarborSource: KnowledgeSource = {
   label: 'Harbor on Steam',
   url: STEAM_URL,
-  note: 'Official store listing maintained by CastilvaGames; source for release status, modes, features, languages, and PC requirements.',
+  note: 'Official Harbor store listing; source for release status, developer and publisher credits, modes, features, languages, and PC requirements.',
 };
 
 const officialWebsiteSource: KnowledgeSource = {
@@ -101,6 +123,40 @@ const officialTrailerSource: KnowledgeSource = {
   url: TRAILER_URL,
   note: 'Official video published by CastilvaGames.',
 };
+
+const announcementTrailer: KnowledgeVideo = {
+  name: 'Harbor Announcement Trailer',
+  description: 'The official Harbor announcement trailer from CastilvaGames, introducing the post-apocalyptic open-world survival game.',
+  thumbnailUrl: '/trailer-thumb.webp',
+  embedUrl: TRAILER_EMBED_URL,
+  watchUrl: TRAILER_URL,
+  uploadDate: '2025-01-07T22:51:14-08:00',
+  duration: 'PT1M55S',
+  durationSeconds: 115,
+};
+
+const announcementTrailerTr: KnowledgeVideo = {
+  ...announcementTrailer,
+  description: 'CastilvaGames’in post-apocalyptic açık dünya survival oyunu Harbor’ı tanıtan resmi duyuru fragmanı.',
+};
+
+const trailerSourcesTr: KnowledgeSource[] = [
+  {
+    label: 'Harbor resmi fragmanı',
+    url: TRAILER_URL,
+    note: 'CastilvaGames tarafından yayınlanan resmi YouTube videosu; başlık, yüklenme tarihi ve süre için ana kaynak.',
+  },
+  {
+    label: 'Harbor Steam sayfası',
+    url: STEAM_URL,
+    note: 'Çıkış durumu, geliştirici ve yayıncı kredileri, modlar, özellikler, diller ve PC gereksinimleri için resmi mağaza listesi.',
+  },
+  {
+    label: 'Resmi Harbor sitesi',
+    url: `${BASE_URL}/tr/`,
+    note: 'Oyun dünyası, ekran görüntüleri, özellik açıklamaları ve Türkçe Harbor bilgileri için birinci taraf kaynak.',
+  },
+];
 
 const englishRelated: Record<KnowledgePageData['key'], RelatedPage> = {
   gameplay: {
@@ -122,6 +178,11 @@ const englishRelated: Record<KnowledgePageData['key'], RelatedPage> = {
     href: '/press/',
     label: 'Press kit',
     description: 'Official facts, descriptions, links, logo, screenshots, and media contact information.',
+  },
+  trailer: {
+    href: '/trailer/',
+    label: 'Official trailer',
+    description: 'Watch the Harbor announcement trailer and review its verified video details and official source links.',
   },
 };
 
@@ -146,6 +207,11 @@ const turkishRelated: Record<KnowledgePageData['key'], RelatedPage> = {
     label: 'Basın kiti',
     description: 'Resmi oyun bilgileri, kısa tanıtım metinleri, bağlantılar, logo ve ekran görüntüleri.',
   },
+  trailer: {
+    href: '/tr/fragman/',
+    label: 'Resmi fragman',
+    description: 'Harbor duyuru fragmanını izleyin; doğrulanmış video ayrıntılarını ve resmi kaynak bağlantılarını görün.',
+  },
 };
 
 const relatedExcept = (
@@ -165,10 +231,12 @@ const gameplayEn: KnowledgePageData = {
   eyebrow: 'OFFICIAL GAMEPLAY GUIDE',
   title: 'Harbor Gameplay: Survival, PvP, Building, Trading & Vehicles',
   directAnswer: 'Harbor is a competitive, first-person, post-apocalyptic open-world survival game for Windows PC. Its verified loop is to scavenge scarce resources, manage hunger and thirst, craft equipment, build and upgrade shelters, pursue mobile resource targets, trade and take missions inside the only safe zone, then return to an online PvP and co-op world where death can cost everything you carry. Harbor is still in development for a 2026 PC release; Steam lists Early Access and an Epic Games Store release is planned.',
-  updatedLabel: 'Fact-checked July 22, 2026',
+  updatedLabel: 'Fact-checked August 29, 2026',
   publishedDate: '2026-07-22',
-  modifiedDate: '2026-07-22',
+  modifiedDate: FACT_CHECK_DATE,
   heroImage: '/feature-harbor.jpg',
+  heroWidth: 1920,
+  heroHeight: 935,
   heroAlt: 'The Harbor safe zone in the open-world multiplayer survival game Harbor',
   badges: ['First-person', 'Online PvP', 'Online co-op', 'Open-world survival craft'],
   factsTitle: 'Harbor gameplay at a glance',
@@ -263,7 +331,7 @@ const gameplayEn: KnowledgePageData = {
     { question: 'Does Harbor have full-loot PvP?', answer: 'The official description says death means losing everything you worked for. CastilvaGames has not yet published the exact inventory, recovery, server, or wipe rules, so “full-loot” should be treated as a high-level description rather than a complete ruleset.' },
     { question: 'Can players trade in Harbor?', answer: 'Yes. Trading is confirmed, and the Harbor safe zone is specifically described as a place to trade resources and take missions.' },
     { question: 'Does Harbor have vehicles?', answer: 'Yes. Driving is a Steam tag and official descriptions say vehicles are needed to catch the War Truck and train that provide valuable resources.' },
-    { question: 'Is Harbor already playable?', answer: 'No public release is available as of July 22, 2026. Harbor is planned for Windows PC in 2026; the Steam page is live and the Epic Games Store page is coming later.' },
+    { question: 'Is Harbor already playable?', answer: 'No public release is available as of August 29, 2026. Harbor is planned for Windows PC in 2026; the Steam page is live and the Epic Games Store page is coming later.' },
   ],
   sourcesTitle: 'Official sources and verification',
   sourcesIntro: 'Gameplay claims on this page are limited to public first-party material. Unknown values are identified instead of estimated.',
@@ -285,11 +353,13 @@ const releaseEn: KnowledgePageData = {
   metaDescription: 'Harbor is planned for Windows PC in 2026 on Steam and Epic Games Store. See the release window, price status, languages, and PC requirements.',
   eyebrow: 'CURRENT RELEASE INFORMATION',
   title: 'Harbor Release Date, Platforms, Price & PC Requirements',
-  directAnswer: 'Harbor is planned for Windows PC in 2026, with no exact day or month announced. Steam lists Harbor for Early Access, and CastilvaGames also plans an Epic Games Store release; the Epic store page is not public yet. No launch price is displayed, and no PlayStation, Xbox, macOS, or Linux release is announced as of July 22, 2026. Steam wishlisting is currently the public way to receive a release notification.',
-  updatedLabel: 'Fact-checked July 22, 2026',
+  directAnswer: 'Harbor is planned for Windows PC in 2026, with no exact day or month announced. Steam lists Harbor for Early Access, and an Epic Games Store release is also planned; the Epic store page is not public yet. No launch price is displayed, and no PlayStation, Xbox, macOS, or Linux release is announced as of August 29, 2026. Steam wishlisting is currently the public way to receive a release notification.',
+  updatedLabel: 'Fact-checked August 29, 2026',
   publishedDate: '2026-07-22',
-  modifiedDate: '2026-07-22',
+  modifiedDate: FACT_CHECK_DATE,
   heroImage: '/hero-bg.webp',
+  heroWidth: 6336,
+  heroHeight: 3724,
   heroAlt: 'Harbor post-apocalyptic open-world survival game key art',
   badges: ['Planned: 2026', 'Windows PC', 'Steam page live', 'Epic Games Store planned', 'Price: not announced'],
   factsTitle: 'Release status at a glance',
@@ -299,7 +369,8 @@ const releaseEn: KnowledgePageData = {
     { label: 'Availability', value: 'Not yet publicly playable; the Steam page is live.' },
     { label: 'Confirmed platform', value: 'Windows PC (64-bit); Steam and Epic Games Store are the planned storefronts.' },
     { label: 'Price', value: 'No launch price published.' },
-    { label: 'Developer and publisher', value: 'CastilvaGames.' },
+    { label: 'Developer', value: `${DEVELOPER.name}.` },
+    { label: 'Publisher', value: `${GAME_PUBLISHER.name}.` },
     { label: 'Steam App ID', value: '2714930.' },
     { label: 'Supported languages', value: '11 interface/subtitle languages; English full audio.' },
   ],
@@ -322,13 +393,13 @@ const releaseEn: KnowledgePageData = {
         headers: ['Platform', 'Status', 'Evidence'],
         rows: [
           ['Windows PC / Steam', 'Confirmed', 'Official Steam listing; Windows 10–11 64-bit requirements are published.'],
-          ['Windows PC / Epic Games Store', 'Planned; page pending', 'CastilvaGames confirms the planned storefront; no public Epic product URL is available yet.'],
+          ['Windows PC / Epic Games Store', 'Planned; page pending', 'The official Harbor website identifies the storefront as planned; no public Epic product URL is available yet.'],
           ['PlayStation', 'Not announced', 'No official PlayStation listing or announcement located.'],
           ['Xbox', 'Not announced', 'No official Xbox listing or announcement located.'],
           ['macOS / Linux', 'Not announced', 'Steam currently lists Windows support only.'],
         ],
       },
-      note: 'The Epic Games Store plan is first-party information from CastilvaGames. This page will add the official product URL when it becomes public; console and non-Windows versions remain unannounced.',
+      note: 'The Epic Games Store plan is stated on the official Harbor website. This page will add the official product URL when it becomes public; console and non-Windows versions remain unannounced.',
     },
     {
       id: 'price',
@@ -343,7 +414,7 @@ const releaseEn: KnowledgePageData = {
       title: 'What are Harbor’s PC system requirements?',
       answer: 'Harbor requires a 64-bit Windows 10 or 11 PC, DirectX 12, and 15 GB of available storage. Steam currently lists 12 GB RAM minimum and 16 GB recommended.',
       table: {
-        caption: 'Official Harbor PC requirements on Steam, checked July 22, 2026',
+        caption: 'Official Harbor PC requirements on Steam, checked August 29, 2026',
         headers: ['Component', 'Minimum', 'Recommended'],
         rows: [
           ['Operating system', 'Windows 10–11, 64-bit', 'Windows 10–11, 64-bit'],
@@ -371,13 +442,13 @@ const releaseEn: KnowledgePageData = {
   faqs: [
     { question: 'What is Harbor’s exact release date?', answer: 'No exact day or month has been announced. The official Steam page lists a planned 2026 Early Access release.' },
     { question: 'Is Harbor available now?', answer: 'No. Steam states that the game is not yet available and offers a wishlist notification for release.' },
-    { question: 'Is Harbor coming to Epic Games Store?', answer: 'Yes. CastilvaGames plans an Epic Games Store release in 2026, but the public Epic product page is not live yet.' },
+    { question: 'Is Harbor coming to Epic Games Store?', answer: 'Yes. An Epic Games Store release is planned for 2026, but the public Epic product page is not live yet.' },
     { question: 'Is Harbor coming to consoles?', answer: 'No PlayStation or Xbox release is currently listed or announced. Windows PC is the confirmed platform, with Steam and Epic Games Store planned as storefronts.' },
     { question: 'How much will Harbor cost?', answer: 'The price has not been announced. Steam’s Early Access FAQ says the full release is expected to cost more than the Early Access version, but no amount is published.' },
     { question: 'Does Harbor require DirectX 12?', answer: 'Yes. The official Steam requirements say DirectX 12 is required and the game will not run on systems without DirectX 12 capability.' },
   ],
   sourcesTitle: 'Official sources and change policy',
-  sourcesIntro: 'Release details are time-sensitive. This page combines the current Steam listing with CastilvaGames’ first-party plan and avoids filling unknowns with estimates.',
+  sourcesIntro: 'Release details are time-sensitive. This page combines the current Steam listing with the official Harbor website and avoids filling unknowns with estimates.',
   sources: [officialHarborSource, officialWebsiteSource],
   relatedTitle: 'Learn more about Harbor',
   related: relatedExcept(englishRelated, 'release'),
@@ -397,10 +468,12 @@ const comparisonEn: KnowledgePageData = {
   eyebrow: 'EVIDENCE-BASED GENRE COMPARISON',
   title: 'Is Harbor Like Rust, DayZ or SCUM?',
   directAnswer: 'Harbor belongs in the same broad genre neighborhood as Rust, DayZ, and SCUM because all four are presented on Steam as multiplayer survival games with online PvP and co-op. Harbor is not a released or reviewed alternative yet, so it cannot responsibly be called “better.” Its verified identity centers on a post-apocalyptic wasteland, one named safe zone, Clean Blood and Fuel scarcity, mission and trading activity, shelter upgrades, and vehicles used to pursue moving resource targets.',
-  updatedLabel: 'Compared from official Steam pages on July 22, 2026',
+  updatedLabel: 'Compared from official Steam pages on August 29, 2026',
   publishedDate: '2026-07-22',
-  modifiedDate: '2026-07-22',
+  modifiedDate: FACT_CHECK_DATE,
   heroImage: '/feature-rulers.jpg',
+  heroWidth: 1920,
+  heroHeight: 1040,
   heroAlt: 'Clan territory in Harbor, an upcoming open-world multiplayer survival game',
   badges: ['Genre overlap, not affiliation', 'Official sources', 'No paid ranking', 'Harbor is unreleased'],
   factsTitle: 'The honest short version',
@@ -504,17 +577,20 @@ const pressEn: KnowledgePageData = {
   metaDescription: 'Official Harbor press kit: verified game facts, short descriptions, Steam and trailer links, logo, screenshots, system details, and media contact.',
   eyebrow: 'OFFICIAL PRESS & CREATOR RESOURCES',
   title: 'Harbor Press Kit',
-  directAnswer: 'Harbor is a competitive first-person, post-apocalyptic open-world survival game for Windows PC, developed and published by CastilvaGames. Planned for 2026 on Steam and Epic Games Store, it combines online PvP and co-op with scarce resources, crafting, shelter building, trading, missions, driving, and a world built around one safe zone called Harbor. This page is the canonical source for media facts and downloadable first-party assets.',
-  updatedLabel: 'Press facts verified July 22, 2026',
+  directAnswer: 'Harbor is a competitive first-person, post-apocalyptic open-world survival game for Windows PC, developed by CastilvaGames and published by Wandering Wizard. Planned for 2026 on Steam and Epic Games Store, it combines online PvP and co-op with scarce resources, crafting, shelter building, trading, missions, driving, and a world built around one safe zone called Harbor. This page is the canonical source for media facts and downloadable first-party assets.',
+  updatedLabel: 'Press facts verified August 29, 2026',
   publishedDate: '2026-07-22',
-  modifiedDate: '2026-07-22',
+  modifiedDate: FACT_CHECK_DATE,
   heroImage: '/trailer-thumb.webp',
+  heroWidth: 6336,
+  heroHeight: 3724,
   heroAlt: 'Harbor official trailer artwork',
   badges: ['Developer: CastilvaGames', 'Steam App 2714930', 'Windows PC', 'Planned: 2026', 'Steam + Epic planned'],
   factsTitle: 'Official quick facts',
   facts: [
     { label: 'Title', value: 'Harbor' },
-    { label: 'Developer / publisher', value: 'CastilvaGames' },
+    { label: 'Developer', value: DEVELOPER.name },
+    { label: 'Publisher', value: GAME_PUBLISHER.name },
     { label: 'Genre', value: 'Action, adventure, indie, open-world survival craft, first-person shooter' },
     { label: 'Modes', value: 'Online PvP and online co-op' },
     { label: 'Platform', value: 'Windows PC via Steam and Epic Games Store' },
@@ -552,7 +628,7 @@ const pressEn: KnowledgePageData = {
     {
       id: 'brand-usage',
       title: 'Brand and attribution guidance',
-      answer: 'Use “Harbor” for the game and “CastilvaGames” for both developer and publisher. Harbor is an original game and is not affiliated with Rust, DayZ, SCUM, Mad Max, Fallout, or their owners.',
+      answer: 'Use “Harbor” for the game, “CastilvaGames” for the developer, and “Wandering Wizard” for the publisher. Harbor is an original game and is not affiliated with Rust, DayZ, SCUM, Mad Max, Fallout, or their owners.',
       bullets: [
         'Recommended image credit: “Courtesy of CastilvaGames.”',
         'Copyright line: “© 2026 CastilvaGames. All rights reserved.”',
@@ -570,7 +646,7 @@ const pressEn: KnowledgePageData = {
     },
   ],
   faqs: [
-    { question: 'Who develops and publishes Harbor?', answer: 'CastilvaGames is both the developer and publisher listed on Steam.' },
+    { question: 'Who develops and publishes Harbor?', answer: 'Steam lists CastilvaGames as the developer and Wandering Wizard as the publisher.' },
     { question: 'What is Harbor’s release date?', answer: 'Steam lists a planned 2026 Early Access release. No exact day or month is currently announced.' },
     { question: 'Which Harbor platform is confirmed?', answer: 'Windows PC is confirmed, with Steam and Epic Games Store planned as storefronts. The Steam page is public; the Epic page is pending.' },
     { question: 'Are these assets official?', answer: 'Yes. The files linked on this page are hosted on the official Harbor website and originate from CastilvaGames material.' },
@@ -582,8 +658,8 @@ const pressEn: KnowledgePageData = {
     officialHarborSource,
     officialWebsiteSource,
     officialTrailerSource,
-    { label: 'CastilvaGames on YouTube', url: 'https://www.youtube.com/@CastilvaGames', note: 'Official developer video channel.' },
-    { label: 'Harbor Discord', url: 'https://discord.gg/DQaJMQGvNn', note: 'Official community invite linked by the Harbor website.' },
+    { label: 'CastilvaGames on YouTube', url: DEVELOPER.youtube, note: 'Official developer video channel.' },
+    { label: 'Harbor Discord', url: DEVELOPER.discord, note: 'Official community invite linked by the Harbor website.' },
     { label: 'Machine-readable Harbor facts', url: `${BASE_URL}/harbor-facts.json`, note: 'Structured first-party fact sheet for tools and editorial workflows.' },
   ],
   assets: pressAssets,
@@ -596,6 +672,95 @@ const pressEn: KnowledgePageData = {
   schemaType: 'AboutPage',
 };
 
+const trailerEn: KnowledgePageData = {
+  key: 'trailer',
+  locale: 'en',
+  route: '/trailer/',
+  alternateRoute: '/tr/fragman/',
+  metaTitle: 'Harbor Official Trailer | Watch the Announcement Video',
+  metaDescription: 'Watch the official 1:55 Harbor Announcement Trailer from CastilvaGames and review its verified upload date, duration, source, and game links.',
+  eyebrow: 'OFFICIAL HARBOR VIDEO',
+  title: 'Harbor Official Trailer: Watch the Announcement Trailer',
+  directAnswer: 'The official Harbor Announcement Trailer is a 1 minute 55 second video uploaded to the CastilvaGames YouTube channel on January 7, 2025. Watch it below or open the original video on YouTube. The published source confirms the title, upload date, and duration; no official transcript or chapter list is currently provided here.',
+  updatedLabel: 'Video details verified August 29, 2026',
+  publishedDate: FACT_CHECK_DATE,
+  modifiedDate: FACT_CHECK_DATE,
+  heroImage: '/trailer-thumb.webp',
+  heroWidth: 6336,
+  heroHeight: 3724,
+  heroAlt: 'Harbor Announcement Trailer official thumbnail',
+  badges: ['Official video', 'Duration: 1:55', 'Uploaded: January 7, 2025', 'CastilvaGames'],
+  factsTitle: 'Verified trailer details',
+  facts: [
+    { label: 'Official title', value: announcementTrailer.name },
+    { label: 'Duration', value: '1 minute 55 seconds (115 seconds).' },
+    { label: 'Upload date', value: 'January 7, 2025.' },
+    { label: 'Video source', value: 'Official CastilvaGames YouTube channel.' },
+    { label: 'Transcript and chapters', value: 'Not published in the verified source information used for this page.' },
+    { label: 'Game developer', value: DEVELOPER.name },
+    { label: 'Game publisher', value: GAME_PUBLISHER.name },
+  ],
+  video: announcementTrailer,
+  sections: [
+    {
+      id: 'watch-official-video',
+      title: 'Watch the official Harbor video',
+      answer: 'The player above shows the official YouTube upload of the Harbor Announcement Trailer.',
+      paragraphs: [
+        'The dedicated watch page keeps the video, its title, thumbnail, duration, upload date, and source together. The external link below the player opens the same upload on YouTube for viewers who prefer the original platform.',
+        'The video does not autoplay. Playback begins only when you use the YouTube controls.',
+      ],
+    },
+    {
+      id: 'verified-scope',
+      title: 'What is verified—and what is not inferred',
+      answer: 'This page reports video metadata and official game identity facts that can be checked against the original YouTube upload, Harbor’s Steam listing, and the official website.',
+      bullets: [
+        'Verified video title: Harbor Announcement Trailer.',
+        'Verified duration: 115 seconds, expressed as 1 minute 55 seconds.',
+        'Verified upload timestamp: January 7, 2025, with the original YouTube timezone retained in structured data.',
+        'Verified game credits: developed by CastilvaGames and published by Wandering Wizard.',
+        'No transcript, dialogue quotation, chapter timing, closed-caption status, or scene-by-scene interpretation is supplied without a published source.',
+      ],
+      note: 'Trailer imagery can communicate tone and setting, but it should not be treated as proof that every depicted or implied feature will ship unchanged. Harbor is still in development.',
+    },
+    {
+      id: 'game-context',
+      title: 'Official Harbor game context',
+      answer: 'Harbor is a competitive first-person post-apocalyptic open-world survival game planned for Windows PC in 2026.',
+      paragraphs: [
+        'Current official descriptions identify online PvP and co-op, scarce resources, crafting, shelter building, vehicles, trading, missions, and one safe zone called Harbor. For sourced mechanics and clearly marked unknowns, use the gameplay guide rather than inferring final systems from a promotional video.',
+        'The release page tracks the public 2026 window, Steam Early Access status, PC requirements, supported languages, and the planned Epic Games Store release. Exact launch timing and price remain unannounced.',
+      ],
+    },
+    {
+      id: 'sharing-and-attribution',
+      title: 'Sharing and attribution',
+      answer: 'When linking or embedding the trailer, preserve its official title and point viewers to this watch page or the original CastilvaGames YouTube upload.',
+      paragraphs: [
+        'Press and creator resources, downloadable first-party images, verified descriptions, and the media contact are available in the Harbor press kit. The press kit also separates the developer credit, CastilvaGames, from the publisher credit, Wandering Wizard.',
+      ],
+    },
+  ],
+  faqs: [
+    { question: 'How long is the Harbor Announcement Trailer?', answer: 'The official upload is 1 minute 55 seconds long, or 115 seconds.' },
+    { question: 'When was the Harbor trailer uploaded?', answer: 'YouTube metadata dates the official upload to January 7, 2025.' },
+    { question: 'Where can I watch the original Harbor trailer?', answer: 'Use the embedded player on this page or open the original video on the official CastilvaGames YouTube channel.' },
+    { question: 'Does this page provide a Harbor trailer transcript?', answer: 'No. This page does not invent or infer dialogue, captions, chapters, or a transcript that is not supplied by the verified source metadata.' },
+    { question: 'Who develops and publishes Harbor?', answer: 'CastilvaGames develops Harbor, and Wandering Wizard is the publisher listed on Steam.' },
+  ],
+  sourcesTitle: 'Official video and game sources',
+  sourcesIntro: 'Video details come from the original CastilvaGames YouTube upload. Game identity and changing release facts are cross-checked against the official Steam listing and Harbor website.',
+  sources: [officialTrailerSource, officialHarborSource, officialWebsiteSource],
+  relatedTitle: 'Continue with verified Harbor information',
+  related: relatedExcept(englishRelated, 'trailer'),
+  ctaTitle: 'Track Harbor’s release status',
+  ctaText: 'The Steam listing is the public source for the current release window, PC requirements, supported languages, developer, and publisher credits.',
+  ctaLabel: 'Open Harbor on Steam',
+  schemaType: 'WebPage',
+  minWords: 350,
+};
+
 const gameplayTr: KnowledgePageData = {
   ...gameplayEn,
   locale: 'tr',
@@ -606,7 +771,7 @@ const gameplayTr: KnowledgePageData = {
   eyebrow: 'RESMİ OYNANIŞ REHBERİ',
   title: 'Harbor Oynanış Rehberi: Survival, PvP, Üs Kurma ve Araçlar',
   directAnswer: 'Harbor, Windows PC için geliştirilen rekabetçi, birinci şahıs bakış açılı post-apocalyptic açık dünya survival oyunudur. Doğrulanmış oyun döngüsü; kıt kaynakları toplamak, açlık ve susuzluğu yönetmek, ekipman üretmek, sığınak kurup geliştirmek, hareketli kaynak hedeflerini takip etmek, tek güvenli bölgede ticaret ve görev yapmak, ardından ölümün taşıdığınız her şeye mal olabileceği online PvP ve co-op dünyasına dönmektir. Oyun 2026 PC çıkışı için geliştirilmektedir; Steam Early Access sayfası açık, Epic Games Store çıkışı planlıdır.',
-  updatedLabel: 'Bilgiler 22 Temmuz 2026’da doğrulandı',
+  updatedLabel: 'Bilgiler 29 Ağustos 2026’da doğrulandı',
   heroAlt: 'Harbor açık dünya multiplayer survival oyunundaki güvenli bölge',
   badges: ['Birinci şahıs', 'Online PvP', 'Online co-op', 'Açık dünya survival craft'],
   factsTitle: 'Kısa Harbor oynanış özeti',
@@ -683,7 +848,7 @@ const gameplayTr: KnowledgePageData = {
     { question: 'Harbor full-loot PvP mi?', answer: 'Resmi açıklama ölümün uğruna çalışılan her şeyi kaybettirebileceğini söyler. Kesin envanter, geri alma, sunucu ve wipe kuralları açıklanmadığı için “full-loot” ifadesi ayrıntılı bir kurallar bütünü değil, yüksek seviyeli bir tanımdır.' },
     { question: 'Harbor’da ticaret var mı?', answer: 'Evet. Ticaret doğrulanmıştır; Harbor güvenli bölgesi kaynak ticareti ve görev alma noktası olarak açıklanır.' },
     { question: 'Harbor’da araç var mı?', answer: 'Evet. Sürüş Steam etiketleri arasındadır ve resmi açıklama War Truck ile değerli kaynak taşıyan treni yakalamak için araç gerektiğini söyler.' },
-    { question: 'Harbor şu an oynanabilir mi?', answer: '22 Temmuz 2026 itibarıyla herkese açık bir sürüm yoktur. Windows PC çıkışı 2026 için planlıdır; Steam sayfası açık, Epic Games Store sayfası daha sonra gelecektir.' },
+    { question: 'Harbor şu an oynanabilir mi?', answer: '29 Ağustos 2026 itibarıyla herkese açık bir sürüm yoktur. Windows PC çıkışı 2026 için planlıdır; Steam sayfası açık, Epic Games Store sayfası daha sonra gelecektir.' },
   ],
   sourcesTitle: 'Resmi kaynaklar ve doğrulama',
   sourcesIntro: 'Bu sayfadaki oynanış iddiaları halka açık birinci taraf materyalle sınırlıdır; bilinmeyen değerler tahmin edilmez.',
@@ -704,8 +869,8 @@ const releaseTr: KnowledgePageData = {
   metaDescription: 'Harbor’ın 2026’da Windows PC için Steam ve Epic Games Store’a çıkması planlanıyor. Fiyat, diller ve resmi PC sistem gereksinimleri.',
   eyebrow: 'GÜNCEL ÇIKIŞ BİLGİLERİ',
   title: 'Harbor Çıkış Tarihi, Platformlar, Fiyat ve Sistem Gereksinimleri',
-  directAnswer: 'Harbor’ın 2026’da Windows PC için çıkması planlanıyor; kesin gün veya ay açıklanmadı. Steam Harbor’ı Early Access olarak listeliyor; CastilvaGames ayrıca Epic Games Store çıkışını planlıyor ancak Epic mağaza sayfası henüz açık değil. 22 Temmuz 2026 itibarıyla çıkış fiyatı gösterilmiyor; PlayStation, Xbox, macOS veya Linux sürümü açıklanmadı. Şu anda resmi çıkış bildirimi almanın açık yolu Steam istek listesidir.',
-  updatedLabel: 'Bilgiler 22 Temmuz 2026’da doğrulandı',
+  directAnswer: 'Harbor’ın 2026’da Windows PC için çıkması planlanıyor; kesin gün veya ay açıklanmadı. Steam Harbor’ı Early Access olarak listeliyor; ayrıca Epic Games Store çıkışı planlanıyor ancak Epic mağaza sayfası henüz açık değil. 29 Ağustos 2026 itibarıyla çıkış fiyatı gösterilmiyor; PlayStation, Xbox, macOS veya Linux sürümü açıklanmadı. Şu anda resmi çıkış bildirimi almanın açık yolu Steam istek listesidir.',
+  updatedLabel: 'Bilgiler 29 Ağustos 2026’da doğrulandı',
   heroAlt: 'Harbor post-apocalyptic açık dünya survival oyunu ana görseli',
   badges: ['Planlanan: 2026', 'Windows PC', 'Steam sayfası açık', 'Epic Games Store planlı', 'Fiyat: açıklanmadı'],
   factsTitle: 'Kısa çıkış özeti',
@@ -715,7 +880,8 @@ const releaseTr: KnowledgePageData = {
     { label: 'Erişilebilirlik', value: 'Henüz herkese açık değil; Steam sayfası yayında.' },
     { label: 'Doğrulanmış platform', value: '64-bit Windows PC; planlanan mağazalar Steam ve Epic Games Store.' },
     { label: 'Fiyat', value: 'Çıkış fiyatı yayınlanmadı.' },
-    { label: 'Geliştirici ve yayıncı', value: 'CastilvaGames.' },
+    { label: 'Geliştirici', value: `${DEVELOPER.name}.` },
+    { label: 'Yayıncı', value: `${GAME_PUBLISHER.name}.` },
     { label: 'Steam App ID', value: '2714930.' },
     { label: 'Dil desteği', value: '11 arayüz/altyazı dili; İngilizce tam seslendirme.' },
   ],
@@ -738,13 +904,13 @@ const releaseTr: KnowledgePageData = {
         headers: ['Platform', 'Durum', 'Kanıt'],
         rows: [
           ['Windows PC / Steam', 'Doğrulandı', 'Resmi Steam sayfası; Windows 10–11 64-bit gereksinimleri yayınlandı.'],
-          ['Windows PC / Epic Games Store', 'Planlı; sayfa bekleniyor', 'CastilvaGames mağaza çıkışını doğruladı; halka açık Epic ürün URL’si henüz yok.'],
+          ['Windows PC / Epic Games Store', 'Planlı; sayfa bekleniyor', 'Resmi Harbor sitesi mağazayı planlı olarak tanımlıyor; halka açık Epic ürün URL’si henüz yok.'],
           ['PlayStation', 'Açıklanmadı', 'Resmi PlayStation listesi veya duyurusu yok.'],
           ['Xbox', 'Açıklanmadı', 'Resmi Xbox listesi veya duyurusu yok.'],
           ['macOS / Linux', 'Açıklanmadı', 'Steam şu anda yalnızca Windows desteği listeliyor.'],
         ],
       },
-      note: 'Epic Games Store planı CastilvaGames’in birinci taraf bilgisidir. Resmi ürün URL’si açıldığında buraya eklenecek; konsol ve Windows dışı sürümler açıklanmadı.',
+      note: 'Epic Games Store planı resmi Harbor sitesinde belirtilir. Resmi ürün URL’si açıldığında buraya eklenecek; konsol ve Windows dışı sürümler açıklanmadı.',
     },
     {
       id: 'fiyat',
@@ -757,7 +923,7 @@ const releaseTr: KnowledgePageData = {
       title: 'Harbor PC sistem gereksinimleri neler?',
       answer: 'Harbor; 64-bit Windows 10 veya 11, DirectX 12 ve 15 GB boş alan ister. Steam şu anda minimum 12 GB, önerilen 16 GB RAM listeler.',
       table: {
-        caption: '22 Temmuz 2026’da Steam’de yayınlanan resmi Harbor PC gereksinimleri',
+        caption: '29 Ağustos 2026’da Steam’de yayınlanan resmi Harbor PC gereksinimleri',
         headers: ['Bileşen', 'Minimum', 'Önerilen'],
         rows: [
           ['İşletim sistemi', 'Windows 10–11, 64-bit', 'Windows 10–11, 64-bit'],
@@ -780,13 +946,13 @@ const releaseTr: KnowledgePageData = {
   faqs: [
     { question: 'Harbor’ın kesin çıkış tarihi ne?', answer: 'Kesin gün veya ay açıklanmadı. Resmi Steam sayfası 2026 Early Access planını listeler.' },
     { question: 'Harbor şu an oynanabilir mi?', answer: 'Hayır. Steam oyunun henüz erişilebilir olmadığını belirtir ve çıkış için istek listesi bildirimi sunar.' },
-    { question: 'Harbor Epic Games Store’a çıkacak mı?', answer: 'Evet. CastilvaGames 2026 için Epic Games Store çıkışını planlıyor; ancak halka açık Epic ürün sayfası henüz yayınlanmadı.' },
+    { question: 'Harbor Epic Games Store’a çıkacak mı?', answer: 'Evet. 2026 için Epic Games Store çıkışı planlanıyor; ancak halka açık Epic ürün sayfası henüz yayınlanmadı.' },
     { question: 'Harbor konsollara çıkacak mı?', answer: 'Şu anda PlayStation veya Xbox sürümü listelenmiyor. Doğrulanan platform Windows PC; planlanan mağazalar Steam ve Epic Games Store’dur.' },
     { question: 'Harbor kaç TL olacak?', answer: 'Fiyat açıklanmadı. Steam Early Access SSS’si tam sürümün Early Access’ten daha pahalı olmasının beklendiğini söyler; herhangi bir tutar yayınlanmaz.' },
     { question: 'Harbor DirectX 12 istiyor mu?', answer: 'Evet. Resmi Steam gereksinimleri DirectX 12 ister ve DirectX 12 desteklemeyen sistemlerde oyunun çalışmayacağını belirtir.' },
   ],
   sourcesTitle: 'Resmi kaynaklar ve değişiklik politikası',
-  sourcesIntro: 'Çıkış bilgileri zamanla değişebilir. Bu sayfa güncel Steam listesi ile CastilvaGames’in birinci taraf planını birleştirir ve bilinmeyenleri tahminle doldurmaz.',
+  sourcesIntro: 'Çıkış bilgileri zamanla değişebilir. Bu sayfa güncel Steam listesi ile resmi Harbor sitesini birleştirir ve bilinmeyenleri tahminle doldurmaz.',
   sources: [officialHarborSource, officialWebsiteSource],
   relatedTitle: 'Harbor hakkında daha fazla bilgi',
   related: relatedExcept(turkishRelated, 'release'),
@@ -805,7 +971,7 @@ const comparisonTr: KnowledgePageData = {
   eyebrow: 'KANITA DAYALI TÜR KARŞILAŞTIRMASI',
   title: 'Harbor; Rust, DayZ veya SCUM Benzeri Bir Oyun mu?',
   directAnswer: 'Harbor; Steam’de açık dünya multiplayer survival, online PvP ve co-op özellikleriyle sunulduğu için Rust, DayZ ve SCUM ile aynı geniş tür çevresinde yer alır. Ancak henüz çıkmış veya incelenmiş bir alternatif değildir; bu yüzden “daha iyi” demek doğru olmaz. Harbor’ın doğrulanmış kimliği; post-apocalyptic çorak dünya, tek güvenli bölge, Clean Blood ve Fuel kıtlığı, görev ve ticaret, sığınak geliştirme ve hareketli kaynak hedeflerini kovalayan araçlar etrafında şekillenir.',
-  updatedLabel: 'Resmi Steam sayfaları 22 Temmuz 2026’da karşılaştırıldı',
+  updatedLabel: 'Resmi Steam sayfaları 29 Ağustos 2026’da karşılaştırıldı',
   heroAlt: 'Harbor açık dünya multiplayer survival oyunundaki klan bölgesi',
   badges: ['Tür benzerliği, marka bağlantısı değil', 'Resmi kaynaklar', 'Ücretli sıralama yok', 'Harbor henüz çıkmadı'],
   factsTitle: 'Dürüst kısa cevap',
@@ -890,14 +1056,15 @@ const pressTr: KnowledgePageData = {
   metaDescription: 'Resmi Harbor basın kiti: doğrulanmış oyun bilgileri, kısa tanıtım metinleri, Steam ve fragman bağlantıları, logo, ekran görüntüleri ve iletişim.',
   eyebrow: 'RESMİ BASIN VE İÇERİK ÜRETİCİ KAYNAKLARI',
   title: 'Harbor Basın Kiti',
-  directAnswer: 'Harbor, CastilvaGames tarafından geliştirilen ve yayınlanan, Windows PC için rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. 2026’da Steam ve Epic Games Store için planlanan oyun; online PvP ve co-op’u kaynak kıtlığı, crafting, sığınak kurma, ticaret, görevler, sürüş ve Harbor adlı tek güvenli bölge çevresinde birleştirir. Bu sayfa basın bilgileri ve indirilebilir birinci taraf görseller için resmi merkezdir.',
-  updatedLabel: 'Basın bilgileri 22 Temmuz 2026’da doğrulandı',
+  directAnswer: 'Harbor, CastilvaGames tarafından geliştirilen ve Wandering Wizard tarafından yayınlanan, Windows PC için rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. 2026’da Steam ve Epic Games Store için planlanan oyun; online PvP ve co-op’u kaynak kıtlığı, crafting, sığınak kurma, ticaret, görevler, sürüş ve Harbor adlı tek güvenli bölge çevresinde birleştirir. Bu sayfa basın bilgileri ve indirilebilir birinci taraf görseller için resmi merkezdir.',
+  updatedLabel: 'Basın bilgileri 29 Ağustos 2026’da doğrulandı',
   heroAlt: 'Harbor resmi fragman görseli',
   badges: ['Geliştirici: CastilvaGames', 'Steam App 2714930', 'Windows PC', 'Planlanan: 2026', 'Steam + Epic planlı'],
   factsTitle: 'Resmi hızlı bilgiler',
   facts: [
     { label: 'Oyun adı', value: 'Harbor' },
-    { label: 'Geliştirici / yayıncı', value: 'CastilvaGames' },
+    { label: 'Geliştirici', value: DEVELOPER.name },
+    { label: 'Yayıncı', value: GAME_PUBLISHER.name },
     { label: 'Tür', value: 'Aksiyon, macera, bağımsız, açık dünya survival craft, birinci şahıs shooter' },
     { label: 'Modlar', value: 'Online PvP ve online co-op' },
     { label: 'Platform', value: 'Steam ve Epic Games Store üzerinden Windows PC' },
@@ -935,7 +1102,7 @@ const pressTr: KnowledgePageData = {
     {
       id: 'marka',
       title: 'Marka ve atıf kuralları',
-      answer: 'Oyun için “Harbor”, geliştirici ve yayıncı için “CastilvaGames” kullanın. Harbor özgün bir oyundur; Rust, DayZ, SCUM, Mad Max, Fallout veya hak sahipleriyle bağlantılı değildir.',
+      answer: 'Oyun için “Harbor”, geliştirici için “CastilvaGames”, yayıncı için “Wandering Wizard” kullanın. Harbor özgün bir oyundur; Rust, DayZ, SCUM, Mad Max, Fallout veya hak sahipleriyle bağlantılı değildir.',
       bullets: [
         'Önerilen görsel kredisi: “CastilvaGames’in izniyle.”',
         'Telif satırı: “© 2026 CastilvaGames. Tüm hakları saklıdır.”',
@@ -951,7 +1118,7 @@ const pressTr: KnowledgePageData = {
     },
   ],
   faqs: [
-    { question: 'Harbor’ı kim geliştiriyor ve yayınlıyor?', answer: 'Steam’de hem geliştirici hem yayıncı CastilvaGames olarak listelenir.' },
+    { question: 'Harbor’ı kim geliştiriyor ve yayınlıyor?', answer: 'Steam, geliştirici olarak CastilvaGames’i ve yayıncı olarak Wandering Wizard’ı listeler.' },
     { question: 'Harbor ne zaman çıkacak?', answer: 'Steam 2026 Early Access planını listeler. Kesin gün veya ay açıklanmadı.' },
     { question: 'Harbor için hangi platform doğrulandı?', answer: 'Windows PC doğrulandı; Steam ve Epic Games Store planlanan mağazalardır. Steam sayfası açık, Epic sayfası bekleniyor.' },
     { question: 'Bu görseller resmi mi?', answer: 'Evet. Bu sayfadaki dosyalar resmi Harbor sitesinde barındırılan CastilvaGames materyalleridir.' },
@@ -969,15 +1136,106 @@ const pressTr: KnowledgePageData = {
   ctaLabel: 'Resmi Steam sayfasını aç',
 };
 
+const trailerTr: KnowledgePageData = {
+  key: 'trailer',
+  locale: 'tr',
+  route: '/tr/fragman/',
+  alternateRoute: '/trailer/',
+  metaTitle: 'Harbor Resmi Fragmanı | Duyuru Videosunu İzle',
+  metaDescription: 'CastilvaGames’in resmi 1:55 uzunluğundaki Harbor Announcement Trailer videosunu izleyin; doğrulanmış tarih, süre ve kaynak bilgilerini görün.',
+  eyebrow: 'RESMİ HARBOR VİDEOSU',
+  title: 'Harbor Resmi Fragmanı: Duyuru Fragmanını İzle',
+  directAnswer: 'Resmi Harbor Announcement Trailer, 7 Ocak 2025’te CastilvaGames YouTube kanalına yüklenen 1 dakika 55 saniyelik videodur. Aşağıdan izleyebilir veya özgün videoyu YouTube’da açabilirsiniz. Yayınlanan kaynak başlık, yüklenme tarihi ve süreyi doğrular; resmi transkript ya da bölüm listesi bu sayfada henüz sunulmuyor.',
+  updatedLabel: 'Video bilgileri 29 Ağustos 2026’da doğrulandı',
+  publishedDate: FACT_CHECK_DATE,
+  modifiedDate: FACT_CHECK_DATE,
+  heroImage: '/trailer-thumb.webp',
+  heroWidth: 6336,
+  heroHeight: 3724,
+  heroAlt: 'Harbor Announcement Trailer resmi küçük resmi',
+  badges: ['Resmi video', 'Süre: 1:55', 'Yüklenme: 7 Ocak 2025', 'CastilvaGames'],
+  factsTitle: 'Doğrulanmış fragman bilgileri',
+  facts: [
+    { label: 'Resmi başlık', value: announcementTrailer.name },
+    { label: 'Süre', value: '1 dakika 55 saniye (115 saniye).' },
+    { label: 'Yüklenme tarihi', value: '7 Ocak 2025.' },
+    { label: 'Video kaynağı', value: 'Resmi CastilvaGames YouTube kanalı.' },
+    { label: 'Transkript ve bölümler', value: 'Bu sayfa için kullanılan doğrulanmış kaynak bilgilerinde yayınlanmadı.' },
+    { label: 'Oyunun geliştiricisi', value: DEVELOPER.name },
+    { label: 'Oyunun yayıncısı', value: GAME_PUBLISHER.name },
+  ],
+  video: announcementTrailerTr,
+  sections: [
+    {
+      id: 'resmi-videoyu-izle',
+      title: 'Resmi Harbor videosunu izle',
+      answer: 'Yukarıdaki oynatıcı, Harbor Announcement Trailer videosunun resmi YouTube yüklemesini gösterir.',
+      paragraphs: [
+        'Bu özel izleme sayfası videoyu; resmi başlığı, küçük resmi, süresi, yüklenme tarihi ve kaynağıyla aynı yerde sunar. Oynatıcının altındaki dış bağlantı, özgün platformu tercih edenler için aynı videoyu YouTube’da açar.',
+        'Video otomatik başlamaz. Oynatma yalnız YouTube kontrollerini kullandığınızda başlar.',
+      ],
+    },
+    {
+      id: 'dogrulanan-kapsam',
+      title: 'Neler doğrulandı, neler çıkarılmadı?',
+      answer: 'Bu sayfa, özgün YouTube yüklemesi, Harbor Steam listesi ve resmi site üzerinden kontrol edilebilen video metadata’sını ve oyun kimliği bilgilerini aktarır.',
+      bullets: [
+        'Doğrulanmış video başlığı: Harbor Announcement Trailer.',
+        'Doğrulanmış süre: 115 saniye, yani 1 dakika 55 saniye.',
+        'Doğrulanmış yüklenme zamanı: 7 Ocak 2025; özgün YouTube saat dilimi yapılandırılmış veride korunur.',
+        'Doğrulanmış oyun kredileri: geliştirici CastilvaGames, yayıncı Wandering Wizard.',
+        'Yayınlanmış kaynak olmadan transkript, diyalog alıntısı, bölüm zamanları, altyazı durumu veya sahne sahne yorum sunulmaz.',
+      ],
+      note: 'Fragman görselleri atmosfer ve ortam hakkında fikir verebilir; ancak gösterilen veya ima edilen her özelliğin değişmeden çıkacağını kanıtlamaz. Harbor hâlâ geliştirme aşamasındadır.',
+    },
+    {
+      id: 'oyun-baglami',
+      title: 'Resmi Harbor oyun bağlamı',
+      answer: 'Harbor, Windows PC için 2026’da çıkması planlanan rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur.',
+      paragraphs: [
+        'Güncel resmi açıklamalar; online PvP ve co-op, kıt kaynaklar, crafting, sığınak kurma, araçlar, ticaret, görevler ve Harbor adlı tek güvenli bölgeyi tanımlar. Kaynaklı mekanikler ve açıkça işaretlenmiş bilinmeyenler için bir tanıtım videosundan nihai sistemler çıkarmak yerine oynanış rehberini kullanın.',
+        'Çıkış sayfası; halka açık 2026 penceresini, Steam Early Access durumunu, PC gereksinimlerini, desteklenen dilleri ve planlanan Epic Games Store çıkışını takip eder. Kesin çıkış zamanı ve fiyat hâlâ açıklanmamıştır.',
+      ],
+    },
+    {
+      id: 'paylasim-ve-atif',
+      title: 'Paylaşım ve atıf',
+      answer: 'Fragmana bağlantı verirken veya videoyu yerleştirirken resmi başlığını koruyun; izleyicileri bu sayfaya ya da özgün CastilvaGames YouTube yüklemesine yönlendirin.',
+      paragraphs: [
+        'Basın ve içerik üreticisi kaynakları, indirilebilir birinci taraf görseller, doğrulanmış tanıtım metinleri ve medya iletişim bilgisi Harbor basın kitinde bulunur. Basın kiti, geliştirici CastilvaGames ile yayıncı Wandering Wizard kredilerini de birbirinden ayırır.',
+      ],
+    },
+  ],
+  faqs: [
+    { question: 'Harbor Announcement Trailer ne kadar uzun?', answer: 'Resmi video 1 dakika 55 saniye, yani 115 saniye uzunluğundadır.' },
+    { question: 'Harbor fragmanı ne zaman yüklendi?', answer: 'YouTube metadata’sı resmi yüklemeyi 7 Ocak 2025 olarak tarihlendirir.' },
+    { question: 'Özgün Harbor fragmanını nerede izleyebilirim?', answer: 'Bu sayfadaki gömülü oynatıcıyı kullanabilir veya videoyu resmi CastilvaGames YouTube kanalında açabilirsiniz.' },
+    { question: 'Bu sayfada Harbor fragman transkripti var mı?', answer: 'Hayır. Bu sayfa doğrulanmış kaynak metadata’sında sunulmayan diyalog, altyazı, bölüm veya transkripti uydurmaz ve çıkarım yoluyla üretmez.' },
+    { question: 'Harbor’ı kim geliştiriyor ve yayınlıyor?', answer: 'Harbor’ı CastilvaGames geliştiriyor; Steam’de listelenen yayıncı Wandering Wizard’dır.' },
+  ],
+  sourcesTitle: 'Resmi video ve oyun kaynakları',
+  sourcesIntro: 'Video bilgileri özgün CastilvaGames YouTube yüklemesinden gelir. Oyun kimliği ve değişebilen çıkış bilgileri resmi Steam listesi ve Harbor sitesiyle karşılaştırılır.',
+  sources: trailerSourcesTr,
+  relatedTitle: 'Doğrulanmış Harbor bilgileriyle devam et',
+  related: relatedExcept(turkishRelated, 'trailer'),
+  ctaTitle: 'Harbor çıkış durumunu takip et',
+  ctaText: 'Güncel çıkış penceresi, PC gereksinimleri, desteklenen diller, geliştirici ve yayıncı kredileri için halka açık kaynak Steam listesidir.',
+  ctaLabel: 'Harbor Steam sayfasını aç',
+  schemaType: 'WebPage',
+  minWords: 350,
+};
+
 export const knowledgePages: KnowledgePageData[] = [
   gameplayEn,
   releaseEn,
   comparisonEn,
   pressEn,
+  trailerEn,
   gameplayTr,
   releaseTr,
   comparisonTr,
   pressTr,
+  trailerTr,
 ];
 
 const normalizePath = (pathname: string) => {

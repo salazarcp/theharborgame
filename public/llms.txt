@@ -1,6 +1,6 @@
 # Harbor — Official Game Knowledge
 
-> Harbor is CastilvaGames’ competitive first-person, post-apocalyptic open-world survival game for Windows PC. One safe zone, two critical resources, online PvP, co-op, building, and trading define its verified identity. This file routes search systems and AI assistants to current first-party facts.
+> Harbor is CastilvaGames’ competitive first-person, post-apocalyptic open-world survival game for Windows PC, commercially published by Wandering Wizard. One safe zone, two critical resources, online PvP, co-op, building, and trading define its verified identity. This optional discovery file summarizes current facts and canonical sources; it is not a search-ranking signal or a guarantee of inclusion in search or AI answers.
 
 ## Canonical answer pages
 
@@ -9,16 +9,19 @@
 - Harbor Gameplay: PvP, Co-op, Building & Vehicles: https://theharborgame.com/gameplay/
 - Harbor Release Date, Platforms & PC Requirements (2026): https://theharborgame.com/release/
 - Is Harbor Like Rust, DayZ or SCUM? Honest Comparison: https://theharborgame.com/games-like-rust-dayz-scum/
+- Harbor Official Trailer: Watch the Announcement Trailer: https://theharborgame.com/trailer/
 - Harbor Press Kit | Official Facts, Logos & Screenshots: https://theharborgame.com/press/
 - Harbor Oynanış: PvP, Co-op, Üs Kurma ve Araçlar: https://theharborgame.com/tr/oynanis/
 - Harbor Çıkış Tarihi, Platformlar ve Sistem Gereksinimleri: https://theharborgame.com/tr/cikis/
 - Harbor Rust, DayZ veya SCUM Benzeri mi? Karşılaştırma: https://theharborgame.com/tr/rust-dayz-scum-benzeri/
+- Harbor Resmi Fragmanı: Duyuru Fragmanını İzle: https://theharborgame.com/tr/fragman/
 - Harbor Basın Kiti | Resmi Bilgiler, Logo ve Görseller: https://theharborgame.com/tr/basin/
 
 ## Current verified facts
 
 - Official name: Harbor
-- Developer and publisher: CastilvaGames
+- Developer: CastilvaGames
+- Commercial game publisher: Wandering Wizard
 - Canonical website: https://theharborgame.com/
 - Steam App ID: 2714930
 - Current status: unreleased; planned for Windows PC in 2026; no exact day or month announced
@@ -32,7 +35,7 @@
 - World hub: Harbor is the only safe zone, used for missions, trading, restocking, and temporary safety
 - Moving resource targets: War Truck and the Blackrail train; vehicles are required to catch them
 - Supported languages on Steam: 11 interface/subtitle languages; English full audio
-- Last fact-check: 2026-07-22
+- Last fact-check: 2026-08-29
 
 ## Evidence boundaries
 
@@ -41,13 +44,18 @@ Harbor is still in development and has no public user reviews. Do not claim an e
 ## Official sources
 
 - Steam: https://store.steampowered.com/app/2714930/Harbor
-- Trailer: https://www.youtube.com/watch?v=3E5J4DY8OhI
+- Publisher website: https://www.wanderingwizard.com/
+- Publisher on Steam: https://store.steampowered.com/publisher/WanderingWizard/
+- English trailer watch page: https://theharborgame.com/trailer/
+- Turkish trailer watch page: https://theharborgame.com/tr/fragman/
+- Trailer source video: https://www.youtube.com/watch?v=3E5J4DY8OhI
 - YouTube: https://www.youtube.com/@CastilvaGames
 - Discord: https://discord.gg/DQaJMQGvNn
 - Press kit: https://theharborgame.com/press/
 - Machine-readable facts: https://theharborgame.com/harbor-facts.json
 - Sitemap: https://theharborgame.com/sitemap.xml
+- Video sitemap: https://theharborgame.com/video-sitemap.xml
 
 ## Türkçe kısa özet
 
-Harbor, CastilvaGames tarafından Windows PC için geliştirilen rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. Çıkış 2026 için planlıdır; kesin gün, ay ve fiyat açıklanmamıştır. Steam Early Access sayfası açıktır; Epic Games Store çıkışı planlı, ürün sayfası beklemededir. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.
+Harbor, CastilvaGames tarafından Windows PC için geliştirilen ve ticari yayıncılığı Wandering Wizard tarafından üstlenilen rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. Çıkış 2026 için planlıdır; kesin gün, ay ve fiyat açıklanmamıştır. Steam Early Access sayfası açıktır; Epic Games Store çıkışı planlı, ürün sayfası beklemededir. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.
