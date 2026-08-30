@@ -164,7 +164,7 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
                 <time dateTime={page.modifiedDate}>{page.updatedLabel}</time>
               </div>
 
-              <div className="mt-10 rounded-2xl border border-orange-500/30 bg-[#1a1410]/90 p-6 shadow-2xl shadow-black/30 md:p-8">
+              <div id="direct-answer" className="mt-10 rounded-2xl border border-orange-500/30 bg-[#1a1410]/90 p-6 shadow-2xl shadow-black/30 md:p-8">
                 <p className="mb-3 font-rajdhani text-sm font-bold uppercase tracking-[0.2em] text-orange-400">{copy.answer}</p>
                 <p className="text-lg leading-8 text-amber-50/90 md:text-xl">{page.directAnswer}</p>
                 <p className="mt-5 border-t border-amber-900/25 pt-4 text-sm leading-relaxed text-amber-100/55">{copy.factsSource}</p>

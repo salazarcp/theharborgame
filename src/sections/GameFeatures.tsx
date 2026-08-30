@@ -12,19 +12,22 @@ interface Feature {
   subtitle?: string;
   description: string;
   image: string;
+  alt: string;
   align: 'left' | 'right';
 }
 
-const beyondImages = [
-  '/beyond-48.jpg',
-  '/beyond-55.jpg',
-  '/beyond-54.jpg',
-  '/beyond-51.jpg',
-  '/beyond-42.jpg',
-  '/beyond-36.jpg',
-  '/beyond-16.jpg',
-  '/beyond-14.jpg',
-  '/beyond-8.jpg',
+// These are in-game screenshots, not decoration, so each one carries real alt
+// text rather than an empty string.
+const beyondImages: { src: string; alt: string }[] = [
+  { src: '/beyond-48.jpg', alt: 'Harbor gameplay screenshot of the post-apocalyptic open world' },
+  { src: '/beyond-55.jpg', alt: 'Harbor screenshot showing the wasteland landscape between settlements' },
+  { src: '/beyond-54.jpg', alt: 'Harbor screenshot of a survivor outpost in the wasteland' },
+  { src: '/beyond-51.jpg', alt: 'Harbor screenshot of scavenging terrain in the open world' },
+  { src: '/beyond-42.jpg', alt: 'Harbor screenshot of a ruined structure in the post-apocalyptic world' },
+  { src: '/beyond-36.jpg', alt: 'Harbor screenshot of the desert wasteland under open sky' },
+  { src: '/beyond-16.jpg', alt: 'Harbor screenshot of a route between wasteland regions' },
+  { src: '/beyond-14.jpg', alt: 'Harbor screenshot of the open-world environment at ground level' },
+  { src: '/beyond-8.jpg', alt: 'Harbor screenshot of the wasteland terrain players cross between runs' },
 ];
 
 const features: Feature[] = [
@@ -34,6 +37,7 @@ const features: Feature[] = [
     description:
       'At the heart of the safe zone, the bar is where survivors gather to drink, swap stories, and broker deals before heading back into the wasteland.',
     image: '/feature-harbor-bar.jpg',
+    alt: 'The Harbor Bar interior inside the safe zone where survivors trade and gather in Harbor',
     align: 'left',
   },
   {
@@ -42,6 +46,7 @@ const features: Feature[] = [
     description:
       'Sanctioned fight events inside the safe zone. Step into the ring, take down other survivors, and build a reputation that carries beyond Harbor.',
     image: '/feature-king-of-the-hill.jpg',
+    alt: 'King of the Hill fight arena inside the Harbor safe zone',
     align: 'right',
   },
   {
@@ -50,6 +55,7 @@ const features: Feature[] = [
     description:
       'Carved into the red cliffs, the Citadel holds the master valve. Open it, water returns to the wasteland, and your name is written into the map itself.',
     image: '/feature-citadel.jpg',
+    alt: 'The Citadel carved into red cliffs, holding the master water valve in Harbor',
     align: 'left',
   },
   {
@@ -58,6 +64,7 @@ const features: Feature[] = [
     description:
       'Harbor sits at the center of the wasteland. The only safe haven where you can catch your breath, restock, and gather your nerve before the next run.',
     image: '/feature-harbor.jpg',
+    alt: 'The Harbor safe zone at the centre of the wasteland, the only safe haven in the game world',
     align: 'right',
   },
   {
@@ -66,6 +73,7 @@ const features: Feature[] = [
     description:
       'The only place on the map to refuel. Anyone running on fumes is already on their way, and they will fight you for every drop.',
     image: '/feature-diesel-ring.jpg',
+    alt: 'The Diesel Ring, the only refuelling location on the Harbor map',
     align: 'left',
   },
   {
@@ -74,6 +82,7 @@ const features: Feature[] = [
     description:
       'Most of the wasteland is one ride away. Hop the Blackrail to skip the long runs, and shelter inside its cars where even the radiation cannot reach you.',
     image: '/feature-blackrail.jpg',
+    alt: 'The Blackrail train crossing the wasteland in Harbor',
     align: 'right',
   },
   {
@@ -82,6 +91,7 @@ const features: Feature[] = [
     description:
       'The richest alloy deposits in the wasteland. Remember it well, because every survivor runs out of bullets eventually, and a mine cart drops you straight to the bottom when that day comes.',
     image: '/feature-bullet-quarry.jpg',
+    alt: 'The Bullet Quarry alloy mine with its mine cart descent in Harbor',
     align: 'left',
   },
   {
@@ -90,6 +100,7 @@ const features: Feature[] = [
     description:
       'Without clean blood, the radiation finds you with every step. The Blackrail is the only way in that lets you walk back out.',
     image: '/feature-greenwound.jpg',
+    alt: 'Greenwound, the irradiated region requiring Clean Blood in Harbor',
     align: 'right',
   },
   {
@@ -98,6 +109,7 @@ const features: Feature[] = [
     description:
       'A swamp standing between you and what is worth crossing for. Pull yourself tree to tree with the harpoon, and keep an eye on the water, because not everything down there is dead.',
     image: '/feature-blackmire.jpeg',
+    alt: 'Blackmire, the swamp region crossed with a harpoon in Harbor',
     align: 'left',
   },
   {
@@ -106,6 +118,7 @@ const features: Feature[] = [
     description:
       'The only ground in Harbor a clan can take and hold. Claim it, and the gates open at your name, your colors fly above the walls, and every drop of fuel outside the Diesel Ring runs through your people.',
     image: '/feature-rulers.jpg',
+    alt: 'Rulers of the Harbor clan territory, the only claimable ground in Harbor',
     align: 'right',
   },
 ];
@@ -233,7 +246,7 @@ const GameFeatures = () => {
                   <div className="relative aspect-video rounded-xl overflow-hidden border border-amber-900/30">
                     <PictureImage
                       src={feature.image}
-                      alt={feature.title}
+                      alt={feature.alt}
                       width={1920}
                       height={1080}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -272,17 +285,17 @@ const GameFeatures = () => {
           <div className="absolute right-0 top-0 bottom-0 w-24 lg:w-40 bg-gradient-to-l from-[#1a1410] to-transparent z-10 pointer-events-none" />
 
           <div className="marquee-track flex gap-6">
-            {[...beyondImages, ...beyondImages].map((src, i) => (
+            {[...beyondImages, ...beyondImages].map((img, i) => (
               <button
                 type="button"
                 key={i}
-                onClick={() => setLightboxSrc(src)}
-                aria-label="Open screenshot"
+                onClick={() => setLightboxSrc(img.src)}
+                aria-label={`Open screenshot: ${img.alt}`}
                 className="flex-none w-[320px] md:w-[400px] lg:w-[480px] aspect-video relative rounded-xl overflow-hidden border border-amber-900/30 group cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
               >
                 <PictureImage
-                  src={src}
-                  alt=""
+                  src={img.src}
+                  alt={img.alt}
                   width={1920}
                   height={1080}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -2,10 +2,12 @@ import type { KnowledgePageData } from '@/content/knowledgePages';
 import {
   BASE_URL,
   DEVELOPER,
-  GAME_PLATFORM,
-  GAME_PUBLISHER,
-  STEAM_APP_ID,
-  STEAM_URL,
+  DEVELOPER_ORGANIZATION,
+  GAME_ID,
+  GAME_NODE,
+  PUBLISHER_ORGANIZATION,
+  WEBSITE_ID,
+  WEBSITE_NODE,
 } from '@/content/gameIdentity';
 
 interface KnowledgeStructuredDataProps {
@@ -27,8 +29,8 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
     inLanguage: page.locale,
     datePublished: page.publishedDate,
     dateModified: page.modifiedDate,
-    isPartOf: { '@id': `${BASE_URL}/#website` },
-    about: { '@id': `${BASE_URL}/#game` },
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@id': GAME_ID },
     primaryImageOfPage: {
       '@type': 'ImageObject',
       url: `${BASE_URL}${page.heroImage}`,
@@ -36,6 +38,11 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
     },
     breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
     publisher: { '@id': DEVELOPER.id },
+    // Both selectors are stable ids rendered by KnowledgePage.tsx.
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['#direct-answer', '#faq'],
+    },
     ...(page.video ? { mainEntity: { '@id': `${pageUrl}#video` } } : {}),
   };
 
@@ -51,10 +58,19 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
     author: { '@id': DEVELOPER.id },
     publisher: { '@id': DEVELOPER.id },
     image: `${BASE_URL}${page.heroImage}`,
-    about: { '@id': `${BASE_URL}/#game` },
-    citation: page.sources.map(({ url }) => url),
+    about: { '@id': GAME_ID },
+    // CreativeWork rather than a bare URL string, so each source carries its
+    // own identity instead of coercing to anonymous Text.
+    citation: page.sources.map(({ label, url }) => ({
+      '@type': 'CreativeWork',
+      name: label,
+      url,
+    })),
   } : null;
 
+  // Note: no `inLanguage` and no `contentUrl` here — verify-seo-pages.mjs
+  // forbids both (the trailer's spoken language is unverified, and a YouTube
+  // watch page is not a valid contentUrl).
   const video = page.video ? {
     '@type': 'VideoObject',
     '@id': `${pageUrl}#video`,
@@ -66,6 +82,9 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
     duration: page.video.duration,
     embedUrl: page.video.embedUrl,
     publisher: { '@id': DEVELOPER.id },
+    creator: { '@id': DEVELOPER.id },
+    about: { '@id': GAME_ID },
+    subjectOf: { '@id': GAME_ID },
     mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
     sameAs: [page.video.watchUrl],
   } : null;
@@ -73,81 +92,12 @@ const KnowledgeStructuredData = ({ page }: KnowledgeStructuredDataProps) => {
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
-      {
-        '@type': 'Organization',
-        '@id': DEVELOPER.id,
-        name: DEVELOPER.name,
-        alternateName: DEVELOPER.alternateName,
-        url: DEVELOPER.website,
-        email: 'info@castilva.com',
-        logo: {
-          '@type': 'ImageObject',
-          url: `${BASE_URL}/logo.png`,
-        },
-        sameAs: [
-          DEVELOPER.youtube,
-          DEVELOPER.discord,
-        ],
-      },
-      {
-        '@type': 'Organization',
-        '@id': GAME_PUBLISHER.id,
-        name: GAME_PUBLISHER.name,
-        url: GAME_PUBLISHER.website,
-        sameAs: [GAME_PUBLISHER.steam],
-      },
-      {
-        '@type': 'WebSite',
-        '@id': `${BASE_URL}/#website`,
-        url: `${BASE_URL}/`,
-        name: 'Harbor Official Website',
-        alternateName: 'theharborgame.com',
-        inLanguage: ['en', 'tr'],
-        publisher: { '@id': DEVELOPER.id },
-      },
-      {
-        '@type': 'VideoGame',
-        '@id': `${BASE_URL}/#game`,
-        name: 'Harbor',
-        identifier: {
-          '@type': 'PropertyValue',
-          propertyID: 'Steam App ID',
-          value: STEAM_APP_ID,
-        },
-        disambiguatingDescription: 'Harbor is CastilvaGames’ competitive post-apocalyptic open-world survival game for Windows PC, identified on Steam as App 2714930.',
-        url: `${BASE_URL}/`,
-        description: 'Harbor is a competitive post-apocalyptic open-world survival game built around one safe zone, scarce resources, online PvP, co-op, crafting, building, and trading.',
-        image: [
-          `${BASE_URL}/hero-bg.webp`,
-          `${BASE_URL}/feature-harbor.jpg`,
-          `${BASE_URL}/feature-rulers.jpg`,
-        ],
-        genre: [
-          'Open World Survival Craft',
-          'Survival',
-          'Multiplayer',
-          'Online PvP',
-          'Online Co-op',
-          'First-Person Shooter',
-          'Post-apocalyptic',
-          'Building',
-          'Driving',
-        ],
-        gamePlatform: GAME_PLATFORM,
-        operatingSystem: 'Windows 10 or Windows 11, 64-bit',
-        playMode: ['https://schema.org/MultiPlayer', 'https://schema.org/CoOp'],
-        applicationCategory: 'Game',
-        inLanguage: ['en', 'fr', 'it', 'de', 'es', 'zh-Hans', 'ja', 'ko', 'pt-PT', 'ru', 'tr'],
-        creator: { '@id': DEVELOPER.id },
-        publisher: { '@id': GAME_PUBLISHER.id },
-        sameAs: [STEAM_URL],
-        copyrightHolder: { '@id': DEVELOPER.id },
-        potentialAction: {
-          '@type': 'ViewAction',
-          name: page.locale === 'tr' ? 'Harbor Steam sayfasını aç' : 'View Harbor on Steam',
-          target: STEAM_URL,
-        },
-      },
+      // Site-wide entities, shared verbatim with StructuredData so the same
+      // `@id` never asserts two different values.
+      DEVELOPER_ORGANIZATION,
+      PUBLISHER_ORGANIZATION,
+      WEBSITE_NODE,
+      GAME_NODE,
       webPage,
       ...(article ? [article] : []),
       ...(video ? [video] : []),

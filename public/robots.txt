@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# Explicit AI-usage preference. Harbor is unreleased and seeking discovery, so
+# training, search, retrieval and personalization are all permitted.
+# https://contentsignals.org/
+Content-Signal: ai-train=yes, search=yes, ai-retrieval=yes, ai-personalization=yes
+
 Sitemap: https://theharborgame.com/sitemap.xml
 Sitemap: https://theharborgame.com/video-sitemap.xml
-Host: theharborgame.com

@@ -185,9 +185,10 @@ const pageContentHash = async (page, html) => {
 };
 
 try {
-  const [{ default: SiteRoot }, { knowledgePages }] = await Promise.all([
+  const [{ default: SiteRoot }, { knowledgePages }, { gameFaqs }] = await Promise.all([
     vite.ssrLoadModule('/src/SiteRoot.tsx'),
     vite.ssrLoadModule('/src/content/knowledgePages.ts'),
+    vite.ssrLoadModule('/src/content/gameContent.ts'),
   ]);
 
   const contentPages = knowledgePages.map((page) => {
@@ -298,6 +299,67 @@ ${videoEntries}
 `;
   await writeFile(path.join(distDirectory, 'video-sitemap.xml'), videoSitemap, 'utf8');
   await writeFile(path.join(root, 'public', 'video-sitemap.xml'), videoSitemap, 'utf8');
+
+  // llms-full.txt: the extended companion to llms.txt. Generated from the same
+  // source of truth the pages render from, so it cannot drift out of sync.
+  const llmsIndex = await readFile(path.join(root, 'public', 'llms.txt'), 'utf8');
+  const faqBlock = (faqs) => (faqs ?? []).map(({ question, answer }) => `### ${question}\n\n${answer}`).join('\n\n');
+
+  const pageBlocks = knowledgePages.map((page) => {
+    const parts = [
+      `## ${page.metaTitle}`,
+      `URL: ${absoluteUrl(page.route)}`,
+      `Language: ${page.locale}`,
+      `Last verified: ${page.modifiedDate}`,
+      '',
+      `### Direct answer`,
+      '',
+      page.directAnswer,
+    ];
+
+    for (const section of page.sections ?? []) {
+      parts.push('', `### ${section.title}`, '');
+      if (section.answer) parts.push(section.answer);
+      for (const paragraph of section.paragraphs ?? []) parts.push('', paragraph);
+    }
+
+    if (page.faqs?.length) {
+      parts.push('', `### Questions and answers`, '', faqBlock(page.faqs));
+    }
+
+    if (page.sources?.length) {
+      parts.push('', `### Sources`, '');
+      for (const { label, url, note } of page.sources) {
+        parts.push(`- ${label} (${url})${note ? `: ${note}` : ''}`);
+      }
+    }
+
+    return parts.join('\n');
+  });
+
+  const llmsFull = [
+    llmsIndex.trimEnd(),
+    '',
+    '---',
+    '',
+    '# Extended Harbor knowledge',
+    '',
+    'Everything below is the full text of the canonical answer pages, generated at build time from the same content the pages render. Where this file and the official Steam listing for App 2714930 disagree, Steam wins.',
+    '',
+    '## Harbor homepage questions and answers (English)',
+    '',
+    faqBlock(gameFaqs.en),
+    '',
+    '## Harbor ana sayfa soru ve cevapları (Türkçe)',
+    '',
+    faqBlock(gameFaqs.tr),
+    '',
+    ...pageBlocks,
+    '',
+  ].join('\n');
+
+  await writeFile(path.join(distDirectory, 'llms-full.txt'), llmsFull, 'utf8');
+  await writeFile(path.join(root, 'public', 'llms-full.txt'), llmsFull, 'utf8');
 
   console.log(`Prerender complete · ${pages.length} canonical HTML pages`);
 } finally {

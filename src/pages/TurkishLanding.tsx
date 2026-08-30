@@ -60,8 +60,8 @@ const TurkishLanding = () => (
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            width={6336}
-            height={3724}
+            width={2560}
+            height={1505}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#1a1410]/45 via-[#1a1410]/35 to-[#1a1410]" />

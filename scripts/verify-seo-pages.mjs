@@ -25,10 +25,10 @@ const expectedRoutes = [
 ];
 const expectedVideoRoutes = ['/trailer/', '/tr/fragman/'];
 const expectedImageDimensions = new Map([
-  ['/hero-bg.webp', [6336, 3724]],
+  ['/hero-bg.webp', [2560, 1505]],
   ['/feature-harbor.jpg', [1920, 935]],
   ['/feature-rulers.jpg', [1920, 1040]],
-  ['/trailer-thumb.webp', [6336, 3724]],
+  ['/trailer-thumb.webp', [2560, 1505]],
 ]);
 const expectedTrailer = {
   name: 'Harbor Announcement Trailer',

@@ -158,6 +158,43 @@ const trailerSourcesTr: KnowledgeSource[] = [
   },
 ];
 
+// Turkish equivalents of the shared English sources. The Turkish pages used the
+// English constants, which rendered English notes on Turkish pages and pointed
+// readers at the English homepage.
+const officialHarborSourceTr: KnowledgeSource = {
+  label: 'Harbor Steam sayfası',
+  url: STEAM_URL,
+  note: 'Resmi Harbor mağaza listesi; çıkış durumu, geliştirici ve yayıncı kredileri, modlar, özellikler, diller ve PC gereksinimleri için ana kaynak.',
+};
+
+const officialWebsiteSourceTr: KnowledgeSource = {
+  label: 'Resmi Harbor sitesi',
+  url: `${BASE_URL}/tr/`,
+  note: 'Oyun dünyası, ekran görüntüleri, fragman ve özellik açıklamaları için birinci taraf kaynak.',
+};
+
+const officialTrailerSourceTr: KnowledgeSource = {
+  label: 'Harbor resmi fragmanı',
+  url: TRAILER_URL,
+  note: 'CastilvaGames tarafından yayınlanan resmi video.',
+};
+
+const comparisonSourcesTr: KnowledgeSource[] = [
+  officialHarborSourceTr,
+  { label: 'Rust Steam sayfası', url: 'https://store.steampowered.com/app/252490/Rust/', note: 'Facepunch Studios tarafından yayınlanan resmi Rust mağaza sayfası.' },
+  { label: 'DayZ Steam sayfası', url: 'https://store.steampowered.com/app/221100/DayZ/', note: 'Bohemia Interactive tarafından yayınlanan resmi DayZ mağaza sayfası.' },
+  { label: 'SCUM Steam sayfası', url: 'https://store.steampowered.com/app/513710/SCUM/', note: 'Gamepires tarafından yayınlanan resmi SCUM mağaza sayfası.' },
+];
+
+const pressSourcesTr: KnowledgeSource[] = [
+  officialHarborSourceTr,
+  officialWebsiteSourceTr,
+  officialTrailerSourceTr,
+  { label: 'CastilvaGames YouTube kanalı', url: DEVELOPER.youtube, note: 'Resmi geliştirici video kanalı.' },
+  { label: 'Harbor Discord', url: DEVELOPER.discord, note: 'Harbor sitesinde bağlantısı verilen resmi topluluk daveti.' },
+  { label: 'Makine tarafından okunabilir Harbor bilgileri', url: `${BASE_URL}/harbor-facts.json`, note: 'Araçlar ve editoryal iş akışları için yapılandırılmış birinci taraf bilgi dosyası.' },
+];
+
 const englishRelated: Record<KnowledgePageData['key'], RelatedPage> = {
   gameplay: {
     href: '/gameplay/',
@@ -358,8 +395,8 @@ const releaseEn: KnowledgePageData = {
   publishedDate: '2026-07-22',
   modifiedDate: FACT_CHECK_DATE,
   heroImage: '/hero-bg.webp',
-  heroWidth: 6336,
-  heroHeight: 3724,
+  heroWidth: 2560,
+  heroHeight: 1505,
   heroAlt: 'Harbor post-apocalyptic open-world survival game key art',
   badges: ['Planned: 2026', 'Windows PC', 'Steam page live', 'Epic Games Store planned', 'Price: not announced'],
   factsTitle: 'Release status at a glance',
@@ -582,8 +619,8 @@ const pressEn: KnowledgePageData = {
   publishedDate: '2026-07-22',
   modifiedDate: FACT_CHECK_DATE,
   heroImage: '/trailer-thumb.webp',
-  heroWidth: 6336,
-  heroHeight: 3724,
+  heroWidth: 2560,
+  heroHeight: 1505,
   heroAlt: 'Harbor official trailer artwork',
   badges: ['Developer: CastilvaGames', 'Steam App 2714930', 'Windows PC', 'Planned: 2026', 'Steam + Epic planned'],
   factsTitle: 'Official quick facts',
@@ -686,8 +723,8 @@ const trailerEn: KnowledgePageData = {
   publishedDate: FACT_CHECK_DATE,
   modifiedDate: FACT_CHECK_DATE,
   heroImage: '/trailer-thumb.webp',
-  heroWidth: 6336,
-  heroHeight: 3724,
+  heroWidth: 2560,
+  heroHeight: 1505,
   heroAlt: 'Harbor Announcement Trailer official thumbnail',
   badges: ['Official video', 'Duration: 1:55', 'Uploaded: January 7, 2025', 'CastilvaGames'],
   factsTitle: 'Verified trailer details',
@@ -852,7 +889,7 @@ const gameplayTr: KnowledgePageData = {
   ],
   sourcesTitle: 'Resmi kaynaklar ve doğrulama',
   sourcesIntro: 'Bu sayfadaki oynanış iddiaları halka açık birinci taraf materyalle sınırlıdır; bilinmeyen değerler tahmin edilmez.',
-  sources: [officialHarborSource, officialWebsiteSource, officialTrailerSource],
+  sources: [officialHarborSourceTr, officialWebsiteSourceTr, officialTrailerSourceTr],
   relatedTitle: 'Resmi Harbor rehberine devam et',
   related: relatedExcept(turkishRelated, 'gameplay'),
   ctaTitle: 'Geliştirme sürecini takip et',
@@ -953,7 +990,7 @@ const releaseTr: KnowledgePageData = {
   ],
   sourcesTitle: 'Resmi kaynaklar ve değişiklik politikası',
   sourcesIntro: 'Çıkış bilgileri zamanla değişebilir. Bu sayfa güncel Steam listesi ile resmi Harbor sitesini birleştirir ve bilinmeyenleri tahminle doldurmaz.',
-  sources: [officialHarborSource, officialWebsiteSource],
+  sources: [officialHarborSourceTr, officialWebsiteSourceTr],
   relatedTitle: 'Harbor hakkında daha fazla bilgi',
   related: relatedExcept(turkishRelated, 'release'),
   ctaTitle: 'Resmi çıkış bildirimini al',
@@ -1039,7 +1076,7 @@ const comparisonTr: KnowledgePageData = {
   ],
   sourcesTitle: 'Kaynaklar ve karşılaştırma yöntemi',
   sourcesIntro: 'Karşılaştırma güncel birinci taraf Steam açıklamaları ve özellik listelerini kullanır. Harbor’ın eşdeğer çıkış kanıtı olmadığı için inceleme puanları ve geçici fiyatlar karşılaştırmaya katılmaz.',
-  sources: comparisonEn.sources,
+  sources: comparisonSourcesTr,
   relatedTitle: 'Resmi Harbor bilgilerini kullan',
   related: relatedExcept(turkishRelated, 'comparison'),
   ctaTitle: 'Harbor’ı resmi güncellemelerle değerlendir',
@@ -1126,7 +1163,7 @@ const pressTr: KnowledgePageData = {
   ],
   sourcesTitle: 'Resmi ana bağlantılar',
   sourcesIntro: 'Değişebilen çıkış ve özellik bilgilerini doğrularken bu birinci taraf kaynakları kullanın.',
-  sources: pressEn.sources,
+  sources: pressSourcesTr,
   assets: pressAssets,
   assetsTitle: 'Resmi Harbor görsellerini indir',
   relatedTitle: 'İçerik için arka plan bilgileri',
@@ -1150,8 +1187,8 @@ const trailerTr: KnowledgePageData = {
   publishedDate: FACT_CHECK_DATE,
   modifiedDate: FACT_CHECK_DATE,
   heroImage: '/trailer-thumb.webp',
-  heroWidth: 6336,
-  heroHeight: 3724,
+  heroWidth: 2560,
+  heroHeight: 1505,
   heroAlt: 'Harbor Announcement Trailer resmi küçük resmi',
   badges: ['Resmi video', 'Süre: 1:55', 'Yüklenme: 7 Ocak 2025', 'CastilvaGames'],
   factsTitle: 'Doğrulanmış fragman bilgileri',

@@ -1,0 +1,829 @@
+# Harbor — Official Game Knowledge
+
+> Harbor is CastilvaGames' competitive first-person post-apocalyptic open-world survival game for Windows PC, published by Wandering Wizard. Planned for 2026.
+
+## About this file
+
+This is an optional discovery file that summarizes current verified facts and canonical sources for Harbor. It is not a search-ranking signal and not a guarantee of inclusion in search or AI answers. theharborgame.com and the official Steam listing for App 2714930 are the controlling sources; where this file and those disagree, they win.
+
+## Canonical answer pages
+
+- [Harbor | Open-World Multiplayer Survival Game](https://theharborgame.com/): Entity overview — what Harbor is, its safe zone, critical resources, named world locations, and current release status.
+- [Harbor | Açık Dünya Multiplayer Survival Oyunu](https://theharborgame.com/tr/): Turkish entity overview of Harbor, its safe zone and current status.
+- [Harbor Gameplay: PvP, Co-op, Building & Vehicles](https://theharborgame.com/gameplay/): The verified survival loop — Clean Blood and Fuel scarcity, crafting, three-stage shelter upgrades, the Harbor safe zone, vehicles, trading, and PvP/co-op rules.
+- [Harbor Release Date, Platforms & PC Requirements (2026)](https://theharborgame.com/release/): 2026 Early Access window, Windows PC confirmation, unannounced price, 11 supported languages, and the full Steam minimum and recommended specification tables.
+- [Is Harbor Like Rust, DayZ or SCUM? Honest Comparison](https://theharborgame.com/games-like-rust-dayz-scum/): Four-way comparison of Harbor, Rust, DayZ and SCUM covering release status, developer, multiplayer modes and official focus, with explicit non-affiliation statements.
+- [Harbor Official Trailer: Watch the Announcement Trailer](https://theharborgame.com/trailer/): The 1:55 announcement trailer with its verified upload date, duration and source links.
+- [Harbor Press Kit | Official Facts, Logos & Screenshots](https://theharborgame.com/press/): Editorial fact sheet, downloadable logo and screenshots, and the media contact address.
+- [Harbor Oynanış: PvP, Co-op, Üs Kurma ve Araçlar](https://theharborgame.com/tr/oynanis/): Turkish gameplay reference covering the same verified survival loop.
+- [Harbor Çıkış Tarihi, Platformlar ve Sistem Gereksinimleri](https://theharborgame.com/tr/cikis/): Turkish release and PC requirements reference.
+- [Harbor Rust, DayZ veya SCUM Benzeri mi? Karşılaştırma](https://theharborgame.com/tr/rust-dayz-scum-benzeri/): Turkish comparison with Rust, DayZ and SCUM.
+- [Harbor Resmi Fragmanı: Duyuru Fragmanını İzle](https://theharborgame.com/tr/fragman/): Turkish trailer watch page with verified video metadata.
+- [Harbor Basın Kiti | Resmi Bilgiler, Logo ve Görseller](https://theharborgame.com/tr/basin/): Turkish press kit with the same assets and contact address.
+
+## Current verified facts
+
+- Official name: Harbor
+- Developer: CastilvaGames (also written "Castilva Games"; both refer to the same studio)
+- Commercial game publisher: Wandering Wizard
+- Canonical website: https://theharborgame.com/
+- Steam App ID: 2714930
+- Current status: unreleased; planned for Windows PC in 2026; no exact day or month announced
+- Confirmed platform: Windows PC
+- Planned storefronts: Steam Early Access (public page) and Epic Games Store (public page pending)
+- Price: not announced; do not describe Harbor as free or quote a launch price
+- Demo status: a free demo ran 24 February – 28 March 2025 during Steam Fest and was temporarily removed in July 2025; CastilvaGames has said a portion of the Early Access version will return later as a Prologue, with no date announced
+- Modes: online PvP and online co-op
+- Perspective and genre: first-person, FPS, open-world survival craft, action, adventure
+- Core systems: scarce resources, hunger and thirst, crafting, shelter building and upgrades, alliances, trading, missions, driving, territory defense, and high-stakes death
+- Critical resources: Clean Blood and Fuel
+- World hub: Harbor is the only safe zone, used for missions, trading, restocking, and temporary safety
+- Named world locations: Harbor (safe zone), The Harbor Bar, King of the Hill, The Citadel, Diesel Ring, Blackrail, The Bullet Quarry, Greenwound, Blackmire, and Rulers of the Harbor (claimable clan territory)
+- Moving resource targets: War Truck and the Blackrail train; vehicles are required to catch them
+- 2025 development updates published on Steam covered a gyrocopter vehicle and a rebuilt construction system with three-tier material upgrades
+- PC requirements: Windows 10 or Windows 11 64-bit, DirectX 12, 15 GB storage; 12 GB RAM minimum and 16 GB recommended; Easy Anti-Cheat with Secure Boot and TPM 2.0 required
+- Supported languages on Steam: 11 interface/subtitle languages; English full audio
+- Last fact-check: 2026-08-29
+
+## Evidence boundaries
+
+Harbor is still in development and has no public user reviews. Do not claim an exact release day or month, launch price, console release, additional storefront, final server rules, final performance, sales, player counts, review score, or superiority over another game without a newer official source. Steam and Epic Games Store are planned for Windows PC; the Epic product page is not yet public. Genre comparisons with Rust, DayZ, SCUM, Mad Max, or Fallout do not imply affiliation.
+
+Some third-party game databases publish a placeholder exact date (for example 27 February 2026). That date is not official. Only the year 2026 is announced.
+
+Third-party videos labelled "Harbor demo" show the demo build that ran in early 2025 and was removed in July 2025. They do not indicate a demo that is playable today.
+
+## Official sources
+
+- Steam: https://store.steampowered.com/app/2714930/Harbor
+- Steam Community hub: https://steamcommunity.com/app/2714930
+- Steam news and development updates: https://store.steampowered.com/news/app/2714930
+- Publisher website: https://www.wanderingwizard.com/
+- Publisher on Steam: https://store.steampowered.com/publisher/WanderingWizard/
+- English trailer watch page: https://theharborgame.com/trailer/
+- Turkish trailer watch page: https://theharborgame.com/tr/fragman/
+- Trailer source video: https://www.youtube.com/watch?v=3E5J4DY8OhI
+- Development update video (Building System Reborn, 26 September 2025): https://www.youtube.com/watch?v=Xlmgkb5sU8k
+- YouTube: https://www.youtube.com/@CastilvaGames
+- Discord: https://discord.gg/DQaJMQGvNn
+- Press kit: https://theharborgame.com/press/
+- Machine-readable facts: https://theharborgame.com/harbor-facts.json
+- Extended knowledge file: https://theharborgame.com/llms-full.txt
+- Sitemap: https://theharborgame.com/sitemap.xml
+- Video sitemap: https://theharborgame.com/video-sitemap.xml
+
+## Contact
+
+- Website: https://theharborgame.com/
+- Media enquiries and factual corrections: info@castilva.com
+- Press kit: https://theharborgame.com/press/
+- Community: https://discord.gg/DQaJMQGvNn
+
+## Türkçe kısa özet
+
+Harbor, CastilvaGames tarafından Windows PC için geliştirilen ve ticari yayıncılığı Wandering Wizard tarafından üstlenilen rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. Çıkış 2026 için planlıdır; kesin gün, ay ve fiyat açıklanmamıştır. Steam Early Access sayfası açıktır; Epic Games Store çıkışı planlı, ürün sayfası beklemededir. Ücretsiz demo 24 Şubat – 28 Mart 2025 tarihlerinde yayındaydı ve Temmuz 2025'te geçici olarak kaldırıldı; Early Access'in bir bölümü ileride Prologue olarak yayınlanacak, tarih açıklanmadı. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.
+
+---
+
+# Extended Harbor knowledge
+
+Everything below is the full text of the canonical answer pages, generated at build time from the same content the pages render. Where this file and the official Steam listing for App 2714930 disagree, Steam wins.
+
+## Harbor homepage questions and answers (English)
+
+### What is Harbor?
+
+Harbor is CastilvaGames’ competitive first-person, post-apocalyptic open-world survival game for Windows PC. Players scavenge limited resources, craft essential gear, build shelters, trade, form alliances, and fight to survive.
+
+### Is Harbor an open-world multiplayer survival game?
+
+Yes. Harbor combines open-world survival crafting with online PvP and online co-op. The world revolves around scarce resources, exploration, player alliances, shelter building, trading, and the Harbor safe zone.
+
+### Can I play Harbor with friends?
+
+Yes. Harbor supports online co-op as well as online PvP. You can form alliances, build and trade with other survivors, while still protecting your resources from threats across the wasteland.
+
+### Does Harbor combine FPS, PvP, and survival mechanics?
+
+Yes. Harbor is a first-person survival shooter with online PvP, resource scarcity, crafting, building, exploration, and high-stakes deaths where you can lose what you have gathered.
+
+### Does Harbor include base building, crafting, and resource gathering?
+
+Yes. Players gather resources to craft tools, weapons, clothing, and other essentials. Harbor also includes shelter building, structure upgrades, territory defense, and workbenches designed for fast setup.
+
+### Are there vehicles and vehicle-based objectives in Harbor?
+
+Yes. Driving is part of Harbor, and vehicles are needed to pursue moving sources of valuable resources such as the War Truck and the Blackrail train. Fuel is one of the wasteland's most critical resources.
+
+### Is Harbor a Mad Max-style open-world survival game?
+
+Harbor is an original game and is not affiliated with the Mad Max franchise. It may appeal to players searching for desert-set, post-apocalyptic survival with scarce fuel, vehicles, scavenging, building, and online PvP, while telling its own story in its own world.
+
+### What is the Harbor safe zone?
+
+Harbor is the wasteland's only safe zone. Players can take on missions, trade resources, restock, and gain temporary safety there before returning to the open world.
+
+### When will Harbor be released?
+
+Harbor is planned for Windows PC in 2026 through Steam Early Access and Epic Games Store. No exact day or month is announced. The Steam page is public; the Epic Games Store page is coming later.
+
+### Is Harbor suitable for new survival-game players?
+
+Harbor is designed around tense, high-stakes survival rather than an easy mode: resources are limited and death can cost you everything you carry. New players can cooperate, form alliances, trade, and use the Harbor safe zone while learning the wasteland.
+
+## Harbor ana sayfa soru ve cevapları (Türkçe)
+
+### Harbor nasıl bir oyun?
+
+Harbor, CastilvaGames tarafından PC için geliştirilen, birinci şahıs bakış açılı açık dünya multiplayer survival oyunudur. Post-apocalyptic dünyada sınırlı kaynakları toplar; ekipman üretir, sığınak kurar, ticaret yapar, ittifaklar oluşturur ve hayatta kalmak için savaşırsınız.
+
+### Harbor açık dünya multiplayer survival oyunu mu?
+
+Evet. Harbor; açık dünya survival crafting, online PvP ve online co-op özelliklerini bir araya getirir. Oynanış; kaynak toplama, keşif, üs kurma, ticaret, ittifaklar ve Harbor güvenli bölgesi etrafında şekillenir.
+
+### Harbor arkadaşlarla oynanabilir mi?
+
+Evet. Harbor hem online co-op hem de online PvP destekler. Arkadaşlarınızla ittifak kurabilir, sığınak inşa edebilir ve ticaret yapabilir; aynı zamanda kaynaklarınızı diğer tehditlere karşı koruyabilirsiniz.
+
+### Harbor FPS, PvP ve survival mekaniklerini birleştiriyor mu?
+
+Evet. Harbor; FPS çatışmalarını online PvP, kaynak kıtlığı, crafting, building, keşif ve ölümde topladıklarınızı kaybetme riski taşıyan survival mekanikleriyle birleştirir.
+
+### Harbor’da üs kurma, crafting ve kaynak toplama var mı?
+
+Evet. Topladığınız kaynaklarla araç gereç, silah, kıyafet ve diğer temel eşyaları üretebilirsiniz. Sığınak kurma, yapıları geliştirme, çalışma tezgâhları ve bölgenizi savunma da oynanışın parçasıdır.
+
+### Harbor’da araç kullanma ve hareketli kaynak hedefleri var mı?
+
+Araç kullanma Harbor’ın önemli parçalarından biridir. Değerli kaynak taşıyan War Truck ve Blackrail trenini yakalamak için araçlara ihtiyaç duyarsınız; yakıt ise çorak dünyanın en kritik kaynaklarından biridir.
+
+### Harbor, Mad Max tarzı açık dünya survival oyunu mu?
+
+Harbor özgün bir oyundur ve Mad Max markasıyla bağlantılı değildir. Çöl atmosferi, post-apocalyptic dünya, kıt yakıt, araçlar, kaynak toplama, üs kurma ve online PvP arayan oyunculara benzer bir genel tür deneyimi sunarken kendi evrenini kurar.
+
+### Harbor’daki güvenli bölge nedir?
+
+Harbor, çorak dünyanın tek güvenli bölgesidir. Burada görev alabilir, kaynak ticareti yapabilir, ihtiyaçlarınızı tamamlayabilir ve yeniden açık dünyaya çıkmadan önce geçici güvenlik sağlayabilirsiniz.
+
+### Harbor ne zaman çıkacak?
+
+Harbor’ın 2026’da Windows PC için Steam Early Access ve Epic Games Store üzerinden çıkması planlanıyor. Kesin gün veya ay açıklanmadı. Steam sayfası açık; Epic Games Store sayfası daha sonra yayınlanacak.
+
+### Harbor yeni başlayanlar için uygun bir online survival oyunu mu?
+
+Harbor kolay bir deneyim vadetmez: kaynaklar sınırlıdır ve ölüm taşıdığınız her şeyi kaybetmenize yol açabilir. Yeni oyuncular ittifak kurarak, arkadaşlarıyla co-op oynayarak, ticaret yaparak ve Harbor güvenli bölgesini kullanarak dünyayı öğrenebilir.
+
+## Harbor Gameplay: PvP, Co-op, Building & Vehicles
+URL: https://theharborgame.com/gameplay/
+Language: en
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor is a competitive, first-person, post-apocalyptic open-world survival game for Windows PC. Its verified loop is to scavenge scarce resources, manage hunger and thirst, craft equipment, build and upgrade shelters, pursue mobile resource targets, trade and take missions inside the only safe zone, then return to an online PvP and co-op world where death can cost everything you carry. Harbor is still in development for a 2026 PC release; Steam lists Early Access and an Epic Games Store release is planned.
+
+### What is the core gameplay loop in Harbor?
+
+The official loop is scavenge, survive, craft, build, move, trade, and defend—then risk those gains again in the open world.
+
+### How do resource scarcity and survival work?
+
+Harbor makes limited resources the center of decision-making. The official Steam page identifies Clean Blood and Fuel as the two most critical resources, alongside hunger and thirst.
+
+Scarcity connects exploration, combat, building, trading, and transport. Fuel is not only an inventory need: it determines whether players can use vehicles to reach valuable moving targets. Clean Blood is tied to surviving the hostile, irradiated world shown in official Harbor material.
+
+The published death rule is severe: dying can mean losing everything you worked for and carried. The final balance, rates, and recovery rules have not been published, so this page does not invent numbers or promise a specific wipe model.
+
+### Does Harbor have base building and crafting?
+
+Yes. Players can craft essential equipment, build shelters, defend territory, use workbenches, and upgrade structures through a planned three-stage improvement system.
+
+### What is the Harbor safe zone?
+
+Harbor is the game world’s only safe zone. It is where players can accept missions, trade resources, restock, and obtain temporary safety before returning to the wasteland.
+
+This makes Harbor more than a visual landmark: it is the published hub for missions and player-facing economic activity. The game still presents cooperation as a choice rather than a guarantee, because alliances and trade exist alongside online PvP and the instruction to trust no one outside the safe zone.
+
+### Are vehicles important in Harbor?
+
+Yes. Driving is a confirmed gameplay feature, and the official description says players need vehicles to catch the War Truck and a train carrying valuable resources.
+
+Official Harbor material names the train Blackrail and presents it as both transport and a moving part of the world. Fuel scarcity gives vehicle use a strategic cost: reaching a resource target can also consume one of the resources players are trying to secure.
+
+### Is Harbor PvP, co-op, or both?
+
+Both. Steam lists online PvP and online co-op, while the official description says players can form alliances, build shelters, and trade with others.
+
+The public material supports cooperative play and player conflict, but it does not publish final server sizes, private-server support, solo-server rules, cross-play, or matchmaking details. Those points remain unconfirmed until CastilvaGames announces them.
+
+### Questions and answers
+
+### Is Harbor a first-person survival game?
+
+Yes. Harbor is listed as first-person and FPS, with open-world survival crafting, exploration, building, driving, online PvP, and online co-op.
+
+### Can I play Harbor with friends?
+
+Yes. Online co-op is confirmed on Steam, and the official description says players can form alliances. Final party and server-size details have not been announced.
+
+### Does Harbor have full-loot PvP?
+
+The official description says death means losing everything you worked for. CastilvaGames has not yet published the exact inventory, recovery, server, or wipe rules, so “full-loot” should be treated as a high-level description rather than a complete ruleset.
+
+### Can players trade in Harbor?
+
+Yes. Trading is confirmed, and the Harbor safe zone is specifically described as a place to trade resources and take missions.
+
+### Does Harbor have vehicles?
+
+Yes. Driving is a Steam tag and official descriptions say vehicles are needed to catch the War Truck and train that provide valuable resources.
+
+### Is Harbor already playable?
+
+No public release is available as of August 29, 2026. Harbor is planned for Windows PC in 2026; the Steam page is live and the Epic Games Store page is coming later.
+
+### Sources
+
+- Harbor on Steam (https://store.steampowered.com/app/2714930/Harbor): Official Harbor store listing; source for release status, developer and publisher credits, modes, features, languages, and PC requirements.
+- Official Harbor website (https://theharborgame.com/): First-party game world, screenshots, trailer, and feature descriptions.
+- Harbor official trailer (https://www.youtube.com/watch?v=3E5J4DY8OhI): Official video published by CastilvaGames.
+## Harbor Release Date, Platforms & PC Requirements (2026)
+URL: https://theharborgame.com/release/
+Language: en
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor is planned for Windows PC in 2026, with no exact day or month announced. Steam lists Harbor for Early Access, and an Epic Games Store release is also planned; the Epic store page is not public yet. No launch price is displayed, and no PlayStation, Xbox, macOS, or Linux release is announced as of August 29, 2026. Steam wishlisting is currently the public way to receive a release notification.
+
+### When is Harbor coming out?
+
+The current official window is 2026 for Windows PC. Steam lists Early Access; no exact release day or month has been announced.
+
+Any page naming a specific month or day is going beyond the current official listing. Early Access also means the game will release as a work in progress and continue developing with community feedback.
+
+CastilvaGames says its current goal is to leave Early Access within roughly one year, but that duration depends on player feedback and is a development goal—not a guaranteed full-release date.
+
+### Which platforms are confirmed for Harbor?
+
+Windows PC is the confirmed platform. Steam and Epic Games Store are planned storefronts; the Steam page is public and the Epic page is not yet live.
+
+### Will Harbor be free or paid?
+
+No launch price is currently published, so a specific price—or a claim that Harbor will be free—cannot be verified.
+
+The developer’s Steam Early Access FAQ says the full version is expected to have a higher price than the Early Access version. That indicates a priced Early Access plan, but the amount and regional pricing remain unannounced. Check the official Steam page before relying on third-party price claims.
+
+### What are Harbor’s PC system requirements?
+
+Harbor requires a 64-bit Windows 10 or 11 PC, DirectX 12, and 15 GB of available storage. Steam currently lists 12 GB RAM minimum and 16 GB recommended.
+
+### Which languages will Harbor support?
+
+Steam lists 11 supported interface and subtitle languages. English is the only language currently marked for full audio.
+
+### Questions and answers
+
+### What is Harbor’s exact release date?
+
+No exact day or month has been announced. The official Steam page lists a planned 2026 Early Access release.
+
+### Is Harbor available now?
+
+No. Steam states that the game is not yet available and offers a wishlist notification for release.
+
+### Is Harbor coming to Epic Games Store?
+
+Yes. An Epic Games Store release is planned for 2026, but the public Epic product page is not live yet.
+
+### Is Harbor coming to consoles?
+
+No PlayStation or Xbox release is currently listed or announced. Windows PC is the confirmed platform, with Steam and Epic Games Store planned as storefronts.
+
+### How much will Harbor cost?
+
+The price has not been announced. Steam’s Early Access FAQ says the full release is expected to cost more than the Early Access version, but no amount is published.
+
+### Does Harbor require DirectX 12?
+
+Yes. The official Steam requirements say DirectX 12 is required and the game will not run on systems without DirectX 12 capability.
+
+### Sources
+
+- Harbor on Steam (https://store.steampowered.com/app/2714930/Harbor): Official Harbor store listing; source for release status, developer and publisher credits, modes, features, languages, and PC requirements.
+- Official Harbor website (https://theharborgame.com/): First-party game world, screenshots, trailer, and feature descriptions.
+## Is Harbor Like Rust, DayZ or SCUM? Honest Comparison
+URL: https://theharborgame.com/games-like-rust-dayz-scum/
+Language: en
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor belongs in the same broad genre neighborhood as Rust, DayZ, and SCUM because all four are presented on Steam as multiplayer survival games with online PvP and co-op. Harbor is not a released or reviewed alternative yet, so it cannot responsibly be called “better.” Its verified identity centers on a post-apocalyptic wasteland, one named safe zone, Clean Blood and Fuel scarcity, mission and trading activity, shelter upgrades, and vehicles used to pursue moving resource targets.
+
+### How does Harbor compare with Rust, DayZ, and SCUM?
+
+The strongest verified overlap is genre and multiplayer structure. The biggest evidence difference is maturity: Rust, DayZ, and SCUM are released games; Harbor is planned for 2026 Early Access.
+
+### Is Harbor a Rust alternative?
+
+Harbor may interest players searching for another first-person multiplayer survival game with gathering, crafting, building, PvP, co-op, vehicles, and high-stakes loss.
+
+Rust’s official page emphasizes a mature sandbox with base raiding, player-run servers, modding, automation, many transport types, and years of updates. Harbor’s published identity is narrower and different: a post-apocalyptic wasteland organized around Harbor as the only safe zone, critical Clean Blood and Fuel, trade and missions, and mobile resource targets.
+
+Those differences make Harbor relevant to a “games like Rust” search without making it a Rust clone or proving it will replace Rust for a particular player.
+
+### Is Harbor like DayZ?
+
+The overlap is strongest in first-person post-apocalyptic multiplayer survival, limited resources, online cooperation, PvP, and the risk created by other survivors.
+
+DayZ’s official pitch centers on hardcore survival in infected lands, minimal guidance, environmental systems, and emergent player stories. Harbor instead publishes a defined safe-zone hub with missions and trade, building upgrades, Clean Blood and Fuel, and vehicle-based pursuit of moving objectives. Harbor has not announced infected enemies as its defining premise.
+
+### Is Harbor similar to SCUM?
+
+Both occupy open-world survival craft searches and list multiplayer PvP and co-op, scavenging, crafting, building, and combat.
+
+SCUM’s official page emphasizes deep character customization, metabolism, fatigue, skills, hunting, and hostile island survival. Harbor’s public material emphasizes a different set of systems: one safe zone, resource trading and missions, Clean Blood and Fuel, shelter upgrades, and vehicles needed to catch valuable moving targets.
+
+### Who should follow Harbor—and who should wait?
+
+Follow Harbor if its verified setting and systems match what you want; wait for release evidence if reviews, exact balance, server rules, or proven performance are essential to your decision.
+
+### Questions and answers
+
+### Is Harbor better than Rust?
+
+There is no responsible basis for that claim. Rust is a released, extensively reviewed game; Harbor is unreleased and has no public user reviews. The games can be compared by published features, not final quality.
+
+### Is Harbor a Rust clone?
+
+No such claim is supported. Harbor shares broad survival-crafting and multiplayer features but presents its own named world, safe zone, resources, objectives, and development identity.
+
+### Does Harbor have zombies like DayZ or SCUM?
+
+Zombies are not identified as Harbor’s defining threat in the current official Steam description. Do not assume infected or zombie systems unless CastilvaGames announces them.
+
+### Does Harbor have base building and PvP?
+
+Yes. Shelter building, structure upgrades, territory defense, online PvP, and online co-op are all part of the public feature set.
+
+### Can I play Harbor now instead of Rust, DayZ, or SCUM?
+
+No public Harbor release is available yet. Steam lists a planned 2026 Early Access release.
+
+### Sources
+
+- Harbor on Steam (https://store.steampowered.com/app/2714930/Harbor): Official Harbor store listing; source for release status, developer and publisher credits, modes, features, languages, and PC requirements.
+- Rust on Steam (https://store.steampowered.com/app/252490/Rust/): Official Rust store page by Facepunch Studios.
+- DayZ on Steam (https://store.steampowered.com/app/221100/DayZ/): Official DayZ store page by Bohemia Interactive.
+- SCUM on Steam (https://store.steampowered.com/app/513710/SCUM/): Official SCUM store page by Gamepires.
+## Harbor Press Kit | Official Facts, Logos & Screenshots
+URL: https://theharborgame.com/press/
+Language: en
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor is a competitive first-person, post-apocalyptic open-world survival game for Windows PC, developed by CastilvaGames and published by Wandering Wizard. Planned for 2026 on Steam and Epic Games Store, it combines online PvP and co-op with scarce resources, crafting, shelter building, trading, missions, driving, and a world built around one safe zone called Harbor. This page is the canonical source for media facts and downloadable first-party assets.
+
+### Short Harbor description
+
+Harbor is a first-person open-world multiplayer survival game where scarce resources, shelter building, trade, driving, alliances, and online PvP shape every trip beyond the world’s only safe zone.
+
+### 100-word Harbor description
+
+Harbor is a competitive first-person open-world survival game from CastilvaGames. In a post-apocalyptic wasteland, players manage hunger and thirst, compete for limited resources, craft tools and equipment, build and upgrade shelters, drive, trade, take missions, and form alliances. Clean Blood and Fuel are critical, while the War Truck and Blackrail create moving resource targets across the world. Harbor itself is the only safe zone, offering temporary protection before players return to online PvP and co-op. Death can cost everything carried. Harbor is planned for Windows PC in 2026 on Steam and Epic Games Store.
+
+### Verified editorial angles
+
+The following angles are supported by current public material without inventing release claims or review verdicts.
+
+### Brand and attribution guidance
+
+Use “Harbor” for the game, “CastilvaGames” for the developer, and “Wandering Wizard” for the publisher. Harbor is an original game and is not affiliated with Rust, DayZ, SCUM, Mad Max, Fallout, or their owners.
+
+### Press and creator contact
+
+For interview requests, review access questions, asset needs, or factual corrections, contact CastilvaGames at info@castilva.com.
+
+Include your publication or channel, audience, deadline, requested assets, and the link where coverage will appear. Community discussion and development feedback are also available through the official Discord and Steam community links.
+
+### Questions and answers
+
+### Who develops and publishes Harbor?
+
+Steam lists CastilvaGames as the developer and Wandering Wizard as the publisher.
+
+### What is Harbor’s release date?
+
+Steam lists a planned 2026 Early Access release. No exact day or month is currently announced.
+
+### Which Harbor platform is confirmed?
+
+Windows PC is confirmed, with Steam and Epic Games Store planned as storefronts. The Steam page is public; the Epic page is pending.
+
+### Are these assets official?
+
+Yes. The files linked on this page are hosted on the official Harbor website and originate from CastilvaGames material.
+
+### Where should factual corrections be sent?
+
+Send press and factual correction requests to info@castilva.com.
+
+### Sources
+
+- Harbor on Steam (https://store.steampowered.com/app/2714930/Harbor): Official Harbor store listing; source for release status, developer and publisher credits, modes, features, languages, and PC requirements.
+- Official Harbor website (https://theharborgame.com/): First-party game world, screenshots, trailer, and feature descriptions.
+- Harbor official trailer (https://www.youtube.com/watch?v=3E5J4DY8OhI): Official video published by CastilvaGames.
+- CastilvaGames on YouTube (https://www.youtube.com/@CastilvaGames): Official developer video channel.
+- Harbor Discord (https://discord.gg/DQaJMQGvNn): Official community invite linked by the Harbor website.
+- Machine-readable Harbor facts (https://theharborgame.com/harbor-facts.json): Structured first-party fact sheet for tools and editorial workflows.
+## Harbor Official Trailer | Watch the Announcement Video
+URL: https://theharborgame.com/trailer/
+Language: en
+Last verified: 2026-08-29
+
+### Direct answer
+
+The official Harbor Announcement Trailer is a 1 minute 55 second video uploaded to the CastilvaGames YouTube channel on January 7, 2025. Watch it below or open the original video on YouTube. The published source confirms the title, upload date, and duration; no official transcript or chapter list is currently provided here.
+
+### Watch the official Harbor video
+
+The player above shows the official YouTube upload of the Harbor Announcement Trailer.
+
+The dedicated watch page keeps the video, its title, thumbnail, duration, upload date, and source together. The external link below the player opens the same upload on YouTube for viewers who prefer the original platform.
+
+The video does not autoplay. Playback begins only when you use the YouTube controls.
+
+### What is verified—and what is not inferred
+
+This page reports video metadata and official game identity facts that can be checked against the original YouTube upload, Harbor’s Steam listing, and the official website.
+
+### Official Harbor game context
+
+Harbor is a competitive first-person post-apocalyptic open-world survival game planned for Windows PC in 2026.
+
+Current official descriptions identify online PvP and co-op, scarce resources, crafting, shelter building, vehicles, trading, missions, and one safe zone called Harbor. For sourced mechanics and clearly marked unknowns, use the gameplay guide rather than inferring final systems from a promotional video.
+
+The release page tracks the public 2026 window, Steam Early Access status, PC requirements, supported languages, and the planned Epic Games Store release. Exact launch timing and price remain unannounced.
+
+### Sharing and attribution
+
+When linking or embedding the trailer, preserve its official title and point viewers to this watch page or the original CastilvaGames YouTube upload.
+
+Press and creator resources, downloadable first-party images, verified descriptions, and the media contact are available in the Harbor press kit. The press kit also separates the developer credit, CastilvaGames, from the publisher credit, Wandering Wizard.
+
+### Questions and answers
+
+### How long is the Harbor Announcement Trailer?
+
+The official upload is 1 minute 55 seconds long, or 115 seconds.
+
+### When was the Harbor trailer uploaded?
+
+YouTube metadata dates the official upload to January 7, 2025.
+
+### Where can I watch the original Harbor trailer?
+
+Use the embedded player on this page or open the original video on the official CastilvaGames YouTube channel.
+
+### Does this page provide a Harbor trailer transcript?
+
+No. This page does not invent or infer dialogue, captions, chapters, or a transcript that is not supplied by the verified source metadata.
+
+### Who develops and publishes Harbor?
+
+CastilvaGames develops Harbor, and Wandering Wizard is the publisher listed on Steam.
+
+### Sources
+
+- Harbor official trailer (https://www.youtube.com/watch?v=3E5J4DY8OhI): Official video published by CastilvaGames.
+- Harbor on Steam (https://store.steampowered.com/app/2714930/Harbor): Official Harbor store listing; source for release status, developer and publisher credits, modes, features, languages, and PC requirements.
+- Official Harbor website (https://theharborgame.com/): First-party game world, screenshots, trailer, and feature descriptions.
+## Harbor Oynanış: PvP, Co-op, Üs Kurma ve Araçlar
+URL: https://theharborgame.com/tr/oynanis/
+Language: tr
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor, Windows PC için geliştirilen rekabetçi, birinci şahıs bakış açılı post-apocalyptic açık dünya survival oyunudur. Doğrulanmış oyun döngüsü; kıt kaynakları toplamak, açlık ve susuzluğu yönetmek, ekipman üretmek, sığınak kurup geliştirmek, hareketli kaynak hedeflerini takip etmek, tek güvenli bölgede ticaret ve görev yapmak, ardından ölümün taşıdığınız her şeye mal olabileceği online PvP ve co-op dünyasına dönmektir. Oyun 2026 PC çıkışı için geliştirilmektedir; Steam Early Access sayfası açık, Epic Games Store çıkışı planlıdır.
+
+### Harbor’ın temel oynanış döngüsü nedir?
+
+Resmi döngü kaynak topla, hayatta kal, üret, üs kur, hareket et, ticaret yap ve savun; sonra açık dünyada kazandıklarını yeniden riske at şeklindedir.
+
+### Kaynak kıtlığı ve survival nasıl çalışıyor?
+
+Harbor’da sınırlı kaynaklar kararların merkezindedir. Resmi Steam sayfası açlık ve susuzluğun yanında Clean Blood ile Fuel’ı en kritik iki kaynak olarak tanımlar.
+
+Kıtlık; keşif, çatışma, üs kurma, ticaret ve ulaşımı birbirine bağlar. Yakıt sadece envanter ihtiyacı değildir: değerli hareketli hedeflere ulaşmak için kullanılacak araçları da belirler. Clean Blood ise resmi Harbor materyallerinde radyasyonlu dünyada hayatta kalmayla ilişkilendirilir.
+
+Yayınlanan ölüm kuralı serttir: ölmek, uğruna çalıştığınız ve taşıdığınız her şeyi kaybetmek anlamına gelebilir. Kesin oranlar, geri alma kuralları ve wipe modeli açıklanmadığı için bu sayfa sayı uydurmaz.
+
+### Harbor’da üs kurma ve crafting var mı?
+
+Evet. Oyuncular temel ekipman üretebilir, sığınak kurabilir, bölgesini savunabilir, workbench kullanabilir ve yapıları planlanan üç aşamalı sistemle geliştirebilir.
+
+### Harbor güvenli bölgesi nedir?
+
+Harbor, oyun dünyasındaki tek güvenli bölgedir. Oyuncular burada görev alabilir, kaynak ticareti yapabilir, ikmal tamamlayabilir ve çorak dünyaya dönmeden önce geçici güvenlik kazanabilir.
+
+Harbor yalnızca görsel bir merkez değildir; görevlerin ve oyuncu ekonomisinin resmi merkezidir. İttifak ve ticaret, online PvP ile aynı dünyada bulunduğu için iş birliği bir garanti değil, oyuncu kararıdır.
+
+### Harbor’da araçlar önemli mi?
+
+Evet. Sürüş doğrulanmış bir oynanış özelliğidir ve resmi açıklamaya göre değerli kaynak taşıyan War Truck ile treni yakalamak için araç gerekir.
+
+Resmi Harbor materyalleri trene Blackrail adını verir. Yakıt kıtlığı, araç kullanımına stratejik maliyet ekler: bir kaynak hedefini yakalamak, güvence altına almaya çalıştığınız kritik yakıtı tüketebilir.
+
+### Harbor PvP mi, co-op mu?
+
+İkisi de. Steam online PvP ve online co-op özelliklerini listeler; resmi açıklama oyuncuların ittifak kurabileceğini, sığınak inşa edebileceğini ve ticaret yapabileceğini söyler.
+
+Son sunucu kapasitesi, özel sunucu desteği, solo sunucu kuralları, cross-play ve matchmaking ayrıntıları henüz yayınlanmadı. CastilvaGames açıklayana kadar bu başlıklar doğrulanmamış kalır.
+
+### Questions and answers
+
+### Harbor birinci şahıs survival oyunu mu?
+
+Evet. Harbor; birinci şahıs, FPS, açık dünya survival crafting, keşif, building, sürüş, online PvP ve online co-op özellikleriyle listelenir.
+
+### Harbor arkadaşlarla oynanabilir mi?
+
+Evet. Online co-op Steam’de doğrulanmıştır ve resmi açıklama ittifak kurulabileceğini söyler. Parti ve sunucu kapasitesi henüz açıklanmadı.
+
+### Harbor full-loot PvP mi?
+
+Resmi açıklama ölümün uğruna çalışılan her şeyi kaybettirebileceğini söyler. Kesin envanter, geri alma, sunucu ve wipe kuralları açıklanmadığı için “full-loot” ifadesi ayrıntılı bir kurallar bütünü değil, yüksek seviyeli bir tanımdır.
+
+### Harbor’da ticaret var mı?
+
+Evet. Ticaret doğrulanmıştır; Harbor güvenli bölgesi kaynak ticareti ve görev alma noktası olarak açıklanır.
+
+### Harbor’da araç var mı?
+
+Evet. Sürüş Steam etiketleri arasındadır ve resmi açıklama War Truck ile değerli kaynak taşıyan treni yakalamak için araç gerektiğini söyler.
+
+### Harbor şu an oynanabilir mi?
+
+29 Ağustos 2026 itibarıyla herkese açık bir sürüm yoktur. Windows PC çıkışı 2026 için planlıdır; Steam sayfası açık, Epic Games Store sayfası daha sonra gelecektir.
+
+### Sources
+
+- Harbor Steam sayfası (https://store.steampowered.com/app/2714930/Harbor): Resmi Harbor mağaza listesi; çıkış durumu, geliştirici ve yayıncı kredileri, modlar, özellikler, diller ve PC gereksinimleri için ana kaynak.
+- Resmi Harbor sitesi (https://theharborgame.com/tr/): Oyun dünyası, ekran görüntüleri, fragman ve özellik açıklamaları için birinci taraf kaynak.
+- Harbor resmi fragmanı (https://www.youtube.com/watch?v=3E5J4DY8OhI): CastilvaGames tarafından yayınlanan resmi video.
+## Harbor Çıkış Tarihi, Platformlar ve Sistem Gereksinimleri
+URL: https://theharborgame.com/tr/cikis/
+Language: tr
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor’ın 2026’da Windows PC için çıkması planlanıyor; kesin gün veya ay açıklanmadı. Steam Harbor’ı Early Access olarak listeliyor; ayrıca Epic Games Store çıkışı planlanıyor ancak Epic mağaza sayfası henüz açık değil. 29 Ağustos 2026 itibarıyla çıkış fiyatı gösterilmiyor; PlayStation, Xbox, macOS veya Linux sürümü açıklanmadı. Şu anda resmi çıkış bildirimi almanın açık yolu Steam istek listesidir.
+
+### Harbor ne zaman çıkacak?
+
+Güncel resmi çıkış penceresi Windows PC için 2026’dır. Steam Early Access listeler; kesin gün veya ay açıklanmadı.
+
+Belirli bir ay veya gün veren sayfalar mevcut resmi listenin ötesine geçer. Early Access, oyunun geliştirme aşamasında yayınlanacağı ve topluluk geri bildirimiyle devam edeceği anlamına gelir.
+
+CastilvaGames’in mevcut hedefi Early Access’ten yaklaşık bir yıl içinde çıkmaktır; ancak bu süre oyuncu geri bildirimine bağlı bir geliştirme hedefidir, garanti edilmiş tam sürüm tarihi değildir.
+
+### Harbor hangi platformlara çıkacak?
+
+Doğrulanan platform Windows PC’dir. Planlanan mağazalar Steam ve Epic Games Store’dur; Steam sayfası açık, Epic sayfası henüz yayınlanmadı.
+
+### Harbor ücretsiz mi, ücretli mi?
+
+Çıkış fiyatı yayınlanmadığı için belirli bir ücret veya Harbor’ın ücretsiz olacağı iddiası doğrulanamaz.
+
+Steam Early Access SSS’sinde geliştirici, tam sürüm fiyatının Early Access sürümünden daha yüksek olmasını beklediğini belirtir. Bu ücretli Early Access planına işaret eder; ancak tutar ve bölgesel fiyat açıklanmamıştır.
+
+### Harbor PC sistem gereksinimleri neler?
+
+Harbor; 64-bit Windows 10 veya 11, DirectX 12 ve 15 GB boş alan ister. Steam şu anda minimum 12 GB, önerilen 16 GB RAM listeler.
+
+### Harbor hangi dilleri destekleyecek?
+
+Steam 11 arayüz ve altyazı dili listeler. Tam seslendirme şu anda yalnızca İngilizce için işaretlidir.
+
+### Questions and answers
+
+### Harbor’ın kesin çıkış tarihi ne?
+
+Kesin gün veya ay açıklanmadı. Resmi Steam sayfası 2026 Early Access planını listeler.
+
+### Harbor şu an oynanabilir mi?
+
+Hayır. Steam oyunun henüz erişilebilir olmadığını belirtir ve çıkış için istek listesi bildirimi sunar.
+
+### Harbor Epic Games Store’a çıkacak mı?
+
+Evet. 2026 için Epic Games Store çıkışı planlanıyor; ancak halka açık Epic ürün sayfası henüz yayınlanmadı.
+
+### Harbor konsollara çıkacak mı?
+
+Şu anda PlayStation veya Xbox sürümü listelenmiyor. Doğrulanan platform Windows PC; planlanan mağazalar Steam ve Epic Games Store’dur.
+
+### Harbor kaç TL olacak?
+
+Fiyat açıklanmadı. Steam Early Access SSS’si tam sürümün Early Access’ten daha pahalı olmasının beklendiğini söyler; herhangi bir tutar yayınlanmaz.
+
+### Harbor DirectX 12 istiyor mu?
+
+Evet. Resmi Steam gereksinimleri DirectX 12 ister ve DirectX 12 desteklemeyen sistemlerde oyunun çalışmayacağını belirtir.
+
+### Sources
+
+- Harbor Steam sayfası (https://store.steampowered.com/app/2714930/Harbor): Resmi Harbor mağaza listesi; çıkış durumu, geliştirici ve yayıncı kredileri, modlar, özellikler, diller ve PC gereksinimleri için ana kaynak.
+- Resmi Harbor sitesi (https://theharborgame.com/tr/): Oyun dünyası, ekran görüntüleri, fragman ve özellik açıklamaları için birinci taraf kaynak.
+## Harbor Rust, DayZ veya SCUM Benzeri mi? Karşılaştırma
+URL: https://theharborgame.com/tr/rust-dayz-scum-benzeri/
+Language: tr
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor; Steam’de açık dünya multiplayer survival, online PvP ve co-op özellikleriyle sunulduğu için Rust, DayZ ve SCUM ile aynı geniş tür çevresinde yer alır. Ancak henüz çıkmış veya incelenmiş bir alternatif değildir; bu yüzden “daha iyi” demek doğru olmaz. Harbor’ın doğrulanmış kimliği; post-apocalyptic çorak dünya, tek güvenli bölge, Clean Blood ve Fuel kıtlığı, görev ve ticaret, sığınak geliştirme ve hareketli kaynak hedeflerini kovalayan araçlar etrafında şekillenir.
+
+### Harbor; Rust, DayZ ve SCUM ile nasıl karşılaştırılır?
+
+En güçlü doğrulanmış ortaklık tür ve multiplayer yapısıdır. En büyük kanıt farkı olgunluktur: Rust, DayZ ve SCUM çıkmış oyunlardır; Harbor 2026 Early Access için planlanır.
+
+### Harbor bir Rust alternatifi mi?
+
+Kaynak toplama, crafting, building, PvP, co-op, araçlar ve yüksek kayıp riski olan başka bir birinci şahıs multiplayer survival oyunu arayanların ilgisini çekebilir.
+
+Rust’ın resmi sayfası base raiding, oyuncu sunucuları, modlama, otomasyon, çok sayıda ulaşım türü ve yıllara yayılan güncellemeleri öne çıkarır. Harbor’ın yayınlanan kimliği daha farklıdır: tek güvenli bölge Harbor, kritik Clean Blood ve Fuel, ticaret ve görevler ile hareketli kaynak hedefleri.
+
+Bu farklar Harbor’ı “Rust benzeri oyunlar” aramasında ilgili kılar; ancak Rust kopyası veya Rust’ın yerini alacağı kanıtı yapmaz.
+
+### Harbor DayZ’ye benziyor mu?
+
+Ortaklık; birinci şahıs post-apocalyptic multiplayer survival, kıt kaynaklar, online iş birliği, PvP ve diğer oyuncuların yarattığı riskte yoğundur.
+
+DayZ’nin resmi sunumu enfekte bölgelerde hardcore survival, az yönlendirme, çevresel sistemler ve oyuncu hikâyelerine odaklanır. Harbor ise görev ve ticaret içeren güvenli bölge, yapı geliştirme, Clean Blood/Fuel ve araçla kovalanan hareketli hedefler yayınlar. Harbor, enfekte düşmanları ana vaadi olarak açıklamamıştır.
+
+### Harbor SCUM’a benziyor mu?
+
+İkisi de açık dünya survival craft aramalarında yer alır; multiplayer PvP/co-op, kaynak toplama, crafting, building ve çatışma özellikleri listeler.
+
+SCUM’ın resmi sayfası derin karakter özelleştirmesi, metabolizma, yorgunluk, beceriler ve avlanmayı öne çıkarır. Harbor ise tek güvenli bölge, kaynak ticareti ve görevler, Clean Blood/Fuel, sığınak geliştirme ve araçla yakalanan hareketli hedeflere odaklanır.
+
+### Harbor’ı kim takip etmeli, kim beklemeli?
+
+Doğrulanmış atmosfer ve sistemler istediğiniz deneyime uyuyorsa takip edin; inceleme, kesin denge, sunucu kuralları veya kanıtlanmış performans kararınız için şartsa çıkış kanıtını bekleyin.
+
+### Questions and answers
+
+### Harbor Rust’tan daha mı iyi?
+
+Bunu söylemek için sorumlu bir kanıt yoktur. Rust çıkmış ve kapsamlı biçimde incelenmiş bir oyundur; Harbor henüz çıkmadı ve kullanıcı incelemesi yoktur. Özellikler karşılaştırılabilir, nihai kalite değil.
+
+### Harbor bir Rust kopyası mı?
+
+Bunu destekleyen kanıt yoktur. Harbor geniş survival-crafting ve multiplayer özelliklerini paylaşır; ancak kendi isimlendirilmiş dünyasını, güvenli bölgesini, kaynaklarını ve hedeflerini sunar.
+
+### Harbor’da DayZ veya SCUM gibi zombi var mı?
+
+Zombiler mevcut resmi Steam açıklamasında Harbor’ın temel tehdidi olarak tanımlanmaz. CastilvaGames duyurmadıkça enfekte veya zombi sistemi varsayılmamalıdır.
+
+### Harbor’da base building ve PvP var mı?
+
+Evet. Sığınak kurma, yapı geliştirme, bölge savunması, online PvP ve online co-op yayınlanan özellikler arasındadır.
+
+### Harbor şu anda Rust, DayZ veya SCUM yerine oynanabilir mi?
+
+Hayır. Harbor’ın herkese açık sürümü henüz yoktur. Steam 2026 Early Access planını listeler.
+
+### Sources
+
+- Harbor Steam sayfası (https://store.steampowered.com/app/2714930/Harbor): Resmi Harbor mağaza listesi; çıkış durumu, geliştirici ve yayıncı kredileri, modlar, özellikler, diller ve PC gereksinimleri için ana kaynak.
+- Rust Steam sayfası (https://store.steampowered.com/app/252490/Rust/): Facepunch Studios tarafından yayınlanan resmi Rust mağaza sayfası.
+- DayZ Steam sayfası (https://store.steampowered.com/app/221100/DayZ/): Bohemia Interactive tarafından yayınlanan resmi DayZ mağaza sayfası.
+- SCUM Steam sayfası (https://store.steampowered.com/app/513710/SCUM/): Gamepires tarafından yayınlanan resmi SCUM mağaza sayfası.
+## Harbor Basın Kiti | Resmi Bilgiler, Logo ve Görseller
+URL: https://theharborgame.com/tr/basin/
+Language: tr
+Last verified: 2026-08-29
+
+### Direct answer
+
+Harbor, CastilvaGames tarafından geliştirilen ve Wandering Wizard tarafından yayınlanan, Windows PC için rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. 2026’da Steam ve Epic Games Store için planlanan oyun; online PvP ve co-op’u kaynak kıtlığı, crafting, sığınak kurma, ticaret, görevler, sürüş ve Harbor adlı tek güvenli bölge çevresinde birleştirir. Bu sayfa basın bilgileri ve indirilebilir birinci taraf görseller için resmi merkezdir.
+
+### Kısa Harbor tanıtımı
+
+Harbor; kıt kaynakların, sığınak kurmanın, ticaretin, araçların, ittifakların ve online PvP’nin, dünyanın tek güvenli bölgesinden yapılan her yolculuğu şekillendirdiği birinci şahıs açık dünya multiplayer survival oyunudur.
+
+### 100 kelimelik Harbor tanıtımı
+
+Harbor, CastilvaGames’in rekabetçi birinci şahıs açık dünya survival oyunudur. Post-apocalyptic çorak dünyada oyuncular açlık ve susuzluğu yönetir; sınırlı kaynaklar için yarışır; araç gereç ve ekipman üretir; sığınak kurup geliştirir; araç kullanır; ticaret ve görev yapar; ittifaklar oluşturur. Clean Blood ile Fuel kritiktir; War Truck ve Blackrail dünyada hareketli kaynak hedefleri yaratır. Harbor adlı merkez, geçici güvenlik sağlayan tek güvenli bölgedir. Dışarıda online PvP ve co-op devam eder; ölüm taşınan her şeye mal olabilir. Oyun 2026’da Windows PC için Steam ve Epic Games Store’a planlanmaktadır.
+
+### Doğrulanmış içerik ve haber açıları
+
+Aşağıdaki başlıklar, çıkış veya inceleme sonucu uydurmadan güncel halka açık materyalle desteklenir.
+
+### Marka ve atıf kuralları
+
+Oyun için “Harbor”, geliştirici için “CastilvaGames”, yayıncı için “Wandering Wizard” kullanın. Harbor özgün bir oyundur; Rust, DayZ, SCUM, Mad Max, Fallout veya hak sahipleriyle bağlantılı değildir.
+
+### Basın ve içerik üreticisi iletişimi
+
+Röportaj, inceleme erişimi, özel görsel veya bilgi düzeltme talepleri için CastilvaGames’e info@castilva.com adresinden ulaşın.
+
+Yayın veya kanal adını, hedef kitleyi, son tarihi, istenen dosyaları ve içeriğin yayınlanacağı bağlantıyı ekleyin. Topluluk ve geliştirme geri bildirimleri için resmi Discord ile Steam topluluk alanları da kullanılabilir.
+
+### Questions and answers
+
+### Harbor’ı kim geliştiriyor ve yayınlıyor?
+
+Steam, geliştirici olarak CastilvaGames’i ve yayıncı olarak Wandering Wizard’ı listeler.
+
+### Harbor ne zaman çıkacak?
+
+Steam 2026 Early Access planını listeler. Kesin gün veya ay açıklanmadı.
+
+### Harbor için hangi platform doğrulandı?
+
+Windows PC doğrulandı; Steam ve Epic Games Store planlanan mağazalardır. Steam sayfası açık, Epic sayfası bekleniyor.
+
+### Bu görseller resmi mi?
+
+Evet. Bu sayfadaki dosyalar resmi Harbor sitesinde barındırılan CastilvaGames materyalleridir.
+
+### Bilgi düzeltmeleri nereye gönderilmeli?
+
+Basın ve bilgi düzeltme taleplerini info@castilva.com adresine gönderin.
+
+### Sources
+
+- Harbor Steam sayfası (https://store.steampowered.com/app/2714930/Harbor): Resmi Harbor mağaza listesi; çıkış durumu, geliştirici ve yayıncı kredileri, modlar, özellikler, diller ve PC gereksinimleri için ana kaynak.
+- Resmi Harbor sitesi (https://theharborgame.com/tr/): Oyun dünyası, ekran görüntüleri, fragman ve özellik açıklamaları için birinci taraf kaynak.
+- Harbor resmi fragmanı (https://www.youtube.com/watch?v=3E5J4DY8OhI): CastilvaGames tarafından yayınlanan resmi video.
+- CastilvaGames YouTube kanalı (https://www.youtube.com/@CastilvaGames): Resmi geliştirici video kanalı.
+- Harbor Discord (https://discord.gg/DQaJMQGvNn): Harbor sitesinde bağlantısı verilen resmi topluluk daveti.
+- Makine tarafından okunabilir Harbor bilgileri (https://theharborgame.com/harbor-facts.json): Araçlar ve editoryal iş akışları için yapılandırılmış birinci taraf bilgi dosyası.
+## Harbor Resmi Fragmanı | Duyuru Videosunu İzle
+URL: https://theharborgame.com/tr/fragman/
+Language: tr
+Last verified: 2026-08-29
+
+### Direct answer
+
+Resmi Harbor Announcement Trailer, 7 Ocak 2025’te CastilvaGames YouTube kanalına yüklenen 1 dakika 55 saniyelik videodur. Aşağıdan izleyebilir veya özgün videoyu YouTube’da açabilirsiniz. Yayınlanan kaynak başlık, yüklenme tarihi ve süreyi doğrular; resmi transkript ya da bölüm listesi bu sayfada henüz sunulmuyor.
+
+### Resmi Harbor videosunu izle
+
+Yukarıdaki oynatıcı, Harbor Announcement Trailer videosunun resmi YouTube yüklemesini gösterir.
+
+Bu özel izleme sayfası videoyu; resmi başlığı, küçük resmi, süresi, yüklenme tarihi ve kaynağıyla aynı yerde sunar. Oynatıcının altındaki dış bağlantı, özgün platformu tercih edenler için aynı videoyu YouTube’da açar.
+
+Video otomatik başlamaz. Oynatma yalnız YouTube kontrollerini kullandığınızda başlar.
+
+### Neler doğrulandı, neler çıkarılmadı?
+
+Bu sayfa, özgün YouTube yüklemesi, Harbor Steam listesi ve resmi site üzerinden kontrol edilebilen video metadata’sını ve oyun kimliği bilgilerini aktarır.
+
+### Resmi Harbor oyun bağlamı
+
+Harbor, Windows PC için 2026’da çıkması planlanan rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur.
+
+Güncel resmi açıklamalar; online PvP ve co-op, kıt kaynaklar, crafting, sığınak kurma, araçlar, ticaret, görevler ve Harbor adlı tek güvenli bölgeyi tanımlar. Kaynaklı mekanikler ve açıkça işaretlenmiş bilinmeyenler için bir tanıtım videosundan nihai sistemler çıkarmak yerine oynanış rehberini kullanın.
+
+Çıkış sayfası; halka açık 2026 penceresini, Steam Early Access durumunu, PC gereksinimlerini, desteklenen dilleri ve planlanan Epic Games Store çıkışını takip eder. Kesin çıkış zamanı ve fiyat hâlâ açıklanmamıştır.
+
+### Paylaşım ve atıf
+
+Fragmana bağlantı verirken veya videoyu yerleştirirken resmi başlığını koruyun; izleyicileri bu sayfaya ya da özgün CastilvaGames YouTube yüklemesine yönlendirin.
+
+Basın ve içerik üreticisi kaynakları, indirilebilir birinci taraf görseller, doğrulanmış tanıtım metinleri ve medya iletişim bilgisi Harbor basın kitinde bulunur. Basın kiti, geliştirici CastilvaGames ile yayıncı Wandering Wizard kredilerini de birbirinden ayırır.
+
+### Questions and answers
+
+### Harbor Announcement Trailer ne kadar uzun?
+
+Resmi video 1 dakika 55 saniye, yani 115 saniye uzunluğundadır.
+
+### Harbor fragmanı ne zaman yüklendi?
+
+YouTube metadata’sı resmi yüklemeyi 7 Ocak 2025 olarak tarihlendirir.
+
+### Özgün Harbor fragmanını nerede izleyebilirim?
+
+Bu sayfadaki gömülü oynatıcıyı kullanabilir veya videoyu resmi CastilvaGames YouTube kanalında açabilirsiniz.
+
+### Bu sayfada Harbor fragman transkripti var mı?
+
+Hayır. Bu sayfa doğrulanmış kaynak metadata’sında sunulmayan diyalog, altyazı, bölüm veya transkripti uydurmaz ve çıkarım yoluyla üretmez.
+
+### Harbor’ı kim geliştiriyor ve yayınlıyor?
+
+Harbor’ı CastilvaGames geliştiriyor; Steam’de listelenen yayıncı Wandering Wizard’dır.
+
+### Sources
+
+- Harbor resmi fragmanı (https://www.youtube.com/watch?v=3E5J4DY8OhI): CastilvaGames tarafından yayınlanan resmi YouTube videosu; başlık, yüklenme tarihi ve süre için ana kaynak.
+- Harbor Steam sayfası (https://store.steampowered.com/app/2714930/Harbor): Çıkış durumu, geliştirici ve yayıncı kredileri, modlar, özellikler, diller ve PC gereksinimleri için resmi mağaza listesi.
+- Resmi Harbor sitesi (https://theharborgame.com/tr/): Oyun dünyası, ekran görüntüleri, özellik açıklamaları ve Türkçe Harbor bilgileri için birinci taraf kaynak.
