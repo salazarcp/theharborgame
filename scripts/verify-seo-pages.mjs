@@ -184,6 +184,22 @@ for (const page of pages) {
   }
   assert(!types.includes('FAQPage'), `${prefix} must not emit obsolete FAQPage structured data`);
   assertPublisherRelationships(graph, prefix);
+  const steamLinks = [...html.matchAll(/<a\b[^>]*href="([^"]+)"/g)]
+    .map((match) => match[1].replaceAll('&amp;', '&'))
+    .filter((href) => href.startsWith('https://store.steampowered.com/app/2714930/'))
+    .map((href) => new URL(href));
+  const campaignLinks = steamLinks.filter((url) => url.searchParams.has('utm_campaign'));
+  assert(campaignLinks.length >= 2, `${prefix} missing measured Steam CTAs in prerendered HTML`);
+  const pageLabel = page.route === '/' ? 'home' : page.route.replace(/^\/+|\/+$/g, '').replaceAll('/', '_');
+  for (const url of campaignLinks) {
+    assert(url.searchParams.get('utm_source') === 'theharborgame.com', `${prefix} wrong Steam source`);
+    assert(url.searchParams.get('utm_medium') === 'website', `${prefix} wrong Steam medium`);
+    assert(url.searchParams.get('utm_campaign') === 'harbor_score_pilot_20260906', `${prefix} wrong Steam campaign`);
+    assert(url.searchParams.get('utm_content')?.startsWith(`${pageLabel}_`), `${prefix} Steam content must identify this page`);
+    assert([...url.searchParams.keys()].length === 4, `${prefix} unexpected Steam URL parameters`);
+  }
+  const game = graph.find((entry) => entryTypes(entry).includes('VideoGame'));
+  assert(asArray(game?.sameAs).every((url) => !String(url).includes('utm_')), `${prefix} schema identity must use clean URLs`);
 
   const expectedDimensions = expectedImageDimensions.get(page.image);
   assert(expectedDimensions, `${prefix} has an unverified social image ${page.image}`);

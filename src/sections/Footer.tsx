@@ -1,10 +1,11 @@
+import { steamCampaignUrl } from '@/content/steamCampaign';
 import { useState } from 'react';
 import { CheckCircle2, Youtube } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/lib/supabase';
 import PictureImage from '@/components/PictureImage';
 import { openAnalyticsSettings, trackAnalyticsEvent } from '@/lib/analytics';
-import { DEVELOPER, STEAM_URL } from '@/content/gameIdentity';
+import { DEVELOPER } from '@/content/gameIdentity';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -22,7 +23,7 @@ const Footer = () => {
 
   const officialLinks = [
     { label: 'Privacy Policy', href: '/privacy-policy.html' },
-    { label: 'Steam', href: STEAM_URL },
+    { label: 'Steam', href: steamCampaignUrl('/', 'footer') },
     { label: 'Discord', href: DEVELOPER.discord },
     { label: 'YouTube', href: DEVELOPER.youtube },
   ];

@@ -1,3 +1,4 @@
+import { steamCampaignUrl } from '@/content/steamCampaign';
 import { ExternalLink, Play } from 'lucide-react';
 import StructuredData from '@/components/StructuredData';
 import GameOverview from '@/sections/GameOverview';
@@ -5,7 +6,7 @@ import KnowledgeHub from '@/sections/KnowledgeHub';
 import FAQ from '@/sections/FAQ';
 import PictureImage from '@/components/PictureImage';
 import { openAnalyticsSettings } from '@/lib/analytics';
-import { DEVELOPER, STEAM_URL } from '@/content/gameIdentity';
+import { DEVELOPER } from '@/content/gameIdentity';
 
 const TurkishLanding = () => (
   <div className="min-h-screen bg-[#0a0a0f] overflow-x-hidden">
@@ -40,7 +41,7 @@ const TurkishLanding = () => (
             EN
           </a>
           <a
-            href={STEAM_URL}
+            href={steamCampaignUrl('/tr/', 'nav')}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary !px-4 md:!px-6 !py-3 text-xs md:text-sm font-orbitron tracking-wider"
@@ -79,7 +80,7 @@ const TurkishLanding = () => (
             Tek güvenli bölge. İki kritik kaynak. Toplayın, üretin, üs kurun, ticaret yapın ve ölümün taşıdığınız her şeye mal olabileceği rekabetçi çorak dünyada hayatta kalın.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href={STEAM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 text-lg">
+            <a href={steamCampaignUrl('/tr/', 'hero_cta')} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 text-lg">
               <span>STEAM İSTEK LİSTESİ</span>
               <ExternalLink className="w-5 h-5" aria-hidden="true" />
             </a>
@@ -143,7 +144,7 @@ const TurkishLanding = () => (
           <p className="text-amber-100/65 text-lg max-w-2xl mx-auto mb-8">
             Steam sayfası açık; Harbor’ı istek listene ekle. Epic Games Store sayfası yayınlandığında resmi bağlantı burada paylaşılacak.
           </p>
-          <a href={STEAM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 text-lg">
+          <a href={steamCampaignUrl('/tr/', 'footer_cta')} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 text-lg">
             STEAM SAYFASINA GİT <ExternalLink className="w-5 h-5" aria-hidden="true" />
           </a>
         </div>

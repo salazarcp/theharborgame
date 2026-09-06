@@ -1,8 +1,9 @@
+import { steamCampaignUrl } from '@/content/steamCampaign';
 import { ArrowRight, CalendarDays, Download, ExternalLink, Menu } from 'lucide-react';
 import KnowledgeStructuredData from '@/components/KnowledgeStructuredData';
 import PictureImage from '@/components/PictureImage';
 import type { KnowledgePageData } from '@/content/knowledgePages';
-import { knowledgePages, STEAM_URL } from '@/content/knowledgePages';
+import { knowledgePages } from '@/content/knowledgePages';
 
 interface KnowledgePageProps {
   page: KnowledgePageData;
@@ -99,7 +100,7 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
               {copy.language}
             </a>
             <a
-              href={STEAM_URL}
+              href={steamCampaignUrl(page.route, 'nav')}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden rounded bg-gradient-to-r from-orange-700 to-amber-700 px-4 py-2.5 font-orbitron text-xs font-bold text-white transition-colors hover:from-orange-600 hover:to-amber-600 sm:inline-flex"
@@ -378,7 +379,7 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
           <div className="container-custom relative z-10">
             <h2 className="font-orbitron text-3xl font-black text-amber-100 md:text-5xl">{page.ctaTitle}</h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-amber-100/65">{page.ctaText}</p>
-            <a href={STEAM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8 inline-flex items-center gap-2">
+            <a href={steamCampaignUrl(page.route, 'content_cta')} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8 inline-flex items-center gap-2">
               {page.ctaLabel} <ExternalLink className="h-5 w-5" aria-hidden="true" />
             </a>
           </div>

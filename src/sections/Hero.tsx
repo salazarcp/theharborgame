@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ChevronDown, Play } from 'lucide-react';
-import { STEAM_URL } from '@/content/gameIdentity';
+import { steamCampaignUrl } from '@/content/steamCampaign';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -50,7 +50,7 @@ const Hero = () => {
   }, []);
 
   const platforms = [
-    { name: 'Steam', logo: '/steam.svg', href: STEAM_URL },
+    { name: 'Steam', logo: '/steam.svg', href: steamCampaignUrl('/', 'hero_platform') },
   ];
 
   const titleText = 'HARBOR';
@@ -152,7 +152,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div ref={buttonsRef} className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
-            href={STEAM_URL}
+            href={steamCampaignUrl('/', 'hero_cta')}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex items-center gap-2 text-lg"

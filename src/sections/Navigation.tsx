@@ -1,7 +1,8 @@
+import { steamCampaignUrl } from '@/content/steamCampaign';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import PictureImage from '@/components/PictureImage';
-import { DEVELOPER, STEAM_URL } from '@/content/gameIdentity';
+import { DEVELOPER } from '@/content/gameIdentity';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -105,7 +106,7 @@ const Navigation = () => {
             </a>
             {/* CTA Button */}
             <a
-              href={STEAM_URL}
+              href={steamCampaignUrl('/', 'nav_desktop')}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm font-orbitron tracking-wider"
@@ -152,7 +153,7 @@ const Navigation = () => {
               TÜRKÇE
             </a>
             <a 
-              href={STEAM_URL}
+              href={steamCampaignUrl('/', 'nav_mobile')}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full text-center block mt-4"
