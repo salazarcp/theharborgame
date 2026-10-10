@@ -6,8 +6,8 @@ export const STEAM_NEWS_URL = `https://store.steampowered.com/news/app/${STEAM_A
 export const TRAILER_URL = 'https://www.youtube.com/watch?v=3E5J4DY8OhI';
 export const TRAILER_EMBED_URL = 'https://www.youtube-nocookie.com/embed/3E5J4DY8OhI';
 export const GAME_PLATFORM = 'Windows PC';
-export const RELEASE_WINDOW = '2026';
-export const FACT_CHECK_DATE = '2026-08-29';
+export const RELEASE_WINDOW = '2027';
+export const FACT_CHECK_DATE = '2026-10-11';
 export const SITE_PUBLISHED_DATE = '2026-07-22';
 export const MEDIA_CONTACT = 'info@castilva.com';
 

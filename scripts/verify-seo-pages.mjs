@@ -171,7 +171,7 @@ for (const page of pages) {
   assert(!new RegExp('\\bLast' + ' Harbor\\b', 'i').test(html), `${prefix} contains an incorrect game title`);
   assert(/^[a-f0-9]{64}$/.test(page.contentHash), `${prefix} missing a valid SHA-256 contentHash`);
   assert(page.contentHash === contentHash, `${prefix} contentHash does not match the prerendered HTML`);
-  assert(page.modifiedDate === '2026-08-29', `${prefix} expected modifiedDate 2026-08-29`);
+  assert(page.modifiedDate === '2026-10-11', `${prefix} expected modifiedDate 2026-10-11`);
 
   if (page.directAnswer) {
     assert(html.includes(page.directAnswer), `${prefix} missing the visible direct answer`);
@@ -317,7 +317,7 @@ assert(facts.publisherLinks?.website === PUBLISHER_WEBSITE, 'harbor-facts.json h
 assert(facts.publisherLinks?.steam === PUBLISHER_STEAM, 'harbor-facts.json has the wrong publisher Steam page');
 assert(facts.steamAppId === 2714930, 'harbor-facts.json has the wrong Steam App ID');
 assert(facts.release?.status === 'unreleased', 'harbor-facts.json must identify the current unreleased status');
-assert(facts.release?.plannedWindow === '2026', 'harbor-facts.json has the wrong release window');
+assert(facts.release?.plannedWindow === '2027', 'harbor-facts.json has the wrong release window');
 assert(facts.release?.exactDate === null, 'harbor-facts.json must not invent an exact release date');
 assert(facts.platforms?.confirmed?.length === 1 && facts.platforms.confirmed[0] === 'Windows PC', 'harbor-facts.json has unsupported confirmed platforms');
 assert(facts.platforms?.storefronts?.some(({ name, url }) => name === 'Steam' && url?.includes('/app/2714930/Harbor')), 'harbor-facts.json is missing the official Steam storefront');

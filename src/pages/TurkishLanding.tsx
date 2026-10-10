@@ -137,7 +137,7 @@ const TurkishLanding = () => (
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1410] via-[#241a14] to-[#1a1410]" />
         <div className="absolute inset-0 gradient-mesh" />
         <div className="container-custom relative z-10">
-          <p className="font-rajdhani font-semibold tracking-[0.24em] text-sm text-orange-400 mb-4">2026 · WINDOWS PC · STEAM + EPIC GAMES STORE</p>
+          <p className="font-rajdhani font-semibold tracking-[0.24em] text-sm text-orange-400 mb-4">2027 · WINDOWS PC · STEAM + EPIC GAMES STORE</p>
           <h2 className="font-orbitron font-bold text-4xl md:text-6xl text-amber-100 mb-5">
             HARBOR’I <span className="text-gradient">İSTEK LİSTENE EKLE</span>
           </h2>

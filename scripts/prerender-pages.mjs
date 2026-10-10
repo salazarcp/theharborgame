@@ -13,7 +13,7 @@ const template = await readFile(indexPath, 'utf8');
 process.env.HARBOR_PRERENDER = 'true';
 
 const BASE_URL = 'https://theharborgame.com';
-const HOME_MODIFIED_DATE = '2026-08-29';
+const HOME_MODIFIED_DATE = '2026-10-11';
 const PRIVACY_MODIFIED_DATE = '2026-08-29';
 const EXPECTED_ROUTES = [
   '/',

@@ -12,7 +12,7 @@ const hubContent = {
     intro: 'Direct, source-backed answers for players, search engines, AI assistants, journalists, and creators. Release-sensitive facts are dated and unknown details stay clearly marked.',
     cards: [
       { href: '/gameplay/', title: 'Gameplay guide', description: 'PvP, co-op, scarcity, crafting, building, safe-zone trading, vehicles, and the survival loop.', icon: BookOpen },
-      { href: '/release/', title: 'Release & requirements', description: '2026 status, confirmed platform, price status, languages, and official PC requirements.', icon: CalendarClock },
+      { href: '/release/', title: 'Release & requirements', description: '2027 status, confirmed platform, price status, languages, and official PC requirements.', icon: CalendarClock },
       { href: '/games-like-rust-dayz-scum/', title: 'Rust, DayZ & SCUM comparison', description: 'Where Harbor overlaps, where it differs, and what cannot be judged before release.', icon: Scale },
       { href: '/press/', title: 'Official press kit', description: 'Canonical facts, descriptions, sources, logo, screenshots, and media contact.', icon: FileText },
     ],
@@ -24,7 +24,7 @@ const hubContent = {
     intro: 'Oyuncular, arama motorları, yapay zekâlar, basın ve içerik üreticileri için doğrudan ve kaynaklı yanıtlar. Değişebilen bilgiler tarihlendirilir; bilinmeyenler açıkça belirtilir.',
     cards: [
       { href: '/tr/oynanis/', title: 'Oynanış rehberi', description: 'PvP, co-op, kıtlık, crafting, üs kurma, güvenli bölge ticareti, araçlar ve survival döngüsü.', icon: BookOpen },
-      { href: '/tr/cikis/', title: 'Çıkış ve gereksinimler', description: '2026 durumu, doğrulanmış platform, fiyat durumu, diller ve resmi PC gereksinimleri.', icon: CalendarClock },
+      { href: '/tr/cikis/', title: 'Çıkış ve gereksinimler', description: '2027 durumu, doğrulanmış platform, fiyat durumu, diller ve resmi PC gereksinimleri.', icon: CalendarClock },
       { href: '/tr/rust-dayz-scum-benzeri/', title: 'Rust, DayZ ve SCUM karşılaştırması', description: 'Harbor’ın ortak noktaları, farkları ve çıkıştan önce değerlendirilemeyecek başlıklar.', icon: Scale },
       { href: '/tr/basin/', title: 'Resmi basın kiti', description: 'Ana bilgiler, tanıtım metinleri, kaynaklar, logo, ekran görüntüleri ve basın iletişimi.', icon: FileText },
     ],

@@ -152,7 +152,7 @@ const AvailableNow = () => {
         {/* Additional Info */}
         <div className="mt-16 text-center">
           <p className="text-amber-100/40 text-sm">
-            Planned for Windows PC in 2026. Steam page live; Epic Games Store page coming soon.
+            Planned for Windows PC in 2027. Steam page live; Epic Games Store page coming soon.
           </p>
         </div>
       </div>
