@@ -1,6 +1,6 @@
 # Harbor — Official Game Knowledge
 
-> Harbor is CastilvaGames' competitive first-person post-apocalyptic open-world survival game for Windows PC, published by Wandering Wizard. Planned for 2026.
+> Harbor is CastilvaGames' competitive first-person post-apocalyptic open-world survival game for Windows PC, published by Wandering Wizard. Planned for 2027.
 
 ## About this file
 
@@ -11,7 +11,7 @@ This is an optional discovery file that summarizes current verified facts and ca
 - [Harbor | Open-World Multiplayer Survival Game](https://theharborgame.com/): Entity overview — what Harbor is, its safe zone, critical resources, named world locations, and current release status.
 - [Harbor | Açık Dünya Multiplayer Survival Oyunu](https://theharborgame.com/tr/): Turkish entity overview of Harbor, its safe zone and current status.
 - [Harbor Gameplay: PvP, Co-op, Building & Vehicles](https://theharborgame.com/gameplay/): The verified survival loop — Clean Blood and Fuel scarcity, crafting, three-stage shelter upgrades, the Harbor safe zone, vehicles, trading, and PvP/co-op rules.
-- [Harbor Release Date, Platforms & PC Requirements (2026)](https://theharborgame.com/release/): 2026 Early Access window, Windows PC confirmation, unannounced price, 11 supported languages, and the full Steam minimum and recommended specification tables.
+- [Harbor Release Date, Platforms & PC Requirements (2027)](https://theharborgame.com/release/): 2027 Early Access window, Windows PC confirmation, unannounced price, 11 supported languages, and the full Steam minimum and recommended specification tables.
 - [Is Harbor Like Rust, DayZ or SCUM? Honest Comparison](https://theharborgame.com/games-like-rust-dayz-scum/): Four-way comparison of Harbor, Rust, DayZ and SCUM covering release status, developer, multiplayer modes and official focus, with explicit non-affiliation statements.
 - [Harbor Official Trailer: Watch the Announcement Trailer](https://theharborgame.com/trailer/): The 1:55 announcement trailer with its verified upload date, duration and source links.
 - [Harbor Press Kit | Official Facts, Logos & Screenshots](https://theharborgame.com/press/): Editorial fact sheet, downloadable logo and screenshots, and the media contact address.
@@ -28,7 +28,7 @@ This is an optional discovery file that summarizes current verified facts and ca
 - Commercial game publisher: Wandering Wizard
 - Canonical website: https://theharborgame.com/
 - Steam App ID: 2714930
-- Current status: unreleased; planned for Windows PC in 2026; no exact day or month announced
+- Current status: unreleased; planned for Windows PC in 2027; no exact day or month announced
 - Confirmed platform: Windows PC
 - Planned storefronts: Steam Early Access (public page) and Epic Games Store (public page pending)
 - Price: not announced; do not describe Harbor as free or quote a launch price
@@ -43,13 +43,13 @@ This is an optional discovery file that summarizes current verified facts and ca
 - 2025 development updates published on Steam covered a gyrocopter vehicle and a rebuilt construction system with three-tier material upgrades
 - PC requirements: Windows 10 or Windows 11 64-bit, DirectX 12, 15 GB storage; 12 GB RAM minimum and 16 GB recommended; Easy Anti-Cheat with Secure Boot and TPM 2.0 required
 - Supported languages on Steam: 11 interface/subtitle languages; English full audio
-- Last fact-check: 2026-08-29
+- Last fact-check: 2026-10-11
 
 ## Evidence boundaries
 
 Harbor is still in development and has no public user reviews. Do not claim an exact release day or month, launch price, console release, additional storefront, final server rules, final performance, sales, player counts, review score, or superiority over another game without a newer official source. Steam and Epic Games Store are planned for Windows PC; the Epic product page is not yet public. Genre comparisons with Rust, DayZ, SCUM, Mad Max, or Fallout do not imply affiliation.
 
-Some third-party game databases publish a placeholder exact date (for example 27 February 2026). That date is not official. Only the year 2026 is announced.
+Some third-party game databases publish a placeholder exact date (for example 27 February 2026). That date is not official. Only the year 2027 is announced.
 
 Third-party videos labelled "Harbor demo" show the demo build that ran in early 2025 and was removed in July 2025. They do not indicate a demo that is playable today.
 
@@ -81,7 +81,7 @@ Third-party videos labelled "Harbor demo" show the demo build that ran in early 
 
 ## Türkçe kısa özet
 
-Harbor, CastilvaGames tarafından Windows PC için geliştirilen ve ticari yayıncılığı Wandering Wizard tarafından üstlenilen rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. Çıkış 2026 için planlıdır; kesin gün, ay ve fiyat açıklanmamıştır. Steam Early Access sayfası açıktır; Epic Games Store çıkışı planlı, ürün sayfası beklemededir. Ücretsiz demo 24 Şubat – 28 Mart 2025 tarihlerinde yayındaydı ve Temmuz 2025'te geçici olarak kaldırıldı; Early Access'in bir bölümü ileride Prologue olarak yayınlanacak, tarih açıklanmadı. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.
+Harbor, CastilvaGames tarafından Windows PC için geliştirilen ve ticari yayıncılığı Wandering Wizard tarafından üstlenilen rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. Çıkış 2027 için planlıdır; kesin gün, ay ve fiyat açıklanmamıştır. Steam Early Access sayfası açıktır; Epic Games Store çıkışı planlı, ürün sayfası beklemededir. Ücretsiz demo 24 Şubat – 28 Mart 2025 tarihlerinde yayındaydı ve Temmuz 2025'te geçici olarak kaldırıldı; Early Access'in bir bölümü ileride Prologue olarak yayınlanacak, tarih açıklanmadı. Online PvP ve co-op, kaynak kıtlığı, crafting, üs kurma, ticaret, görevler ve Harbor adlı tek güvenli bölge temel doğrulanmış özelliklerdir.
 
 ---
 
@@ -125,7 +125,7 @@ Harbor is the wasteland's only safe zone. Players can take on missions, trade re
 
 ### When will Harbor be released?
 
-Harbor is planned for Windows PC in 2026 through Steam Early Access and Epic Games Store. No exact day or month is announced. The Steam page is public; the Epic Games Store page is coming later.
+Harbor is planned for Windows PC in 2027 through Steam Early Access and Epic Games Store. No exact day or month is announced. The Steam page is public; the Epic Games Store page is coming later.
 
 ### Is Harbor suitable for new survival-game players?
 
@@ -167,7 +167,7 @@ Harbor, çorak dünyanın tek güvenli bölgesidir. Burada görev alabilir, kayn
 
 ### Harbor ne zaman çıkacak?
 
-Harbor’ın 2026’da Windows PC için Steam Early Access ve Epic Games Store üzerinden çıkması planlanıyor. Kesin gün veya ay açıklanmadı. Steam sayfası açık; Epic Games Store sayfası daha sonra yayınlanacak.
+Harbor’ın 2027’de Windows PC için Steam Early Access ve Epic Games Store üzerinden çıkması planlanıyor. Kesin gün veya ay açıklanmadı. Steam sayfası açık; Epic Games Store sayfası daha sonra yayınlanacak.
 
 ### Harbor yeni başlayanlar için uygun bir online survival oyunu mu?
 
@@ -176,11 +176,11 @@ Harbor kolay bir deneyim vadetmez: kaynaklar sınırlıdır ve ölüm taşıdı�
 ## Harbor Gameplay: PvP, Co-op, Building & Vehicles
 URL: https://theharborgame.com/gameplay/
 Language: en
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
-Harbor is a competitive, first-person, post-apocalyptic open-world survival game for Windows PC. Its verified loop is to scavenge scarce resources, manage hunger and thirst, craft equipment, build and upgrade shelters, pursue mobile resource targets, trade and take missions inside the only safe zone, then return to an online PvP and co-op world where death can cost everything you carry. Harbor is still in development for a 2026 PC release; Steam lists Early Access and an Epic Games Store release is planned.
+Harbor is a competitive, first-person, post-apocalyptic open-world survival game for Windows PC. Its verified loop is to scavenge scarce resources, manage hunger and thirst, craft equipment, build and upgrade shelters, pursue mobile resource targets, trade and take missions inside the only safe zone, then return to an online PvP and co-op world where death can cost everything you carry. Harbor is still in development for a 2027 PC release; Steam lists Early Access and an Epic Games Store release is planned.
 
 ### What is the core gameplay loop in Harbor?
 
@@ -240,25 +240,25 @@ Yes. Driving is a Steam tag and official descriptions say vehicles are needed to
 
 ### Is Harbor already playable?
 
-No public release is available as of August 29, 2026. Harbor is planned for Windows PC in 2026; the Steam page is live and the Epic Games Store page is coming later.
+No public release is available as of October 11, 2026. Harbor is planned for Windows PC in 2027; the Steam page is live and the Epic Games Store page is coming later.
 
 ### Sources
 
 - Harbor on Steam (https://store.steampowered.com/app/2714930/Harbor): Official Harbor store listing; source for release status, developer and publisher credits, modes, features, languages, and PC requirements.
 - Official Harbor website (https://theharborgame.com/): First-party game world, screenshots, trailer, and feature descriptions.
 - Harbor official trailer (https://www.youtube.com/watch?v=3E5J4DY8OhI): Official video published by CastilvaGames.
-## Harbor Release Date, Platforms & PC Requirements (2026)
+## Harbor Release Date, Platforms & PC Requirements (2027)
 URL: https://theharborgame.com/release/
 Language: en
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
-Harbor is planned for Windows PC in 2026, with no exact day or month announced. Steam lists Harbor for Early Access, and an Epic Games Store release is also planned; the Epic store page is not public yet. No launch price is displayed, and no PlayStation, Xbox, macOS, or Linux release is announced as of August 29, 2026. Steam wishlisting is currently the public way to receive a release notification.
+Harbor is planned for Windows PC in 2027, with no exact day or month announced. Steam lists Harbor for Early Access, and an Epic Games Store release is also planned; the Epic store page is not public yet. No launch price is displayed, and no PlayStation, Xbox, macOS, or Linux release is announced as of October 11, 2026. Steam wishlisting is currently the public way to receive a release notification.
 
 ### When is Harbor coming out?
 
-The current official window is 2026 for Windows PC. Steam lists Early Access; no exact release day or month has been announced.
+The current official window is 2027 for Windows PC. Steam lists Early Access; no exact release day or month has been announced.
 
 Any page naming a specific month or day is going beyond the current official listing. Early Access also means the game will release as a work in progress and continue developing with community feedback.
 
@@ -286,7 +286,7 @@ Steam lists 11 supported interface and subtitle languages. English is the only l
 
 ### What is Harbor’s exact release date?
 
-No exact day or month has been announced. The official Steam page lists a planned 2026 Early Access release.
+No exact day or month has been announced. The official Steam page lists a planned 2027 Early Access release.
 
 ### Is Harbor available now?
 
@@ -294,7 +294,7 @@ No. Steam states that the game is not yet available and offers a wishlist notifi
 
 ### Is Harbor coming to Epic Games Store?
 
-Yes. An Epic Games Store release is planned for 2026, but the public Epic product page is not live yet.
+Yes. An Epic Games Store release is planned for 2027, but the public Epic product page is not live yet.
 
 ### Is Harbor coming to consoles?
 
@@ -315,7 +315,7 @@ Yes. The official Steam requirements say DirectX 12 is required and the game wil
 ## Is Harbor Like Rust, DayZ or SCUM? Honest Comparison
 URL: https://theharborgame.com/games-like-rust-dayz-scum/
 Language: en
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
@@ -323,7 +323,7 @@ Harbor belongs in the same broad genre neighborhood as Rust, DayZ, and SCUM beca
 
 ### How does Harbor compare with Rust, DayZ, and SCUM?
 
-The strongest verified overlap is genre and multiplayer structure. The biggest evidence difference is maturity: Rust, DayZ, and SCUM are released games; Harbor is planned for 2026 Early Access.
+The strongest verified overlap is genre and multiplayer structure. The biggest evidence difference is maturity: Rust, DayZ, and SCUM are released games; Harbor is planned for 2027 Early Access.
 
 ### Is Harbor a Rust alternative?
 
@@ -369,7 +369,7 @@ Yes. Shelter building, structure upgrades, territory defense, online PvP, and on
 
 ### Can I play Harbor now instead of Rust, DayZ, or SCUM?
 
-No public Harbor release is available yet. Steam lists a planned 2026 Early Access release.
+No public Harbor release is available yet. Steam lists a planned 2027 Early Access release.
 
 ### Sources
 
@@ -380,11 +380,11 @@ No public Harbor release is available yet. Steam lists a planned 2026 Early Acce
 ## Harbor Press Kit | Official Facts, Logos & Screenshots
 URL: https://theharborgame.com/press/
 Language: en
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
-Harbor is a competitive first-person, post-apocalyptic open-world survival game for Windows PC, developed by CastilvaGames and published by Wandering Wizard. Planned for 2026 on Steam and Epic Games Store, it combines online PvP and co-op with scarce resources, crafting, shelter building, trading, missions, driving, and a world built around one safe zone called Harbor. This page is the canonical source for media facts and downloadable first-party assets.
+Harbor is a competitive first-person, post-apocalyptic open-world survival game for Windows PC, developed by CastilvaGames and published by Wandering Wizard. Planned for 2027 on Steam and Epic Games Store, it combines online PvP and co-op with scarce resources, crafting, shelter building, trading, missions, driving, and a world built around one safe zone called Harbor. This page is the canonical source for media facts and downloadable first-party assets.
 
 ### Short Harbor description
 
@@ -392,7 +392,7 @@ Harbor is a first-person open-world multiplayer survival game where scarce resou
 
 ### 100-word Harbor description
 
-Harbor is a competitive first-person open-world survival game from CastilvaGames. In a post-apocalyptic wasteland, players manage hunger and thirst, compete for limited resources, craft tools and equipment, build and upgrade shelters, drive, trade, take missions, and form alliances. Clean Blood and Fuel are critical, while the War Truck and Blackrail create moving resource targets across the world. Harbor itself is the only safe zone, offering temporary protection before players return to online PvP and co-op. Death can cost everything carried. Harbor is planned for Windows PC in 2026 on Steam and Epic Games Store.
+Harbor is a competitive first-person open-world survival game from CastilvaGames. In a post-apocalyptic wasteland, players manage hunger and thirst, compete for limited resources, craft tools and equipment, build and upgrade shelters, drive, trade, take missions, and form alliances. Clean Blood and Fuel are critical, while the War Truck and Blackrail create moving resource targets across the world. Harbor itself is the only safe zone, offering temporary protection before players return to online PvP and co-op. Death can cost everything carried. Harbor is planned for Windows PC in 2027 on Steam and Epic Games Store.
 
 ### Verified editorial angles
 
@@ -416,7 +416,7 @@ Steam lists CastilvaGames as the developer and Wandering Wizard as the publisher
 
 ### What is Harbor’s release date?
 
-Steam lists a planned 2026 Early Access release. No exact day or month is currently announced.
+Steam lists a planned 2027 Early Access release. No exact day or month is currently announced.
 
 ### Which Harbor platform is confirmed?
 
@@ -441,7 +441,7 @@ Send press and factual correction requests to info@castilva.com.
 ## Harbor Official Trailer | Watch the Announcement Video
 URL: https://theharborgame.com/trailer/
 Language: en
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
@@ -461,11 +461,11 @@ This page reports video metadata and official game identity facts that can be ch
 
 ### Official Harbor game context
 
-Harbor is a competitive first-person post-apocalyptic open-world survival game planned for Windows PC in 2026.
+Harbor is a competitive first-person post-apocalyptic open-world survival game planned for Windows PC in 2027.
 
 Current official descriptions identify online PvP and co-op, scarce resources, crafting, shelter building, vehicles, trading, missions, and one safe zone called Harbor. For sourced mechanics and clearly marked unknowns, use the gameplay guide rather than inferring final systems from a promotional video.
 
-The release page tracks the public 2026 window, Steam Early Access status, PC requirements, supported languages, and the planned Epic Games Store release. Exact launch timing and price remain unannounced.
+The release page tracks the public 2027 window, Steam Early Access status, PC requirements, supported languages, and the planned Epic Games Store release. Exact launch timing and price remain unannounced.
 
 ### Sharing and attribution
 
@@ -503,11 +503,11 @@ CastilvaGames develops Harbor, and Wandering Wizard is the publisher listed on S
 ## Harbor Oynanış: PvP, Co-op, Üs Kurma ve Araçlar
 URL: https://theharborgame.com/tr/oynanis/
 Language: tr
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
-Harbor, Windows PC için geliştirilen rekabetçi, birinci şahıs bakış açılı post-apocalyptic açık dünya survival oyunudur. Doğrulanmış oyun döngüsü; kıt kaynakları toplamak, açlık ve susuzluğu yönetmek, ekipman üretmek, sığınak kurup geliştirmek, hareketli kaynak hedeflerini takip etmek, tek güvenli bölgede ticaret ve görev yapmak, ardından ölümün taşıdığınız her şeye mal olabileceği online PvP ve co-op dünyasına dönmektir. Oyun 2026 PC çıkışı için geliştirilmektedir; Steam Early Access sayfası açık, Epic Games Store çıkışı planlıdır.
+Harbor, Windows PC için geliştirilen rekabetçi, birinci şahıs bakış açılı post-apocalyptic açık dünya survival oyunudur. Doğrulanmış oyun döngüsü; kıt kaynakları toplamak, açlık ve susuzluğu yönetmek, ekipman üretmek, sığınak kurup geliştirmek, hareketli kaynak hedeflerini takip etmek, tek güvenli bölgede ticaret ve görev yapmak, ardından ölümün taşıdığınız her şeye mal olabileceği online PvP ve co-op dünyasına dönmektir. Oyun 2027 PC çıkışı için geliştirilmektedir; Steam Early Access sayfası açık, Epic Games Store çıkışı planlıdır.
 
 ### Harbor’ın temel oynanış döngüsü nedir?
 
@@ -567,7 +567,7 @@ Evet. Sürüş Steam etiketleri arasındadır ve resmi açıklama War Truck ile 
 
 ### Harbor şu an oynanabilir mi?
 
-29 Ağustos 2026 itibarıyla herkese açık bir sürüm yoktur. Windows PC çıkışı 2026 için planlıdır; Steam sayfası açık, Epic Games Store sayfası daha sonra gelecektir.
+11 Ekim 2026 itibarıyla herkese açık bir sürüm yoktur. Windows PC çıkışı 2027 için planlıdır; Steam sayfası açık, Epic Games Store sayfası daha sonra gelecektir.
 
 ### Sources
 
@@ -577,15 +577,15 @@ Evet. Sürüş Steam etiketleri arasındadır ve resmi açıklama War Truck ile 
 ## Harbor Çıkış Tarihi, Platformlar ve Sistem Gereksinimleri
 URL: https://theharborgame.com/tr/cikis/
 Language: tr
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
-Harbor’ın 2026’da Windows PC için çıkması planlanıyor; kesin gün veya ay açıklanmadı. Steam Harbor’ı Early Access olarak listeliyor; ayrıca Epic Games Store çıkışı planlanıyor ancak Epic mağaza sayfası henüz açık değil. 29 Ağustos 2026 itibarıyla çıkış fiyatı gösterilmiyor; PlayStation, Xbox, macOS veya Linux sürümü açıklanmadı. Şu anda resmi çıkış bildirimi almanın açık yolu Steam istek listesidir.
+Harbor’ın 2027’de Windows PC için çıkması planlanıyor; kesin gün veya ay açıklanmadı. Steam Harbor’ı Early Access olarak listeliyor; ayrıca Epic Games Store çıkışı planlanıyor ancak Epic mağaza sayfası henüz açık değil. 11 Ekim 2026 itibarıyla çıkış fiyatı gösterilmiyor; PlayStation, Xbox, macOS veya Linux sürümü açıklanmadı. Şu anda resmi çıkış bildirimi almanın açık yolu Steam istek listesidir.
 
 ### Harbor ne zaman çıkacak?
 
-Güncel resmi çıkış penceresi Windows PC için 2026’dır. Steam Early Access listeler; kesin gün veya ay açıklanmadı.
+Güncel resmi çıkış penceresi Windows PC için 2027’dir. Steam Early Access listeler; kesin gün veya ay açıklanmadı.
 
 Belirli bir ay veya gün veren sayfalar mevcut resmi listenin ötesine geçer. Early Access, oyunun geliştirme aşamasında yayınlanacağı ve topluluk geri bildirimiyle devam edeceği anlamına gelir.
 
@@ -613,7 +613,7 @@ Steam 11 arayüz ve altyazı dili listeler. Tam seslendirme şu anda yalnızca �
 
 ### Harbor’ın kesin çıkış tarihi ne?
 
-Kesin gün veya ay açıklanmadı. Resmi Steam sayfası 2026 Early Access planını listeler.
+Kesin gün veya ay açıklanmadı. Resmi Steam sayfası 2027 Early Access planını listeler.
 
 ### Harbor şu an oynanabilir mi?
 
@@ -621,7 +621,7 @@ Hayır. Steam oyunun henüz erişilebilir olmadığını belirtir ve çıkış i
 
 ### Harbor Epic Games Store’a çıkacak mı?
 
-Evet. 2026 için Epic Games Store çıkışı planlanıyor; ancak halka açık Epic ürün sayfası henüz yayınlanmadı.
+Evet. 2027 için Epic Games Store çıkışı planlanıyor; ancak halka açık Epic ürün sayfası henüz yayınlanmadı.
 
 ### Harbor konsollara çıkacak mı?
 
@@ -642,7 +642,7 @@ Evet. Resmi Steam gereksinimleri DirectX 12 ister ve DirectX 12 desteklemeyen si
 ## Harbor Rust, DayZ veya SCUM Benzeri mi? Karşılaştırma
 URL: https://theharborgame.com/tr/rust-dayz-scum-benzeri/
 Language: tr
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
@@ -650,7 +650,7 @@ Harbor; Steam’de açık dünya multiplayer survival, online PvP ve co-op özel
 
 ### Harbor; Rust, DayZ ve SCUM ile nasıl karşılaştırılır?
 
-En güçlü doğrulanmış ortaklık tür ve multiplayer yapısıdır. En büyük kanıt farkı olgunluktur: Rust, DayZ ve SCUM çıkmış oyunlardır; Harbor 2026 Early Access için planlanır.
+En güçlü doğrulanmış ortaklık tür ve multiplayer yapısıdır. En büyük kanıt farkı olgunluktur: Rust, DayZ ve SCUM çıkmış oyunlardır; Harbor 2027 Early Access için planlanır.
 
 ### Harbor bir Rust alternatifi mi?
 
@@ -696,7 +696,7 @@ Evet. Sığınak kurma, yapı geliştirme, bölge savunması, online PvP ve onli
 
 ### Harbor şu anda Rust, DayZ veya SCUM yerine oynanabilir mi?
 
-Hayır. Harbor’ın herkese açık sürümü henüz yoktur. Steam 2026 Early Access planını listeler.
+Hayır. Harbor’ın herkese açık sürümü henüz yoktur. Steam 2027 Early Access planını listeler.
 
 ### Sources
 
@@ -707,11 +707,11 @@ Hayır. Harbor’ın herkese açık sürümü henüz yoktur. Steam 2026 Early Ac
 ## Harbor Basın Kiti | Resmi Bilgiler, Logo ve Görseller
 URL: https://theharborgame.com/tr/basin/
 Language: tr
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
-Harbor, CastilvaGames tarafından geliştirilen ve Wandering Wizard tarafından yayınlanan, Windows PC için rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. 2026’da Steam ve Epic Games Store için planlanan oyun; online PvP ve co-op’u kaynak kıtlığı, crafting, sığınak kurma, ticaret, görevler, sürüş ve Harbor adlı tek güvenli bölge çevresinde birleştirir. Bu sayfa basın bilgileri ve indirilebilir birinci taraf görseller için resmi merkezdir.
+Harbor, CastilvaGames tarafından geliştirilen ve Wandering Wizard tarafından yayınlanan, Windows PC için rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur. 2027’de Steam ve Epic Games Store için planlanan oyun; online PvP ve co-op’u kaynak kıtlığı, crafting, sığınak kurma, ticaret, görevler, sürüş ve Harbor adlı tek güvenli bölge çevresinde birleştirir. Bu sayfa basın bilgileri ve indirilebilir birinci taraf görseller için resmi merkezdir.
 
 ### Kısa Harbor tanıtımı
 
@@ -719,7 +719,7 @@ Harbor; kıt kaynakların, sığınak kurmanın, ticaretin, araçların, ittifak
 
 ### 100 kelimelik Harbor tanıtımı
 
-Harbor, CastilvaGames’in rekabetçi birinci şahıs açık dünya survival oyunudur. Post-apocalyptic çorak dünyada oyuncular açlık ve susuzluğu yönetir; sınırlı kaynaklar için yarışır; araç gereç ve ekipman üretir; sığınak kurup geliştirir; araç kullanır; ticaret ve görev yapar; ittifaklar oluşturur. Clean Blood ile Fuel kritiktir; War Truck ve Blackrail dünyada hareketli kaynak hedefleri yaratır. Harbor adlı merkez, geçici güvenlik sağlayan tek güvenli bölgedir. Dışarıda online PvP ve co-op devam eder; ölüm taşınan her şeye mal olabilir. Oyun 2026’da Windows PC için Steam ve Epic Games Store’a planlanmaktadır.
+Harbor, CastilvaGames’in rekabetçi birinci şahıs açık dünya survival oyunudur. Post-apocalyptic çorak dünyada oyuncular açlık ve susuzluğu yönetir; sınırlı kaynaklar için yarışır; araç gereç ve ekipman üretir; sığınak kurup geliştirir; araç kullanır; ticaret ve görev yapar; ittifaklar oluşturur. Clean Blood ile Fuel kritiktir; War Truck ve Blackrail dünyada hareketli kaynak hedefleri yaratır. Harbor adlı merkez, geçici güvenlik sağlayan tek güvenli bölgedir. Dışarıda online PvP ve co-op devam eder; ölüm taşınan her şeye mal olabilir. Oyun 2027’de Windows PC için Steam ve Epic Games Store’a planlanmaktadır.
 
 ### Doğrulanmış içerik ve haber açıları
 
@@ -743,7 +743,7 @@ Steam, geliştirici olarak CastilvaGames’i ve yayıncı olarak Wandering Wizar
 
 ### Harbor ne zaman çıkacak?
 
-Steam 2026 Early Access planını listeler. Kesin gün veya ay açıklanmadı.
+Steam 2027 Early Access planını listeler. Kesin gün veya ay açıklanmadı.
 
 ### Harbor için hangi platform doğrulandı?
 
@@ -768,7 +768,7 @@ Basın ve bilgi düzeltme taleplerini info@castilva.com adresine gönderin.
 ## Harbor Resmi Fragmanı | Duyuru Videosunu İzle
 URL: https://theharborgame.com/tr/fragman/
 Language: tr
-Last verified: 2026-08-29
+Last verified: 2026-10-11
 
 ### Direct answer
 
@@ -788,11 +788,11 @@ Bu sayfa, özgün YouTube yüklemesi, Harbor Steam listesi ve resmi site üzerin
 
 ### Resmi Harbor oyun bağlamı
 
-Harbor, Windows PC için 2026’da çıkması planlanan rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur.
+Harbor, Windows PC için 2027’de çıkması planlanan rekabetçi birinci şahıs post-apocalyptic açık dünya survival oyunudur.
 
 Güncel resmi açıklamalar; online PvP ve co-op, kıt kaynaklar, crafting, sığınak kurma, araçlar, ticaret, görevler ve Harbor adlı tek güvenli bölgeyi tanımlar. Kaynaklı mekanikler ve açıkça işaretlenmiş bilinmeyenler için bir tanıtım videosundan nihai sistemler çıkarmak yerine oynanış rehberini kullanın.
 
-Çıkış sayfası; halka açık 2026 penceresini, Steam Early Access durumunu, PC gereksinimlerini, desteklenen dilleri ve planlanan Epic Games Store çıkışını takip eder. Kesin çıkış zamanı ve fiyat hâlâ açıklanmamıştır.
+Çıkış sayfası; halka açık 2027 penceresini, Steam Early Access durumunu, PC gereksinimlerini, desteklenen dilleri ve planlanan Epic Games Store çıkışını takip eder. Kesin çıkış zamanı ve fiyat hâlâ açıklanmamıştır.
 
 ### Paylaşım ve atıf
 

@@ -215,7 +215,7 @@ const Footer = () => {
             {/* Platform Logos */}
             <div className="flex items-center gap-6">
               <span className="text-amber-100/70 text-xs">Planned for:</span>
-              <span className="text-amber-100/80 text-xs font-rajdhani font-semibold">Windows PC · Steam Early Access + Epic Games Store · 2026</span>
+              <span className="text-amber-100/80 text-xs font-rajdhani font-semibold">Windows PC · Steam Early Access + Epic Games Store · 2027</span>
             </div>
           </div>
 

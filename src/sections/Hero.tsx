@@ -137,7 +137,7 @@ const Hero = () => {
             </a>
           ))}
           <div
-            aria-label="Epic Games Store release planned for 2026; store page coming soon"
+            aria-label="Epic Games Store release planned for 2027; store page coming soon"
             className="relative h-12 md:h-14 px-5 md:px-6 bg-amber-100/5 backdrop-blur-sm rounded-lg flex items-center justify-center border border-amber-500/20"
           >
             <img

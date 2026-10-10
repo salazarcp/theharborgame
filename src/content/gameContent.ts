@@ -50,7 +50,7 @@ export const gameFaqs: Record<SiteLocale, FaqItem[]> = {
     {
       question: 'When will Harbor be released?',
       answer:
-        'Harbor is planned for Windows PC in 2026 through Steam Early Access and Epic Games Store. No exact day or month is announced. The Steam page is public; the Epic Games Store page is coming later.',
+        'Harbor is planned for Windows PC in 2027 through Steam Early Access and Epic Games Store. No exact day or month is announced. The Steam page is public; the Epic Games Store page is coming later.',
     },
     {
       question: 'Is Harbor suitable for new survival-game players?',
@@ -102,7 +102,7 @@ export const gameFaqs: Record<SiteLocale, FaqItem[]> = {
     {
       question: 'Harbor ne zaman çıkacak?',
       answer:
-        'Harbor’ın 2026’da Windows PC için Steam Early Access ve Epic Games Store üzerinden çıkması planlanıyor. Kesin gün veya ay açıklanmadı. Steam sayfası açık; Epic Games Store sayfası daha sonra yayınlanacak.',
+        'Harbor’ın 2027’de Windows PC için Steam Early Access ve Epic Games Store üzerinden çıkması planlanıyor. Kesin gün veya ay açıklanmadı. Steam sayfası açık; Epic Games Store sayfası daha sonra yayınlanacak.',
     },
     {
       question: 'Harbor yeni başlayanlar için uygun bir online survival oyunu mu?',
