@@ -185,10 +185,11 @@ const pageContentHash = async (page, html) => {
 };
 
 try {
-  const [{ default: SiteRoot }, { knowledgePages }, { gameFaqs }] = await Promise.all([
+  const [{ default: SiteRoot }, { knowledgePages }, { gameFaqs }, { stripInlineLinks }] = await Promise.all([
     vite.ssrLoadModule('/src/SiteRoot.tsx'),
     vite.ssrLoadModule('/src/content/knowledgePages.ts'),
     vite.ssrLoadModule('/src/content/gameContent.ts'),
+    vite.ssrLoadModule('/src/content/inlineLinks.ts'),
   ]);
 
   const contentPages = knowledgePages.map((page) => {
@@ -320,7 +321,7 @@ ${videoEntries}
     for (const section of page.sections ?? []) {
       parts.push('', `### ${section.title}`, '');
       if (section.answer) parts.push(section.answer);
-      for (const paragraph of section.paragraphs ?? []) parts.push('', paragraph);
+      for (const paragraph of section.paragraphs ?? []) parts.push('', stripInlineLinks(paragraph));
     }
 
     if (page.faqs?.length) {

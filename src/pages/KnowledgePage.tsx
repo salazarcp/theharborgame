@@ -1,5 +1,6 @@
 import { steamCampaignUrl } from '@/content/steamCampaign';
 import { ArrowRight, CalendarDays, Download, ExternalLink, Menu } from 'lucide-react';
+import InlineText from '@/components/InlineText';
 import KnowledgeStructuredData from '@/components/KnowledgeStructuredData';
 import PictureImage from '@/components/PictureImage';
 import type { KnowledgePageData } from '@/content/knowledgePages';
@@ -245,7 +246,7 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
                 <p className="mt-5 border-l-4 border-orange-500 pl-5 text-lg font-medium leading-8 text-amber-50/90">{section.answer}</p>
 
                 {section.paragraphs?.map((paragraph) => (
-                  <p key={paragraph} className="mt-5 text-lg leading-8 text-amber-100/68">{paragraph}</p>
+                  <p key={paragraph} className="mt-5 text-lg leading-8 text-amber-100/68"><InlineText text={paragraph} /></p>
                 ))}
 
                 {section.cards && (
@@ -264,7 +265,7 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
                     {section.bullets.map((bullet) => (
                       <li key={bullet} className="flex gap-3 leading-7 text-amber-100/70">
                         <span className="mt-2.5 h-2 w-2 flex-none rounded-full bg-orange-500" aria-hidden="true" />
-                        <span>{bullet}</span>
+                        <span><InlineText text={bullet} /></span>
                       </li>
                     ))}
                   </ul>
@@ -304,7 +305,7 @@ const KnowledgePage = ({ page }: KnowledgePageProps) => {
                 )}
 
                 {section.note && (
-                  <p className="mt-7 rounded-xl border border-amber-500/20 bg-amber-500/5 p-5 text-sm leading-7 text-amber-100/65">{section.note}</p>
+                  <p className="mt-7 rounded-xl border border-amber-500/20 bg-amber-500/5 p-5 text-sm leading-7 text-amber-100/65"><InlineText text={section.note} /></p>
                 )}
               </section>
             ))}
